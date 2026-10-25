@@ -1,0 +1,194 @@
+[
+ {
+  "id": "f-ifrs9-001",
+  "standard": "IFRS 9",
+  "topic": "Definitions",
+  "q": "What three features make a contract a derivative?",
+  "a": "Value moves with an underlying; little or no initial net investment; settled at a future date.",
+  "source": "ST p.183"
+ },
+ {
+  "id": "f-ifrs9-002",
+  "standard": "IFRS 9",
+  "topic": "Recognition",
+  "q": "When is a financial instrument recognised?",
+  "a": "When the entity becomes a party to the contractual provisions.",
+  "source": "ST p.189"
+ },
+ {
+  "id": "f-ifrs9-003",
+  "standard": "IFRS 9",
+  "topic": "Derecognition",
+  "q": "When is a financial asset derecognised?",
+  "a": "When the rights to cash flows expire, or when it is transferred and substantially all risks and rewards pass.",
+  "source": "ST p.190"
+ },
+ {
+  "id": "f-ifrs9-004",
+  "standard": "IFRS 9",
+  "topic": "Derecognition",
+  "q": "Give two cases where a sold financial asset is NOT derecognised.",
+  "a": "Sale and repurchase at a fixed price; sale with a total return swap; receivables sold with a credit loss guarantee; stock lending.",
+  "source": "ST p.190, p.193"
+ },
+ {
+  "id": "f-ifrs9-005",
+  "standard": "IFRS 9",
+  "topic": "Derecognition",
+  "q": "What is the test for a substantial modification of a liability?",
+  "a": "PV of new cash flows (at the original EIR) differs by at least 10% from the PV of the remaining original cash flows.",
+  "source": "ST p.193"
+ },
+ {
+  "id": "f-ifrs9-006",
+  "standard": "IFRS 9",
+  "topic": "Classification",
+  "q": "What two tests classify a financial asset?",
+  "a": "The business model for managing it, and the contractual cash flow (SPPI) test.",
+  "source": "ST p.194"
+ },
+ {
+  "id": "f-ifrs9-007",
+  "standard": "IFRS 9",
+  "topic": "Classification",
+  "q": "When is a debt asset at amortised cost?",
+  "a": "Held to collect contractual cash flows, and cash flows are solely principal and interest.",
+  "source": "ST p.194"
+ },
+ {
+  "id": "f-ifrs9-008",
+  "standard": "IFRS 9",
+  "topic": "Classification",
+  "q": "When is a debt asset at FVOCI?",
+  "a": "Business model is both collecting and selling, and cash flows are solely principal and interest.",
+  "source": "ST p.194"
+ },
+ {
+  "id": "f-ifrs9-009",
+  "standard": "IFRS 9",
+  "topic": "Classification",
+  "q": "What is the residual category for financial assets?",
+  "a": "Fair value through profit or loss.",
+  "source": "ST p.195"
+ },
+ {
+  "id": "f-ifrs9-010",
+  "standard": "IFRS 9",
+  "topic": "Classification",
+  "q": "Which instruments fail SPPI?",
+  "a": "Convertible loans, and inverse floating rate loans.",
+  "source": "ST p.196-197"
+ },
+ {
+  "id": "f-ifrs9-011",
+  "standard": "IFRS 9",
+  "topic": "Equity",
+  "q": "What election exists for equity investments not held for trading?",
+  "a": "An irrevocable election at initial recognition to take fair value changes in OCI. Only dividends go to profit or loss.",
+  "source": "ST p.195"
+ },
+ {
+  "id": "f-ifrs9-012",
+  "standard": "IFRS 9",
+  "topic": "Reclassification",
+  "q": "When can financial assets be reclassified?",
+  "a": "Only when the business model changes, applied prospectively. Liabilities are never reclassified.",
+  "source": "ST p.199"
+ },
+ {
+  "id": "f-ifrs9-013",
+  "standard": "IFRS 9",
+  "topic": "Measurement",
+  "q": "Initial measurement of a financial asset?",
+  "a": "Fair value. Add transaction costs unless the asset is at FVTPL, where they are expensed.",
+  "source": "ST p.200"
+ },
+ {
+  "id": "f-ifrs9-014",
+  "standard": "IFRS 9",
+  "topic": "Measurement",
+  "q": "Initial measurement of a liability at amortised cost?",
+  "a": "Fair value of consideration received, less transaction costs.",
+  "source": "ST p.204"
+ },
+ {
+  "id": "f-ifrs9-015",
+  "standard": "IFRS 9",
+  "topic": "Measurement",
+  "q": "Which liabilities are not at amortised cost?",
+  "a": "Held for trading, derivatives, liabilities designated at FVTPL, failed-derecognition liabilities, financial guarantees and below-market loan commitments.",
+  "source": "ST p.198"
+ },
+ {
+  "id": "f-ifrs9-016",
+  "standard": "IFRS 9",
+  "topic": "Own credit risk",
+  "q": "Where does the own-credit part of a designated liability's fair value change go?",
+  "a": "OCI, unless that creates or enlarges an accounting mismatch.",
+  "source": "ST p.207"
+ },
+ {
+  "id": "f-ifrs9-017",
+  "standard": "IFRS 9",
+  "topic": "ECL",
+  "q": "What does 12-month ECL equal?",
+  "a": "The probability of default in the next 12 months multiplied by the total lifetime loss if default occurs.",
+  "source": "ST p.209"
+ },
+ {
+  "id": "f-ifrs9-018",
+  "standard": "IFRS 9",
+  "topic": "ECL",
+  "q": "What is the rebuttable presumption for lifetime ECL?",
+  "a": "A significant increase in credit risk if payments are 30 days past due.",
+  "source": "ST p.210"
+ },
+ {
+  "id": "f-ifrs9-019",
+  "standard": "IFRS 9",
+  "topic": "ECL",
+  "q": "How does interest differ in stage 3?",
+  "a": "Interest is calculated on the carrying amount net of the allowance, not on the gross amount.",
+  "source": "ST p.210-211"
+ },
+ {
+  "id": "f-ifrs9-020",
+  "standard": "IFRS 9",
+  "topic": "ECL",
+  "q": "What approach applies to trade receivables with no financing component?",
+  "a": "Simplified: lifetime ECL from initial recognition, often with a provision matrix.",
+  "source": "ST p.213"
+ },
+ {
+  "id": "f-ifrs9-021",
+  "standard": "IFRS 9",
+  "topic": "Hedging",
+  "q": "Which hedges are examinable?",
+  "a": "Fair value hedges and cash flow hedges. Net investment hedges are not.",
+  "source": "ST p.216, p.219"
+ },
+ {
+  "id": "f-ifrs9-022",
+  "standard": "IFRS 9",
+  "topic": "Hedging",
+  "q": "How is a cash flow hedge's effective gain recorded?",
+  "a": "In OCI and the cash flow hedge reserve. Excess goes to profit or loss.",
+  "source": "ST p.220"
+ },
+ {
+  "id": "f-ifrs9-023",
+  "standard": "IFRS 9",
+  "topic": "Hedging",
+  "q": "What happens to the reserve when a hedged forecast purchase creates a non-financial asset?",
+  "a": "It is removed and included in the asset's initial cost.",
+  "source": "ST p.220"
+ },
+ {
+  "id": "f-ifrs9-024",
+  "standard": "IFRS 9",
+  "topic": "Hedging",
+  "q": "What conditions must a hedge meet?",
+  "a": "Eligible items, formal documentation at inception, an economic relationship, credit risk not dominating, and a correct hedge ratio.",
+  "source": "ST p.217"
+ }
+]

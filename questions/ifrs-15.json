@@ -1,0 +1,266 @@
+[
+ {
+  "id": "q-ifrs15-001",
+  "standard": "IFRS 15",
+  "topic": "Performance obligations",
+  "difficulty": "easy",
+  "question": "Alfa sells an accounting software licence together with one year of helpdesk support in a single contract. Other firms also offer helpdesk support for the software, and the software works fully without it. How many performance obligations does the contract contain?",
+  "options": [
+   "One, because there is a single contract",
+   "Two, because each promise is distinct",
+   "Three, one for the contract and one for each promise",
+   "None until the support year ends"
+  ],
+  "answer": 1,
+  "explanation": "Each promise is capable of being distinct (the software works alone, support is available from others) and is separately identifiable in the contract. Two distinct promises are two performance obligations.",
+  "why_wrong": [
+   "The number of contracts does not decide the number of obligations; distinct promises do.",
+   "",
+   "A contract is not itself an obligation.",
+   "Obligations exist from contract inception; revenue timing follows satisfaction."
+  ],
+  "source": "ST p.42-43 (Office Solutions example). Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs15-002",
+  "standard": "IFRS 15",
+  "topic": "Allocation",
+  "difficulty": "medium",
+  "question": "A customer pays $900 for a phone and a service plan sold together. Stand-alone selling prices are $800 for the phone and $400 for the plan. How much of the $900 is allocated to the phone?",
+  "options": [
+   "$800",
+   "$600",
+   "$450",
+   "$300"
+  ],
+  "answer": 1,
+  "explanation": "Allocate by relative stand-alone selling prices: 900 x 800 / (800 + 400) = $600 to the phone and $300 to the plan.",
+  "why_wrong": [
+   "$800 is the stand-alone price, not the share of the discounted total.",
+   "",
+   "$450 splits the price equally, which ignores the selling prices.",
+   "$300 is the amount allocated to the plan."
+  ],
+  "source": "ST p.45 (allocation by stand-alone selling price, handset example). Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs15-003",
+  "standard": "IFRS 15",
+  "topic": "Variable consideration",
+  "difficulty": "hard",
+  "question": "A supplier sells at $20 a unit. The contract cuts the price retrospectively to $18 if the customer buys more than 1,000 units in the year. In the first quarter the customer buys 200 units and a reversal is not expected, so revenue is $4,000. In the second quarter the customer buys 900 more units and the supplier now expects the discount to apply. What revenue is recognised in the second quarter?",
+  "options": [
+   "$18,000",
+   "$15,800",
+   "$16,200",
+   "$18,400"
+  ],
+  "answer": 1,
+  "explanation": "Second-quarter revenue = 900 x $18 = $16,200, less the retrospective price cut on the 200 units already sold (200 x $2 = $400) = $15,800.",
+  "why_wrong": [
+   "$18,000 uses the old price for the new units.",
+   "",
+   "$16,200 forgets to adjust the first quarter's units.",
+   "$18,400 adds the cut instead of deducting it."
+  ],
+  "source": "ST p.43-44 (Taplop example). Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs15-004",
+  "standard": "IFRS 15",
+  "topic": "Principal vs agent",
+  "difficulty": "medium",
+  "question": "An online platform lets suppliers sell to customers. Suppliers set prices and deliver directly. The platform collects payment and keeps an 8% commission. Sales through the platform in the year total $50,000. What revenue does the platform recognise?",
+  "options": [
+   "$50,000",
+   "$46,000",
+   "$4,000",
+   "$54,000"
+  ],
+  "answer": 2,
+  "explanation": "The platform does not control the goods, does not hold inventory and does not set prices, so it is an agent. Revenue is the commission: 8% x $50,000 = $4,000.",
+  "why_wrong": [
+   "Gross revenue is for a principal.",
+   "$46,000 is the amount passed to suppliers.",
+   "",
+   "The commission is not added on top of sales."
+  ],
+  "source": "ST p.48 (Fancy Goods Co example). Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs15-005",
+  "standard": "IFRS 15",
+  "topic": "Repurchase agreement",
+  "difficulty": "medium",
+  "question": "On 1 March a company sells equipment for $2.0m and receives a call option to buy it back for $2.2m within the year. The customer takes possession. How does the company account for the sale?",
+  "options": [
+   "Revenue of $2.0m, because the customer has possession",
+   "Revenue of $2.2m immediately",
+   "A financing arrangement: asset stays, $2.0m liability plus $0.2m interest",
+   "A lease, because the price is above the original price"
+  ],
+  "answer": 2,
+  "explanation": "A call option stops the customer obtaining control. Repurchase price at or above the sale price means a financing arrangement: the company keeps the asset, recognises a liability for cash received and the $0.2m difference as interest.",
+  "why_wrong": [
+   "Possession alone does not transfer control when the seller can call the asset back.",
+   "The repurchase price is not revenue at inception.",
+   "",
+   "A lease applies when the repurchase price is below the original price."
+  ],
+  "source": "ST p.48-49 (repurchase agreements, A Co call option example). Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs15-006",
+  "standard": "IFRS 15",
+  "topic": "Consignment",
+  "difficulty": "easy",
+  "question": "A manufacturer delivers goods to a dealer who pays only after selling them to end customers and may return unsold goods. When does the manufacturer recognise revenue?",
+  "options": [
+   "On delivery to the dealer",
+   "When the dealer sells the goods to the end customer",
+   "When the dealer pays a deposit",
+   "At the end of the financial year"
+  ],
+  "answer": 1,
+  "explanation": "These are consignment indicators: the dealer has no unconditional obligation to pay and can return the goods. Control passes only when the dealer sells on.",
+  "why_wrong": [
+   "Delivery alone does not transfer control under consignment.",
+   "",
+   "A deposit does not transfer control.",
+   "Revenue follows control, not the year end."
+  ],
+  "source": "ST p.49-51 (consignment arrangements). Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs15-007",
+  "standard": "IFRS 15",
+  "topic": "Over time",
+  "difficulty": "hard",
+  "question": "A contractor has a $2,000,000 contract satisfied over time and measures progress by costs incurred. Costs to date are $600,000 and estimated costs to complete are $900,000. Amounts invoiced to date are $700,000. What contract asset is presented?",
+  "options": [
+   "$100,000",
+   "$800,000",
+   "$1,300,000",
+   "$0, because costs are below the amount invoiced"
+  ],
+  "answer": 0,
+  "explanation": "Progress = 600 / (600 + 900) = 40%. Revenue = 40% x 2,000,000 = $800,000. Contract asset = revenue recognised less amounts invoiced = 800,000 - 700,000 = $100,000.",
+  "why_wrong": [
+   "",
+   "$800,000 is revenue, not the contract asset; the invoiced part is a receivable.",
+   "$1,300,000 is the contract price less the invoiced amount.",
+   "Revenue exceeds the amount invoiced, so a contract asset exists."
+  ],
+  "source": "ST p.52-54 (over-time contracts, P Co example). Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs15-008",
+  "standard": "IFRS 15",
+  "topic": "Presentation",
+  "difficulty": "easy",
+  "question": "A customer pays a $5,000 deposit before the entity has delivered anything. How is the amount presented in the entity's statement of financial position?",
+  "options": [
+   "Revenue",
+   "Receivable",
+   "Contract asset",
+   "Contract liability"
+  ],
+  "answer": 3,
+  "explanation": "Consideration received before the entity performs is a contract liability.",
+  "why_wrong": [
+   "Revenue is recognised only as control passes.",
+   "A receivable is an unconditional right to payment after performance.",
+   "A contract asset arises when the entity has performed before being paid.",
+   ""
+  ],
+  "source": "ST p.52 (presentation). Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs15-009",
+  "standard": "IFRS 15",
+  "topic": "Financing component",
+  "difficulty": "hard",
+  "question": "A company sells goods on 1 January 20X1 for $14,520 payable on 31 December 20X2. The cash price at delivery is $12,000. The implied effective interest rate is 10% a year. Control passes on 1 January 20X1. What interest income is recognised in the year to 31 December 20X1?",
+  "options": [
+   "$0, because payment is not yet due",
+   "$1,200",
+   "$2,520",
+   "$1,452"
+  ],
+  "answer": 1,
+  "explanation": "Revenue is the cash price of $12,000. Interest then accrues on the receivable at the effective rate: 12,000 x 10% = $1,200 in year 1.",
+  "why_wrong": [
+   "Interest accrues over the credit period, not only when cash is paid.",
+   "",
+   "$2,520 is the total interest over two years.",
+   "$1,452 applies 10% to the total contract price."
+  ],
+  "source": "ST p.44 (Lansdale significant financing example). Rate and numbers written for this site. Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs15-010",
+  "standard": "IFRS 15",
+  "topic": "Contract costs",
+  "difficulty": "medium",
+  "question": "A salesperson earns a $5,000 commission only if a contract is won. The company expects to recover it through the contract. Separately it spends $3,000 on tender-preparation travel that it would have incurred whether or not it won. How are these treated?",
+  "options": [
+   "Both capitalised",
+   "Commission capitalised; travel expensed",
+   "Commission expensed; travel capitalised",
+   "Both expensed"
+  ],
+  "answer": 1,
+  "explanation": "Incremental costs of obtaining a contract, expected to be recovered, are capitalised. Costs that would be incurred regardless are expensed as incurred.",
+  "why_wrong": [
+   "Costs incurred regardless are not capitalised.",
+   "",
+   "This reverses the rule.",
+   "The commission is incremental and recoverable, so it is capitalised."
+  ],
+  "source": "ST p.46 (contract costs). Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs15-011",
+  "standard": "IFRS 15",
+  "topic": "Warranties",
+  "difficulty": "medium",
+  "question": "A law requires a retailer to give a one-year warranty on all machines, and customers cannot buy it separately. How is the warranty accounted for?",
+  "options": [
+   "As a separate performance obligation with deferred revenue",
+   "As a provision under IAS 37",
+   "As a contract asset",
+   "It is ignored until a claim is made and paid"
+  ],
+  "answer": 1,
+  "explanation": "A legally required warranty that cannot be bought separately is not a performance obligation. It is accounted for under IAS 37.",
+  "why_wrong": [
+   "A separate obligation applies when the customer can buy the warranty separately or it gives a service beyond assurance.",
+   "",
+   "A contract asset is a right to consideration.",
+   "IAS 37 requires a provision when its recognition criteria are met, not only when paid."
+  ],
+  "source": "ST p.47 (warranties). Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs15-012",
+  "standard": "IFRS 15",
+  "topic": "Right of return",
+  "difficulty": "hard",
+  "question": "A retailer sells 100 units at $50 each (cost $30 each). Based on history, 10 units are expected to be returned. What revenue is recognised on the sale?",
+  "options": [
+   "$5,000",
+   "$4,500",
+   "$500",
+   "$3,000"
+  ],
+  "answer": 1,
+  "explanation": "Revenue is recognised only for goods not expected to be returned: 90 x $50 = $4,500. A refund liability of $500 is shown, and an asset of $300 (10 x $30) for the right to recover the goods is adjusted against cost of sales.",
+  "why_wrong": [
+   "$5,000 ignores the expected returns.",
+   "",
+   "$500 is the refund liability.",
+   "$3,000 is the cost of the 100 units."
+  ],
+  "source": "ST p.51 (sale with right of return, para. B20 as quoted). Scenario and numbers written for this site."
+ }
+]

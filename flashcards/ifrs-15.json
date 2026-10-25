@@ -1,0 +1,130 @@
+[
+ {
+  "id": "f-ifrs15-001",
+  "standard": "IFRS 15",
+  "topic": "Core principle",
+  "q": "What is the core principle of IFRS 15?",
+  "a": "Revenue is recognised to depict the transfer of promised goods or services to a customer, in an amount reflecting the consideration the entity expects to be entitled to.",
+  "source": "ST p.40"
+ },
+ {
+  "id": "f-ifrs15-002",
+  "standard": "IFRS 15",
+  "topic": "Control",
+  "q": "How does IFRS 15 define control of an asset?",
+  "a": "The ability to direct the use of the asset and obtain substantially all of its remaining benefits.",
+  "source": "ST p.40"
+ },
+ {
+  "id": "f-ifrs15-003",
+  "standard": "IFRS 15",
+  "topic": "Five steps",
+  "q": "List the five steps of IFRS 15.",
+  "a": "1 Identify the contract. 2 Identify the performance obligations. 3 Determine the transaction price. 4 Allocate the price. 5 Recognise revenue when (or as) each obligation is satisfied.",
+  "source": "ST p.42"
+ },
+ {
+  "id": "f-ifrs15-004",
+  "standard": "IFRS 15",
+  "topic": "Contract criteria",
+  "q": "What conditions must a contract meet to be within IFRS 15?",
+  "a": "Approved and committed; rights identifiable; payment terms identifiable; commercial substance; collection probable.",
+  "source": "ST p.42 (paras. 9-10)"
+ },
+ {
+  "id": "f-ifrs15-005",
+  "standard": "IFRS 15",
+  "topic": "Distinct",
+  "q": "When is a promised good or service distinct?",
+  "a": "The customer can benefit from it on its own (or with readily available resources) AND it is separately identifiable from other promises in the contract.",
+  "source": "ST p.42 (paras. 22, 27, 29)"
+ },
+ {
+  "id": "f-ifrs15-006",
+  "standard": "IFRS 15",
+  "topic": "Variable consideration",
+  "q": "When is variable consideration included in the transaction price?",
+  "a": "Only if it is highly probable that a significant reversal of revenue will not occur when the uncertainty is resolved.",
+  "source": "ST p.43"
+ },
+ {
+  "id": "f-ifrs15-007",
+  "standard": "IFRS 15",
+  "topic": "Allocation",
+  "q": "How is the transaction price allocated?",
+  "a": "In proportion to the stand-alone selling prices of each performance obligation (estimated if not sold separately).",
+  "source": "ST p.45"
+ },
+ {
+  "id": "f-ifrs15-008",
+  "standard": "IFRS 15",
+  "topic": "Over time",
+  "q": "When is revenue recognised over time?",
+  "a": "If the customer simultaneously receives and consumes the benefit; or the work creates/enhances an asset the customer controls; or no alternative-use asset is created and the entity has an enforceable right to payment to date.",
+  "source": "ST p.45"
+ },
+ {
+  "id": "f-ifrs15-009",
+  "standard": "IFRS 15",
+  "topic": "Control indicators",
+  "q": "Name the indicators that control has passed at a point in time.",
+  "a": "Present right to payment; legal title; physical possession; risks and rewards transferred; customer acceptance.",
+  "source": "ST p.46"
+ },
+ {
+  "id": "f-ifrs15-010",
+  "standard": "IFRS 15",
+  "topic": "Progress",
+  "q": "Output vs input methods?",
+  "a": "Output: value to the customer of what was transferred (surveys, units delivered). Input: entity's inputs (labour hours, costs incurred).",
+  "source": "ST p.46"
+ },
+ {
+  "id": "f-ifrs15-011",
+  "standard": "IFRS 15",
+  "topic": "Principal vs agent",
+  "q": "Principal vs agent: revenue amount?",
+  "a": "Principal controls the goods first and records gross revenue. Agent arranges the supply and records only its fee or commission.",
+  "source": "ST p.48"
+ },
+ {
+  "id": "f-ifrs15-012",
+  "standard": "IFRS 15",
+  "topic": "Repurchase",
+  "q": "Forward or call option with repurchase price at or above the sale price?",
+  "a": "No control transfer. Financing arrangement: keep the asset, recognise a liability, difference is interest. If the price is below the sale price: lease (IFRS 16).",
+  "source": "ST p.48-49"
+ },
+ {
+  "id": "f-ifrs15-013",
+  "standard": "IFRS 15",
+  "topic": "Bill-and-hold",
+  "q": "What must all be true for control to pass in a bill-and-hold sale?",
+  "a": "Substantive reason; goods separately identified as the customer's; ready for transfer; entity cannot use them or send them to another customer.",
+  "source": "ST p.51"
+ },
+ {
+  "id": "f-ifrs15-014",
+  "standard": "IFRS 15",
+  "topic": "Presentation",
+  "q": "Contract asset, receivable, contract liability: what differs?",
+  "a": "Contract asset: performed, right to payment conditional on more than time. Receivable: unconditional, only time. Contract liability: paid or due before performance.",
+  "source": "ST p.41, p.52"
+ },
+ {
+  "id": "f-ifrs15-015",
+  "standard": "IFRS 15",
+  "topic": "Return",
+  "q": "How is a sale with a right of return recorded?",
+  "a": "No revenue for goods expected back. Refund liability, reduce revenue, and an asset for the right to recover the goods (adjusted against cost of sales).",
+  "source": "ST p.51 (para. B20)"
+ },
+ {
+  "id": "f-ifrs15-016",
+  "standard": "IFRS 15",
+  "topic": "Warranty",
+  "q": "How is a warranty that is required by law and not sold separately treated?",
+  "a": "Not a performance obligation. Account for it under IAS 37.",
+  "source": "ST p.47"
+ }
+]

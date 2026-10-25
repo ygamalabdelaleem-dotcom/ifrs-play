@@ -1,0 +1,66 @@
+[
+ {
+  "id": "f-ias32-001",
+  "standard": "IAS 32",
+  "topic": "Core principle",
+  "q": "What is the critical feature of a financial liability?",
+  "a": "A contractual obligation to deliver cash or another financial asset.",
+  "source": "ST p.186"
+ },
+ {
+  "id": "f-ias32-002",
+  "standard": "IAS 32",
+  "topic": "Preference shares",
+  "q": "How are redeemable preference shares classified?",
+  "a": "As liabilities: the issuer must redeem them.",
+  "source": "ST p.186"
+ },
+ {
+  "id": "f-ias32-003",
+  "standard": "IAS 32",
+  "topic": "Compound instruments",
+  "q": "In which order is a convertible split?",
+  "a": "Liability first (discounted at the straight-debt rate), then equity as the residual.",
+  "source": "ST p.187"
+ },
+ {
+  "id": "f-ias32-004",
+  "standard": "IAS 32",
+  "topic": "Compound instruments",
+  "q": "Does the split change if conversion becomes more or less likely?",
+  "a": "No, it stays the same until conversion, maturity or another transaction.",
+  "source": "ST p.188"
+ },
+ {
+  "id": "f-ias32-005",
+  "standard": "IAS 32",
+  "topic": "Treasury shares",
+  "q": "Gain or loss on buying back own shares?",
+  "a": "None in profit or loss. Deduct from equity.",
+  "source": "ST p.188"
+ },
+ {
+  "id": "f-ias32-006",
+  "standard": "IAS 32",
+  "topic": "Offsetting",
+  "q": "What two conditions allow offsetting?",
+  "a": "A legally enforceable right of set-off, and intention to settle net or simultaneously.",
+  "source": "ST p.188"
+ },
+ {
+  "id": "f-ias32-007",
+  "standard": "IAS 32",
+  "topic": "Contingent settlement",
+  "q": "How is an instrument with a not-remote contingent cash settlement classified?",
+  "a": "As a financial liability.",
+  "source": "ST p.186"
+ },
+ {
+  "id": "f-ias32-008",
+  "standard": "IAS 32",
+  "topic": "Equity costs",
+  "q": "Where do transaction costs of an equity issue go?",
+  "a": "Deducted from equity, usually share premium.",
+  "source": "ST p.188"
+ }
+]

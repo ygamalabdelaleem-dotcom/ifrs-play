@@ -1,0 +1,299 @@
+[
+ {
+  "id": "IFRS 15",
+  "name": "Revenue from Contracts with Customers",
+  "kind": "ifrs",
+  "wave": 1,
+  "chapter": "ST Ch 3, p.39-58",
+  "kit": "Q 2, 3, 4, 9, 15, 33; Mock 1 Q4; Mock 2 Q2",
+  "page": "ifrs/ifrs-15"
+ },
+ {
+  "id": "IFRS 9",
+  "name": "Financial Instruments",
+  "kind": "ifrs",
+  "wave": 1,
+  "chapter": "ST Ch 10, p.181-230 (with IAS 32, IFRS 7, IFRS 13)",
+  "kit": "Q 7, 12, 17, 18, 21, 23, 46; Mock 1 Q1, Q4; Mock 2 Q2; Mock 3 Q3",
+  "page": "ifrs/ifrs-9"
+ },
+ {
+  "id": "IFRS 16",
+  "name": "Leases",
+  "kind": "ifrs",
+  "wave": 1,
+  "chapter": "ST Ch 6, p.105-126",
+  "kit": "Q 1, 3, 10, 18; Mock 1 Q2; Mock 3 Q2",
+  "page": "ifrs/ifrs-16"
+ },
+ {
+  "id": "IFRS 3",
+  "name": "Business Combinations",
+  "kind": "ifrs",
+  "wave": 1,
+  "chapter": "ST Ch 7 §3 (p.135); Ch 21 §4, §10 (p.405-434)",
+  "kit": "Q 8, 28, 37, 38-46; Mock 2 Q2",
+  "page": "ifrs/ifrs-3"
+ },
+ {
+  "id": "IFRS 10",
+  "name": "Consolidated Financial Statements",
+  "kind": "ifrs",
+  "wave": 1,
+  "chapter": "ST Ch 20-22, p.383-461",
+  "kit": "Q 34, 36, 38-46; Mock 1 Q1; Mock 3 Q1",
+  "page": "ifrs/ifrs-10"
+ },
+ {
+  "id": "IFRS 2",
+  "name": "Share-based Payment",
+  "kind": "ifrs",
+  "wave": 2,
+  "chapter": "ST Ch 14, p.279-297",
+  "kit": "Q 27, 28, 29, 30, 35; Mock 1 Q2",
+  "page": "ifrs/ifrs-2"
+ },
+ {
+  "id": "IFRS 5",
+  "name": "Non-current Assets Held for Sale and Discontinued Operations",
+  "kind": "ifrs",
+  "wave": 2,
+  "chapter": "ST Ch 16 §4, p.328-332",
+  "kit": "Q 6, 18, 24, 30, 35",
+  "page": "ifrs/ifrs-5"
+ },
+ {
+  "id": "IFRS 18",
+  "name": "Presentation and Disclosure in Financial Statements",
+  "kind": "ifrs",
+  "wave": 2,
+  "chapter": "ST Ch 15, p.299-319",
+  "kit": "Q 13, 24, 36; Mock 3 Q4",
+  "page": "ifrs/ifrs-18"
+ },
+ {
+  "id": "IFRS 8",
+  "name": "Operating Segments",
+  "kind": "ifrs",
+  "wave": 3,
+  "chapter": "ST Ch 18 §2, p.361-367",
+  "kit": "Q 10, 13, 35, 36; Mock 1 Q4",
+  "page": "ifrs/ifrs-8"
+ },
+ {
+  "id": "IFRS 6",
+  "name": "Exploration for and Evaluation of Mineral Resources",
+  "kind": "ifrs",
+  "wave": 3,
+  "chapter": "ST Ch 13 §2, p.268-270",
+  "kit": "Q 24, 31; Mock 2 Q4",
+  "page": "ifrs/ifrs-6"
+ },
+ {
+  "id": "IFRS 19",
+  "name": "Subsidiaries without Public Accountability: Disclosures",
+  "kind": "ifrs",
+  "wave": 3,
+  "chapter": "ST Ch 20 §2.10, p.389",
+  "kit": "Q 11, 35",
+  "page": "ifrs/ifrs-19"
+ },
+ {
+  "id": "IFRS 11",
+  "name": "Joint Arrangements (partial, from Kit)",
+  "kind": "ifrs",
+  "wave": 0,
+  "chapter": "No ST chapter in this edition; ST p.357; Kit",
+  "kit": "Q 4, 17; Mock 2 Q4",
+  "page": "ias/ias-28-ifrs-11-from-kit"
+ },
+ {
+  "id": "IFRS 13",
+  "name": "Fair Value Measurement",
+  "kind": "ifrs",
+  "wave": 2,
+  "chapter": "ST Ch 10 §7, p.224-227",
+  "kit": "Q 8, 9, 17, 22; Mock 1 Q4; Mock 2 Q2",
+  "page": "ifrs/ifrs-13"
+ },
+ {
+  "id": "IFRS for SMEs",
+  "name": "IFRS for Small and Medium-sized Entities",
+  "kind": "ifrs",
+  "wave": 3,
+  "chapter": "ST Ch 19, p.369-381",
+  "kit": "Q 37",
+  "page": "ifrs/ifrs-for-smes"
+ },
+ {
+  "id": "IAS 2",
+  "name": "Inventories",
+  "kind": "ias",
+  "wave": 3,
+  "chapter": "ST Ch 13 §3, p.271-277",
+  "kit": "Q 12, 16, 25, 26; Mock 2 Q3, Q4; Mock 3 Q4",
+  "page": "ias/ias-2"
+ },
+ {
+  "id": "IAS 8",
+  "name": "Basis of Preparation of Financial Statements (accounting policies, estimates, errors)",
+  "kind": "ias",
+  "wave": 2,
+  "chapter": "ST Ch 16 §1-3, p.322-327",
+  "kit": "Mock 1 Q2; Mock 3 Q4",
+  "page": "ias/ias-8"
+ },
+ {
+  "id": "IAS 10",
+  "name": "Events after the Reporting Period",
+  "kind": "ias",
+  "wave": 2,
+  "chapter": "ST Ch 16 §5, p.333-335",
+  "kit": "Q 12, 16, 26, 31; Mock 1 Q3",
+  "page": "ias/ias-10"
+ },
+ {
+  "id": "IAS 12",
+  "name": "Income Taxes",
+  "kind": "ias",
+  "wave": 1,
+  "chapter": "ST Ch 11, p.231-249",
+  "kit": "Q 19, 20, 21, 25, 29",
+  "page": "ias/ias-12"
+ },
+ {
+  "id": "IAS 16",
+  "name": "Property, Plant and Equipment",
+  "kind": "ias",
+  "wave": 2,
+  "chapter": "ST Ch 4 §1-2, p.60-73",
+  "kit": "Q 5, 6, 7, 8, 12, 24, 29; Mock 1 Q3; Mock 3 Q2",
+  "page": "ias/ias-16"
+ },
+ {
+  "id": "IAS 19",
+  "name": "Employee Benefits",
+  "kind": "ias",
+  "wave": 2,
+  "chapter": "ST Ch 9, p.155-179",
+  "kit": "Q 12, 14, 15, 16",
+  "page": "ias/ias-19"
+ },
+ {
+  "id": "IAS 20",
+  "name": "Government Grants",
+  "kind": "ias",
+  "wave": 2,
+  "chapter": "ST Ch 4 §3, p.74-78",
+  "kit": "Q 13",
+  "page": "ias/ias-20"
+ },
+ {
+  "id": "IAS 21",
+  "name": "The Effects of Changes in Foreign Exchange Rates",
+  "kind": "ias",
+  "wave": 2,
+  "chapter": "ST Ch 12, p.251-259",
+  "kit": "Q 22, 23, 26; Mock 2 Q3",
+  "page": "ias/ias-21"
+ },
+ {
+  "id": "IAS 23",
+  "name": "Borrowing Costs",
+  "kind": "ias",
+  "wave": 2,
+  "chapter": "ST Ch 4 §5, p.83",
+  "kit": "Q 5, 7",
+  "page": "ias/ias-23"
+ },
+ {
+  "id": "IAS 24",
+  "name": "Related Party Disclosures",
+  "kind": "ias",
+  "wave": 3,
+  "chapter": "ST Ch 18 §1, p.356-360",
+  "kit": "Q 10, 22, 28, 34",
+  "page": "ias/ias-24"
+ },
+ {
+  "id": "IAS 27",
+  "name": "Separate Financial Statements",
+  "kind": "ias",
+  "wave": 0,
+  "chapter": "No dedicated chapter; ST p.388 mention",
+  "kit": "—",
+  "page": "ias/ias-27"
+ },
+ {
+  "id": "IAS 28",
+  "name": "Investments in Associates and Joint Ventures (partial)",
+  "kind": "ias",
+  "wave": 0,
+  "chapter": "ST Ch 20 §1.5, p.385-386; Kit",
+  "kit": "Q 34, 41, 42; Mock 3 Q4",
+  "page": "ias/ias-28-ifrs-11-from-kit"
+ },
+ {
+  "id": "IAS 32",
+  "name": "Financial Instruments: Presentation",
+  "kind": "ias",
+  "wave": 1,
+  "chapter": "ST Ch 10 §2, p.185-188",
+  "kit": "Q 18; Mock 1 Q4",
+  "page": "ias/ias-32"
+ },
+ {
+  "id": "IAS 33",
+  "name": "Earnings per Share",
+  "kind": "ias",
+  "wave": 2,
+  "chapter": "ST Ch 17, p.339-353",
+  "kit": "Q 13, 32, 33",
+  "page": "ias/ias-33"
+ },
+ {
+  "id": "IAS 36",
+  "name": "Impairment of Assets",
+  "kind": "ias",
+  "wave": 1,
+  "chapter": "ST Ch 5, p.91-103",
+  "kit": "Q 21, 24, 33, 35, 37; Mock 2 Q1",
+  "page": "ias/ias-36"
+ },
+ {
+  "id": "IAS 37",
+  "name": "Provisions, Contingent Liabilities and Contingent Assets",
+  "kind": "ias",
+  "wave": 1,
+  "chapter": "ST Ch 8, p.141-153",
+  "kit": "Q 3, 6, 7, 13, 23, 28; Mock 1 Q3, Q4",
+  "page": "ias/ias-37"
+ },
+ {
+  "id": "IAS 38",
+  "name": "Intangible Assets",
+  "kind": "ias",
+  "wave": 2,
+  "chapter": "ST Ch 7 §1-2, p.127-134",
+  "kit": "Q 8, 11, 12, 22, 24, 28, 34, 37; Mock 1 Q3; Mock 2 Q4",
+  "page": "ias/ias-38"
+ },
+ {
+  "id": "IAS 40",
+  "name": "Investment Property",
+  "kind": "ias",
+  "wave": 2,
+  "chapter": "ST Ch 4 §4, p.79-82",
+  "kit": "Q 8, 9, 36",
+  "page": "ias/ias-40"
+ },
+ {
+  "id": "IAS 41",
+  "name": "Agriculture",
+  "kind": "ias",
+  "wave": 3,
+  "chapter": "ST Ch 13 §1, p.262-267",
+  "kit": "Q 25, 26; Mock 2 Q4",
+  "page": "ias/ias-41"
+ }
+]

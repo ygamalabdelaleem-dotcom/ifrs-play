@@ -1,0 +1,442 @@
+[
+ {
+  "id": "q-ifrs9-001",
+  "standard": "IFRS 9",
+  "topic": "Definitions",
+  "difficulty": "easy",
+  "question": "Which of the following is NOT a financial instrument?",
+  "options": [
+   "Trade receivable",
+   "Inventories",
+   "Forward contract to buy shares",
+   "Loan note issued by the entity"
+  ],
+  "answer": 1,
+  "explanation": "A financial instrument gives rise to a financial asset of one party and a liability or equity of the other. Inventories give goods, not a right to cash.",
+  "why_wrong": [
+   "Gives a right to receive cash.",
+   "",
+   "Gives a contractual right or obligation to exchange financial instruments.",
+   "Gives the holder a right to cash, so it is a financial liability of the issuer."
+  ],
+  "source": "ST p.183-184 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-002",
+  "standard": "IFRS 9",
+  "topic": "Recognition",
+  "difficulty": "easy",
+  "question": "Rho signs (a) a firm order to buy 500 tonnes of iron for delivery next quarter and (b) a forward contract to buy iron at a fixed price on a set date, with no delivery of iron. When does Rho recognise each?",
+  "options": [
+   "Both at signing",
+   "(a) on delivery; (b) at signing",
+   "(a) at signing; (b) on settlement",
+   "Neither until the cash is paid"
+  ],
+  "answer": 1,
+  "explanation": "The order is an ordinary trading contract for a physical item, recognised on delivery. The forward is a financial instrument, recognised when Rho becomes a party to it.",
+  "why_wrong": [
+   "The order for physical iron is not a financial instrument.",
+   "",
+   "The forward is recognised at signing, not at settlement.",
+   "Recognition does not wait for cash."
+  ],
+  "source": "ST p.189-190 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-003",
+  "standard": "IFRS 9",
+  "topic": "Classification",
+  "difficulty": "medium",
+  "question": "Sigma holds a bond whose cash flows are solely principal and interest. Its business model is to collect cash flows, with occasional sales when a bond's credit rating falls. How is the bond measured?",
+  "options": [
+   "Fair value through profit or loss",
+   "Fair value through other comprehensive income",
+   "Amortised cost",
+   "Cost, with no impairment"
+  ],
+  "answer": 2,
+  "explanation": "Both tests are met: SPPI cash flows and a collect-only model. Occasional sales for credit deterioration do not change the objective.",
+  "why_wrong": [
+   "Only for assets that fail a test, or by designation.",
+   "That needs a model of collecting and selling.",
+   "",
+   "Amortised cost is subject to the expected credit loss model."
+  ],
+  "source": "ST p.194-195 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-004",
+  "standard": "IFRS 9",
+  "topic": "Classification",
+  "difficulty": "medium",
+  "question": "Tau invests in a convertible loan note issued by another company. How is the investment measured?",
+  "options": [
+   "Amortised cost",
+   "Fair value through profit or loss",
+   "Fair value through OCI, mandatory",
+   "Cost less impairment"
+  ],
+  "answer": 1,
+  "explanation": "A conversion option means the cash flows are not solely principal and interest, so the asset cannot be at amortised cost or FVOCI (debt).",
+  "why_wrong": [
+   "The SPPI test fails.",
+   "",
+   "FVOCI for debt also requires SPPI.",
+   "IFRS 9 has no cost model for such an asset."
+  ],
+  "source": "ST p.196-197 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-005",
+  "standard": "IFRS 9",
+  "topic": "Equity instruments",
+  "difficulty": "medium",
+  "question": "Upsilon buys quoted ordinary shares in another entity as a long-term investment. They are not held for trading and no election is made. How are they measured?",
+  "options": [
+   "Amortised cost",
+   "Fair value through OCI automatically",
+   "Fair value through profit or loss",
+   "Equity method"
+  ],
+  "answer": 2,
+  "explanation": "Equity instruments must be at fair value. Without the irrevocable election at initial recognition, the default is FVTPL.",
+  "why_wrong": [
+   "Equity shares have no contractual cash flows on specified dates.",
+   "FVOCI needs an irrevocable election at initial recognition.",
+   "",
+   "The equity method is for associates, which are outside IFRS 9."
+  ],
+  "source": "ST p.195 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-006",
+  "standard": "IFRS 9",
+  "topic": "Transaction costs",
+  "difficulty": "medium",
+  "question": "Phi buys 100,000 shares for trading at $4 each, with transaction costs of $8,000. At year end the price is $4.50. What is the net effect on profit or loss for the year, ignoring dividends?",
+  "options": [
+   "$50,000 gain",
+   "$42,000 gain",
+   "$58,000 gain",
+   "$8,000 loss"
+  ],
+  "answer": 1,
+  "explanation": "FVTPL: costs are expensed. Gain = 100,000 x $0.50 = $50,000. Net = $50,000 - $8,000 = $42,000.",
+  "why_wrong": [
+   "Ignores the expensed costs.",
+   "",
+   "Adds the costs instead of deducting them.",
+   "Ignores the fair value gain."
+  ],
+  "source": "ST p.202-203 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-007",
+  "standard": "IFRS 9",
+  "topic": "Transaction costs",
+  "difficulty": "medium",
+  "question": "Chi buys 100,000 shares at $4 with costs of $8,000 and makes the irrevocable FVOCI election. What is the initial carrying amount?",
+  "options": [
+   "$400,000",
+   "$408,000",
+   "$392,000",
+   "$450,000"
+  ],
+  "answer": 1,
+  "explanation": "For FVOCI assets the transaction costs are added to fair value: 400,000 + 8,000 = 408,000.",
+  "why_wrong": [
+   "Leaves out the costs, which apply only for FVTPL.",
+   "",
+   "Costs are deducted for liabilities, not assets.",
+   "That is a later year-end value, not the initial carrying amount."
+  ],
+  "source": "ST p.200, p.203 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-008",
+  "standard": "IFRS 9",
+  "topic": "Amortised cost",
+  "difficulty": "medium",
+  "question": "On 1 January a company buys a bond for $900. Principal $1,000, fixed coupon 5% paid yearly. The effective interest rate is 8%. What is the carrying amount after the first year's coupon is received?",
+  "options": [
+   "$922",
+   "$950",
+   "$900",
+   "$972"
+  ],
+  "answer": 0,
+  "explanation": "Interest income = 900 x 8% = 72. Closing = 900 + 72 - 50 coupon = 922.",
+  "why_wrong": [
+   "",
+   "Uses the coupon rate instead of the effective rate.",
+   "Ignores the unwinding of the discount.",
+   "Adds interest but does not deduct the cash received."
+  ],
+  "source": "ST p.201 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-009",
+  "standard": "IFRS 9",
+  "topic": "Amortised cost",
+  "difficulty": "medium",
+  "question": "Psi issues a $800,000 zero-coupon bond at par and pays issue costs of $20,000. The effective interest rate is 5%. What is the liability after one year?",
+  "options": [
+   "$840,000",
+   "$819,000",
+   "$800,000",
+   "$780,000"
+  ],
+  "answer": 1,
+  "explanation": "Initial amount = 800,000 - 20,000 = 780,000. Finance cost = 780,000 x 5% = 39,000. Closing = 819,000.",
+  "why_wrong": [
+   "Applies 5% to 800,000, ignoring issue costs.",
+   "",
+   "The liability grows through the finance cost.",
+   "This is the opening amount, before the finance cost."
+  ],
+  "source": "ST p.204-205 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-010",
+  "standard": "IFRS 9",
+  "topic": "Expected credit losses",
+  "difficulty": "medium",
+  "question": "A loan has no significant increase in credit risk. The 12-month probability of default is 4% and the loss if default occurs is $500,000. What is the loss allowance?",
+  "options": [
+   "$20,000",
+   "$50,000",
+   "$500,000",
+   "$0"
+  ],
+  "answer": 0,
+  "explanation": "Stage 1: 12-month ECL = 4% x $500,000 = $20,000.",
+  "why_wrong": [
+   "",
+   "That would use a lifetime figure, which Stage 1 does not use.",
+   "That would be the whole loss if default were certain.",
+   "Stage 1 still needs an allowance from initial recognition."
+  ],
+  "source": "ST p.209 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-011",
+  "standard": "IFRS 9",
+  "topic": "Expected credit losses",
+  "difficulty": "hard",
+  "question": "A loan's 12-month default probability is now 6% and the default probability over the remaining term is 9%. Credit risk has increased significantly since initial recognition. The loss on default is $400,000. What is the allowance?",
+  "options": [
+   "$24,000",
+   "$36,000",
+   "$60,000",
+   "$40,000"
+  ],
+  "answer": 2,
+  "explanation": "Stage 2: lifetime ECL. Using the ST method, (6% + 9%) x $400,000 = $60,000.",
+  "why_wrong": [
+   "12-month basis only (6% x 400,000).",
+   "Uses only the remaining-term probability (9%).",
+   "",
+   "Uses 10%, not the figures given."
+  ],
+  "source": "ST p.209-210 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-012",
+  "standard": "IFRS 9",
+  "topic": "Provision matrix",
+  "difficulty": "medium",
+  "question": "Receivables are $500,000 current (0.5% loss rate), $200,000 1-30 days overdue (2%) and $100,000 over 90 days (20%). The opening allowance is $20,000. What is the charge to profit or loss?",
+  "options": [
+   "$26,500",
+   "$6,500",
+   "$20,000",
+   "$46,500"
+  ],
+  "answer": 1,
+  "explanation": "Required allowance = 2,500 + 4,000 + 20,000 = 26,500. Charge = 26,500 - 20,000 = 6,500.",
+  "why_wrong": [
+   "That is the closing allowance, not the charge.",
+   "",
+   "The opening balance is not the charge.",
+   "Adds the opening allowance to the closing one."
+  ],
+  "source": "ST p.213-215 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-013",
+  "standard": "IFRS 9",
+  "topic": "Reclassification",
+  "difficulty": "medium",
+  "question": "Which event requires reclassification of financial assets under IFRS 9?",
+  "options": [
+   "Management changes its intention for one asset",
+   "A market for a security disappears temporarily",
+   "A bank decides to shut its retail mortgage business and sell the loan portfolio",
+   "An asset is moved between two divisions"
+  ],
+  "answer": 2,
+  "explanation": "Reclassification is required only when the business model changes. Selling off a closed business's portfolio is a change.",
+  "why_wrong": [
+   "A change of intention for a particular asset is not a change in business model.",
+   "A temporary market change is not a business model change.",
+   "",
+   "A transfer between parts with different models does not itself change the model."
+  ],
+  "source": "ST p.199 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-014",
+  "standard": "IFRS 9",
+  "topic": "Hedge accounting",
+  "difficulty": "hard",
+  "question": "Inventory costing $300,000 is hedged by a futures contract. Over the period the inventory fair value rises by $40,000 and the futures lose $35,000. Hedge accounting (fair value hedge) applies. What is the net effect on profit?",
+  "options": [
+   "$40,000 gain",
+   "$35,000 loss",
+   "$5,000 gain",
+   "Nil"
+  ],
+  "answer": 2,
+  "explanation": "Both go to profit or loss in the same period: +40,000 on the inventory (carrying amount adjusted) and -35,000 on the futures, net +5,000.",
+  "why_wrong": [
+   "Ignores the futures loss.",
+   "Ignores the inventory gain.",
+   "",
+   "The offset is partial, so a net amount remains."
+  ],
+  "source": "ST p.217-219 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-015",
+  "standard": "IFRS 9",
+  "topic": "Hedge accounting",
+  "difficulty": "medium",
+  "question": "A forward contract is an effective cash flow hedge of a firm commitment to buy a machine. Before delivery the forward shows a gain of $30,000. Where is the gain recognised?",
+  "options": [
+   "Profit or loss",
+   "OCI, in the cash flow hedge reserve",
+   "Directly against the machine immediately",
+   "Not recognised until settlement"
+  ],
+  "answer": 1,
+  "explanation": "The effective part goes to OCI and the reserve. When the machine is recognised, the accumulated amount is transferred into its initial cost.",
+  "why_wrong": [
+   "That is the treatment for a fair value hedge or a non-hedged derivative.",
+   "",
+   "The machine does not yet exist before delivery.",
+   "A derivative is recognised at once at fair value."
+  ],
+  "source": "ST p.220-222, Kit fp.145 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-016",
+  "standard": "IFRS 9",
+  "topic": "Derecognition",
+  "difficulty": "medium",
+  "question": "Omega sells short-term receivables to a bank and guarantees to compensate the bank for credit losses that are likely to occur. What happens to the receivables?",
+  "options": [
+   "Derecognised in full",
+   "Not derecognised",
+   "Derecognised, with a provision for the guarantee",
+   "Derecognised only if the bank pays cash in advance"
+  ],
+  "answer": 1,
+  "explanation": "Omega keeps the credit risk, so substantially all risks and rewards are not transferred.",
+  "why_wrong": [
+   "That needs transfer of substantially all risks and rewards.",
+   "",
+   "The guarantee shows the risk stays with Omega.",
+   "Cash timing does not decide derecognition."
+  ],
+  "source": "ST p.190 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-017",
+  "standard": "IFRS 9",
+  "topic": "Derecognition of liabilities",
+  "difficulty": "hard",
+  "question": "Remaining cash flows of a loan have a PV of $2,000,000. After renegotiation the new cash flows, discounted at the original effective rate, have a PV of $1,820,000. How is the change treated?",
+  "options": [
+   "As a substantial modification: extinguish the old loan",
+   "As a non-substantial modification: the original liability continues",
+   "As a derecognition gain of $180,000 in OCI",
+   "As a new loan measured at nil"
+  ],
+  "answer": 1,
+  "explanation": "The difference is 180,000 / 2,000,000 = 9%, below the 10% threshold, so it is not a substantial modification.",
+  "why_wrong": [
+   "That needs a difference of at least 10%.",
+   "",
+   "Gains on a liability derecognition go to profit or loss, and none is triggered here.",
+   "Nonsense: a liability is not measured at nil."
+  ],
+  "source": "ST p.193 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-018",
+  "standard": "IFRS 9",
+  "topic": "Business model",
+  "difficulty": "medium",
+  "question": "A treasury portfolio is held to meet liquidity needs. Management sells frequently and significantly to reinvest in higher-yielding assets and also collects contractual cash flows. The assets pass SPPI. How are they measured?",
+  "options": [
+   "Amortised cost",
+   "FVOCI",
+   "FVTPL",
+   "Cost"
+  ],
+  "answer": 1,
+  "explanation": "Both collecting and selling are integral to the objective, so the business model is 'collect and sell', which gives FVOCI (debt).",
+  "why_wrong": [
+   "That is for a collect-only model.",
+   "",
+   "FVTPL is the residual category.",
+   "There is no cost category."
+  ],
+  "source": "ST p.197-198 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-019",
+  "standard": "IFRS 9",
+  "topic": "Liabilities at FVTPL",
+  "difficulty": "hard",
+  "question": "An entity designates a liability at FVTPL. The fair value falls by $50,000, of which $15,000 is due to the entity's own credit risk. Presentation creates no accounting mismatch. Where is the $15,000 recognised?",
+  "options": [
+   "Profit or loss",
+   "OCI",
+   "Equity directly",
+   "Not recognised"
+  ],
+  "answer": 1,
+  "explanation": "Changes due to own credit risk go to OCI, and the rest ($35,000) to profit or loss.",
+  "why_wrong": [
+   "That would be right only if OCI treatment created or enlarged an accounting mismatch.",
+   "",
+   "Equity movements are not the route; OCI is.",
+   "The whole fair value change is recognised."
+  ],
+  "source": "ST p.207 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ifrs9-020",
+  "standard": "IFRS 9",
+  "topic": "Expected credit losses",
+  "difficulty": "medium",
+  "question": "Which assets are within the IFRS 9 expected credit loss model?",
+  "options": [
+   "Financial assets at FVTPL",
+   "Contract assets under IFRS 15",
+   "Inventories",
+   "Own equity shares issued"
+  ],
+  "answer": 1,
+  "explanation": "The ECL model covers amortised cost assets, mandatory FVOCI debt, lease receivables, contract assets, loan commitments and financial guarantees.",
+  "why_wrong": [
+   "FVTPL measurement already reflects losses.",
+   "",
+   "Inventories are not financial instruments.",
+   "Own equity shares are equity, not a financial asset."
+  ],
+  "source": "ST p.208-209 Scenario and numbers written for this site."
+ }
+]

@@ -1,0 +1,178 @@
+[
+ {
+  "id": "q-ias32-001",
+  "standard": "IAS 32",
+  "topic": "Liability or equity",
+  "difficulty": "easy",
+  "question": "An entity issues preference shares that must be redeemed in five years at a fixed amount. How are they classified?",
+  "options": [
+   "Equity, because they are shares",
+   "Financial liability",
+   "Part equity, part liability",
+   "Not recognised"
+  ],
+  "answer": 1,
+  "explanation": "The issuer has a contractual obligation to deliver cash at a fixed date, so it is a liability whatever the legal form.",
+  "why_wrong": [
+   "Legal form does not decide; substance does.",
+   "",
+   "There is no equity feature to split.",
+   "All financial instruments are recognised when the entity becomes a party."
+  ],
+  "source": "ST p.186 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ias32-002",
+  "standard": "IAS 32",
+  "topic": "Liability or equity",
+  "difficulty": "medium",
+  "question": "Cumulative irredeemable preference shares carry a fixed dividend. Insufficient profits mean the dividend is missed this year. How are they classified?",
+  "options": [
+   "Equity, because they are never redeemed",
+   "Liability, because the missed dividend must still be paid later",
+   "Equity until the dividend is missed",
+   "Liability only in the year the dividend is missed"
+  ],
+  "answer": 1,
+  "explanation": "The cumulative dividend is an unavoidable obligation, so the instrument is a liability.",
+  "why_wrong": [
+   "No redemption does not remove the dividend obligation.",
+   "",
+   "Classification is fixed at initial recognition.",
+   "Classification is made at issue, not year by year."
+  ],
+  "source": "ST p.186 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ias32-003",
+  "standard": "IAS 32",
+  "topic": "Compound instruments",
+  "difficulty": "medium",
+  "question": "How does IAS 32 split a convertible bond?",
+  "options": [
+   "Equity first, liability as the balance",
+   "Liability first at the market rate for similar debt without conversion; equity as the balance",
+   "Half and half",
+   "All as a liability until conversion"
+  ],
+  "answer": 1,
+  "explanation": "The liability is valued first by discounting at the rate for similar straight debt. Equity is the residual.",
+  "why_wrong": [
+   "The standard works the other way round.",
+   "",
+   "Splits are not arbitrary.",
+   "The conversion option is an equity component."
+  ],
+  "source": "ST p.187 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ias32-004",
+  "standard": "IAS 32",
+  "topic": "Compound instruments",
+  "difficulty": "hard",
+  "question": "A company issues 5,000 convertible bonds at par $100 ($500,000), 4% interest paid yearly in arrears, repayable in 3 years. The market rate for similar non-convertible debt is 8%. Discount factors at 8%: year 3 = 0.794, 3-year annuity = 2.577. What is the equity component?",
+  "options": [
+   "$448,540",
+   "$51,540",
+   "$51,460",
+   "$100,000"
+  ],
+  "answer": 2,
+  "explanation": "Liability = 500,000 x 0.794 = 397,000, plus interest 20,000 x 2.577 = 51,540, total 448,540. Equity = 500,000 - 448,540 = 51,460.",
+  "why_wrong": [
+   "That is the liability component.",
+   "That is only the present value of the interest.",
+   "",
+   "No basis in the figures."
+  ],
+  "source": "ST p.187-188 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ias32-005",
+  "standard": "IAS 32",
+  "topic": "Treasury shares",
+  "difficulty": "easy",
+  "question": "An entity buys back some of its own shares for cash. What is the accounting?",
+  "options": [
+   "Recognise a gain in profit or loss if the price is low",
+   "Deduct the cost from equity; no profit or loss",
+   "Recognise an asset",
+   "Recognise a financial liability"
+  ],
+  "answer": 1,
+  "explanation": "Treasury shares are deducted from equity, and no gain or loss goes to profit or loss.",
+  "why_wrong": [
+   "No gain or loss is ever recognised on own shares.",
+   "",
+   "Own shares are not an asset.",
+   "There is no obligation to pay anyone afterwards."
+  ],
+  "source": "ST p.188 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ias32-006",
+  "standard": "IAS 32",
+  "topic": "Offsetting",
+  "difficulty": "medium",
+  "question": "Entity A has a receivable of $80,000 and a payable of $60,000 with the same bank. It has a legally enforceable right to set off but intends to settle each separately. How are they presented?",
+  "options": [
+   "Net $20,000 asset",
+   "Gross: $80,000 asset and $60,000 liability",
+   "Net, because the legal right exists",
+   "Not presented"
+  ],
+  "answer": 1,
+  "explanation": "Both a legal right and an intention to settle net (or simultaneously) are needed. The intention is missing.",
+  "why_wrong": [
+   "Needs the intention as well.",
+   "",
+   "A legal right alone is not enough.",
+   "Financial assets and liabilities are always presented."
+  ],
+  "source": "ST p.188 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ias32-007",
+  "standard": "IAS 32",
+  "topic": "Contingent settlement",
+  "difficulty": "hard",
+  "question": "An instrument requires the issuer to pay cash if an uncertain event outside both parties' control occurs, otherwise to issue shares. The event is possible, not remote. How is it classified?",
+  "options": [
+   "Equity",
+   "Financial liability",
+   "Equity for now, reviewed each year",
+   "A provision under IAS 37"
+  ],
+  "answer": 1,
+  "explanation": "With a contingent settlement feature that is not remote, the instrument is a financial liability.",
+  "why_wrong": [
+   "Equity classification applies only when settlement in cash is remote.",
+   "",
+   "Classification is made at initial recognition.",
+   "It is a financial instrument, so IAS 32 applies."
+  ],
+  "source": "ST p.186 Scenario and numbers written for this site."
+ },
+ {
+  "id": "q-ias32-008",
+  "standard": "IAS 32",
+  "topic": "Transaction costs",
+  "difficulty": "medium",
+  "question": "Where are the transaction costs of issuing equity shares normally recorded?",
+  "options": [
+   "Expense in profit or loss",
+   "Deducted from equity, usually share premium",
+   "Added to the liability",
+   "Capitalised as an intangible asset"
+  ],
+  "answer": 1,
+  "explanation": "Costs of an equity transaction are a deduction from equity.",
+  "why_wrong": [
+   "They are not an expense.",
+   "",
+   "Equity issuance costs do not relate to a liability.",
+   "They do not create an intangible asset."
+  ],
+  "source": "ST p.188 Scenario and numbers written for this site."
+ }
+]
