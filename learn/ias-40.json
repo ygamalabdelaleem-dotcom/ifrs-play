@@ -117,5 +117,140 @@
    ]
   }
  ],
- "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document.",
+ "je": [
+  {
+   "s": "Investment property under the fair value model rises from 2,000,000 to 2,300,000.",
+   "lines": [
+    [
+     "Dr",
+     "Investment property",
+     300000
+    ],
+    [
+     "Cr",
+     "Fair value gain (P&L)",
+     300000
+    ]
+   ],
+   "distract": [
+    [
+     "Revaluation surplus (OCI)",
+     300000
+    ],
+    [
+     "Depreciation expense",
+     300000
+    ]
+   ],
+   "why": "IAS 40 fair value changes go to profit or loss."
+  },
+  {
+   "s": "Rent of 60,000 for the current year is received in cash.",
+   "lines": [
+    [
+     "Dr",
+     "Cash",
+     60000
+    ],
+    [
+     "Cr",
+     "Rental income",
+     60000
+    ]
+   ],
+   "distract": [
+    [
+     "Investment property",
+     60000
+    ],
+    [
+     "Deferred income",
+     60000
+    ]
+   ],
+   "why": "Rent earned in the year is income."
+  }
+ ],
+ "calc": [
+  {
+   "s": "Investment property bought for 1,000,000 plus legal fees 20,000 and transfer tax 30,000. Initial cost?",
+   "a": 1050000,
+   "why": "Transaction costs are included in initial cost.",
+   "unit": ""
+  },
+  {
+   "s": "Fair value model: opening fair value 800,000, closing fair value 760,000. Loss in profit or loss?",
+   "a": 40000,
+   "why": "800,000 - 760,000 = 40,000 loss in P&L.",
+   "unit": ""
+  }
+ ],
+ "seq": [
+  {
+   "s": "رتّب الأسئلة اللي تحدد معيار العقار",
+   "steps": [
+    "Held for sale in the ordinary course of business? → IAS 2",
+    "Used in production or administration? → IAS 16",
+    "Held for rentals or capital appreciation? → IAS 40",
+    "Choose fair value or cost model for all investment property"
+   ],
+   "why": ""
+  }
+ ],
+ "classify": [
+  {
+   "s": "صنّف كل عقار",
+   "buckets": [
+    "IAS 40",
+    "IAS 16",
+    "IAS 2"
+   ],
+   "items": [
+    [
+     "Office building rented to a third party",
+     0
+    ],
+    [
+     "Head office",
+     1
+    ],
+    [
+     "Land held for an undecided future use",
+     0
+    ],
+    [
+     "Apartments built to sell (developer)",
+     2
+    ],
+    [
+     "Factory used in production",
+     1
+    ],
+    [
+     "Building held for capital appreciation",
+     0
+    ]
+   ],
+   "why": ""
+  }
+ ],
+ "multi": [
+  {
+   "s": "Fair value model for investment property: which are TRUE? (select all)",
+   "opts": [
+    "No depreciation",
+    "Fair value changes go to P&L",
+    "Fair value changes go to OCI",
+    "Applies to all investment property",
+    "Depreciated over 50 years"
+   ],
+   "a": [
+    0,
+    1,
+    3
+   ],
+   "why": "Gains and losses go to P&L and there is no depreciation."
+  }
+ ]
 }

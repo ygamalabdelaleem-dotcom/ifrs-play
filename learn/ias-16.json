@@ -118,5 +118,168 @@
    ]
   }
  ],
- "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document.",
+ "je": [
+  {
+   "s": "A machine is bought for 200,000 cash. Installation costs of 10,000 are also paid in cash.",
+   "lines": [
+    [
+     "Dr",
+     "Property, plant and equipment",
+     210000
+    ],
+    [
+     "Cr",
+     "Cash",
+     210000
+    ]
+   ],
+   "distract": [
+    [
+     "Installation expense",
+     10000
+    ],
+    [
+     "Property, plant and equipment",
+     200000
+    ]
+   ],
+   "why": "Installation is directly attributable, so it is part of cost."
+  },
+  {
+   "s": "Annual depreciation on equipment is 25,000.",
+   "lines": [
+    [
+     "Dr",
+     "Depreciation expense",
+     25000
+    ],
+    [
+     "Cr",
+     "Accumulated depreciation",
+     25000
+    ]
+   ],
+   "distract": [
+    [
+     "Cash",
+     25000
+    ],
+    [
+     "Revaluation surplus",
+     25000
+    ]
+   ],
+   "why": "Depreciation is an expense with a credit to accumulated depreciation."
+  },
+  {
+   "s": "Land carried at 500,000 is revalued to 650,000 for the first time.",
+   "lines": [
+    [
+     "Dr",
+     "Land",
+     150000
+    ],
+    [
+     "Cr",
+     "Revaluation surplus (OCI)",
+     150000
+    ]
+   ],
+   "distract": [
+    [
+     "Revenue",
+     150000
+    ],
+    [
+     "Retained earnings",
+     150000
+    ]
+   ],
+   "why": "A first upward revaluation goes to OCI and the revaluation surplus."
+  }
+ ],
+ "calc": [
+  {
+   "s": "Cost 120,000, residual value 20,000, useful life 5 years, straight line. Carrying amount at the end of year 2?",
+   "a": 80000,
+   "why": "Depreciation = 100,000 / 5 = 20,000 a year. 120,000 - 40,000 = 80,000.",
+   "unit": ""
+  },
+  {
+   "s": "An asset with a carrying amount of 52,000 is sold for 45,000. What is the loss on disposal?",
+   "a": 7000,
+   "why": "52,000 - 45,000 = 7,000 loss in profit or loss.",
+   "unit": ""
+  }
+ ],
+ "seq": [
+  {
+   "s": "رتّب مراحل حياة الأصل الثابت",
+   "steps": [
+    "Initial recognition at cost",
+    "Available for use: depreciation starts",
+    "Annual review of useful life and residual value",
+    "Derecognition on disposal: gain or loss to P&L"
+   ],
+   "why": ""
+  }
+ ],
+ "classify": [
+  {
+   "s": "ترسمل التكلفة ولا مصروف؟",
+   "buckets": [
+    "ترسمل",
+    "مصروف"
+   ],
+   "items": [
+    [
+     "Purchase price",
+     0
+    ],
+    [
+     "Non-refundable import duty",
+     0
+    ],
+    [
+     "Site preparation",
+     0
+    ],
+    [
+     "Staff training",
+     1
+    ],
+    [
+     "Opening ceremony",
+     1
+    ],
+    [
+     "Professional fees for installation",
+     0
+    ],
+    [
+     "Routine repairs",
+     1
+    ]
+   ],
+   "why": ""
+  }
+ ],
+ "multi": [
+  {
+   "s": "Which are changes in accounting ESTIMATE (applied prospectively)? (select all)",
+   "opts": [
+    "Change in useful life",
+    "Change in residual value",
+    "Change in depreciation method",
+    "Correcting last year's depreciation calculation mistake"
+   ],
+   "a": [
+    0,
+    1,
+    2
+   ],
+   "why": "Correcting a mistake is a prior period error, applied retrospectively."
+  }
+ ]
 }

@@ -118,5 +118,138 @@
    ]
   }
  ],
- "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document.",
+ "je": [
+  {
+   "s": "Goods of $1,000 are bought on credit when $1 = EGP 48.",
+   "lines": [
+    [
+     "Dr",
+     "Inventory",
+     48000
+    ],
+    [
+     "Cr",
+     "Trade payables",
+     48000
+    ]
+   ],
+   "distract": [
+    [
+     "Exchange loss",
+     48000
+    ],
+    [
+     "Cash",
+     48000
+    ]
+   ],
+   "why": "Recorded at the spot rate on the transaction date."
+  },
+  {
+   "s": "At year-end the $1,000 payable is still unpaid. The rate moved from 48 to 50.",
+   "lines": [
+    [
+     "Dr",
+     "Exchange loss (P&L)",
+     2000
+    ],
+    [
+     "Cr",
+     "Trade payables",
+     2000
+    ]
+   ],
+   "distract": [
+    [
+     "Inventory",
+     2000
+    ],
+    [
+     "OCI",
+     2000
+    ]
+   ],
+   "why": "Monetary item retranslated: 50,000 - 48,000 = 2,000 loss."
+  }
+ ],
+ "calc": [
+  {
+   "s": "A receivable of $5,000 was recorded at EGP 47. It is settled when $1 = EGP 49. Exchange gain in EGP?",
+   "a": 10000,
+   "why": "5,000 x (49 - 47) = 10,000 gain.",
+   "unit": ""
+  },
+  {
+   "s": "Equipment bought for $20,000 when $1 = EGP 45 (cost model). Year-end rate 50. Carrying amount in EGP (ignore depreciation)?",
+   "a": 900000,
+   "why": "Non-monetary at historical cost: 20,000 x 45 = 900,000.",
+   "unit": ""
+  }
+ ],
+ "seq": [
+  {
+   "s": "رتّب خطوات معاملة بعملة أجنبية",
+   "steps": [
+    "Determine the functional currency",
+    "Record the transaction at the spot rate",
+    "At year-end, retranslate monetary items at the closing rate",
+    "Recognise exchange differences in P&L"
+   ],
+   "why": ""
+  }
+ ],
+ "classify": [
+  {
+   "s": "بند نقدي ولا غير نقدي؟",
+   "buckets": [
+    "نقدي",
+    "غير نقدي"
+   ],
+   "items": [
+    [
+     "Cash in USD",
+     0
+    ],
+    [
+     "Trade receivable",
+     0
+    ],
+    [
+     "Inventory",
+     1
+    ],
+    [
+     "Property, plant and equipment",
+     1
+    ],
+    [
+     "Loan payable",
+     0
+    ],
+    [
+     "Prepaid rent",
+     1
+    ]
+   ],
+   "why": ""
+  }
+ ],
+ "multi": [
+  {
+   "s": "Translating a foreign subsidiary: which are TRUE? (select all)",
+   "opts": [
+    "Assets and liabilities at the closing rate",
+    "Income and expenses at transaction (or average) rates",
+    "Differences go to OCI",
+    "Share capital at the closing rate"
+   ],
+   "a": [
+    0,
+    1,
+    2
+   ],
+   "why": "Equity is kept at historical rates."
+  }
+ ]
 }

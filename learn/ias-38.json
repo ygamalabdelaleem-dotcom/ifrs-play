@@ -118,5 +118,146 @@
    ]
   }
  ],
- "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document.",
+ "je": [
+  {
+   "s": "Development costs of 90,000 are paid in cash. All IAS 38 criteria are met.",
+   "lines": [
+    [
+     "Dr",
+     "Development costs (intangible asset)",
+     90000
+    ],
+    [
+     "Cr",
+     "Cash",
+     90000
+    ]
+   ],
+   "distract": [
+    [
+     "Research expense",
+     90000
+    ],
+    [
+     "Goodwill",
+     90000
+    ]
+   ],
+   "why": "Development meeting all criteria is capitalised."
+  },
+  {
+   "s": "Research costs of 40,000 are paid in cash.",
+   "lines": [
+    [
+     "Dr",
+     "Research expense",
+     40000
+    ],
+    [
+     "Cr",
+     "Cash",
+     40000
+    ]
+   ],
+   "distract": [
+    [
+     "Intangible asset",
+     40000
+    ],
+    [
+     "Prepayments",
+     40000
+    ]
+   ],
+   "why": "Research is always expensed."
+  }
+ ],
+ "calc": [
+  {
+   "s": "Development costs: Jan-Mar 30,000 (criteria not met), Apr-Dec 90,000 (criteria met from 1 April). How much is capitalised?",
+   "a": 90000,
+   "why": "Only costs after the criteria are met. The earlier 30,000 stays expensed.",
+   "unit": ""
+  },
+  {
+   "s": "A licence costs 300,000, useful life 10 years, straight line, no residual. Carrying amount after 3 years?",
+   "a": 210000,
+   "why": "Amortisation 30,000 a year. 300,000 - 90,000 = 210,000.",
+   "unit": ""
+  }
+ ],
+ "seq": [
+  {
+   "s": "رتّب مراحل مشروع داخلي",
+   "steps": [
+    "Research phase: expense",
+    "All criteria met: capitalise development",
+    "Asset available for use: start amortisation",
+    "Review useful life and method each year-end"
+   ],
+   "why": ""
+  }
+ ],
+ "classify": [
+  {
+   "s": "يُعترف به كأصل غير ملموس ولا مصروف؟",
+   "buckets": [
+    "أصل",
+    "مصروف"
+   ],
+   "items": [
+    [
+     "Purchased patent",
+     0
+    ],
+    [
+     "Internally generated brand",
+     1
+    ],
+    [
+     "Development meeting all criteria",
+     0
+    ],
+    [
+     "Research",
+     1
+    ],
+    [
+     "Advertising campaign",
+     1
+    ],
+    [
+     "Purchased software licence",
+     0
+    ],
+    [
+     "Staff training",
+     1
+    ]
+   ],
+   "why": ""
+  }
+ ],
+ "multi": [
+  {
+   "s": "Which are REQUIRED to capitalise development costs? (select all)",
+   "opts": [
+    "Technical feasibility",
+    "Intention to complete",
+    "Ability to use or sell the asset",
+    "Board approval of the annual budget",
+    "Adequate resources to complete",
+    "Reliable measurement of the expenditure"
+   ],
+   "a": [
+    0,
+    1,
+    2,
+    4,
+    5
+   ],
+   "why": "Budget approval is not a criterion; probable future benefits is."
+  }
+ ]
 }

@@ -117,5 +117,133 @@
    ]
   }
  ],
- "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document.",
+ "je": [
+  {
+   "s": "5% preference shares with mandatory redemption are issued for 100,000 cash.",
+   "lines": [
+    [
+     "Dr",
+     "Cash",
+     100000
+    ],
+    [
+     "Cr",
+     "Financial liability",
+     100000
+    ]
+   ],
+   "distract": [
+    [
+     "Share capital",
+     100000
+    ],
+    [
+     "Share premium",
+     100000
+    ]
+   ],
+   "why": "Mandatory redemption = contractual obligation to pay cash."
+  },
+  {
+   "s": "The company buys back its own shares for 30,000 cash.",
+   "lines": [
+    [
+     "Dr",
+     "Treasury shares (equity)",
+     30000
+    ],
+    [
+     "Cr",
+     "Cash",
+     30000
+    ]
+   ],
+   "distract": [
+    [
+     "Investment in shares",
+     30000
+    ],
+    [
+     "Loss (P&L)",
+     30000
+    ]
+   ],
+   "why": "Own shares are deducted from equity, not assets."
+  }
+ ],
+ "calc": [
+  {
+   "s": "A convertible bond is issued for 1,000,000. The PV of the liability component is 920,000. Equity component?",
+   "a": 80000,
+   "why": "Equity is the residual: 1,000,000 - 920,000.",
+   "unit": ""
+  },
+  {
+   "s": "Redeemable preference shares 200,000 with a 6% dividend. Amount shown as finance cost?",
+   "a": 12000,
+   "why": "Classified as a liability, so the dividend is interest: 6% x 200,000.",
+   "unit": ""
+  }
+ ],
+ "seq": [
+  {
+   "s": "رتّب خطوات محاسبة السندات القابلة للتحويل",
+   "steps": [
+    "Measure the liability: PV of cash flows at the market rate without conversion",
+    "Equity component = proceeds - liability",
+    "Unwind the liability at the effective rate",
+    "On conversion, transfer the liability to equity"
+   ],
+   "why": ""
+  }
+ ],
+ "classify": [
+  {
+   "s": "التزام مالي ولا حقوق ملكية؟",
+   "buckets": [
+    "التزام",
+    "حقوق ملكية"
+   ],
+   "items": [
+    [
+     "Ordinary shares",
+     1
+    ],
+    [
+     "Mandatorily redeemable preference shares",
+     0
+    ],
+    [
+     "Irredeemable shares with discretionary dividends",
+     1
+    ],
+    [
+     "Loan note",
+     0
+    ],
+    [
+     "Obligation to deliver shares worth exactly 100,000",
+     0
+    ]
+   ],
+   "why": ""
+  }
+ ],
+ "multi": [
+  {
+   "s": "Offsetting a financial asset and liability requires: (select all)",
+   "opts": [
+    "A legally enforceable right to set off",
+    "Intention to settle net or simultaneously",
+    "Same counterparty only",
+    "Same currency only"
+   ],
+   "a": [
+    0,
+    1
+   ],
+   "why": "Both conditions are needed; the others are not enough."
+  }
+ ]
 }

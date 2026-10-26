@@ -7,8 +7,8 @@ Reference and exam-preparation site for external audit work and the DipIFR exam 
 2. Open `site/index.html` in any browser. No server needed.
 
 ## IFRS Play (Duolingo-style app)
-`site/learn/` is a phone app version: units per standard, short lessons (word, match, true/false, fill-the-blank, multiple choice), hearts, XP, streak, daily goal, mistakes practice. Progress is saved in the browser.
-Content: `learn/*.json` (pairs, tf, fill, intro) + `questions/*.json`. `python3 site/build.py` also writes `site/learn/data.js`.
+`site/learn/` is a phone app version: units per standard, short lessons (journal entries, calculations, ordering steps, classification, select-all, true/false, fill-the-blank, multiple choice; term matching in practice), hearts, XP, streak, daily goal, mistakes practice. Progress is saved in the browser.
+Content: `learn/*.json` (intro, pairs, tf, fill, je, calc, seq, classify, multi) + `questions/*.json`. `learn/_extra.py` holds the journal-entry, calculation, ordering, classification and select-all items. `python3 site/build.py` also writes `site/learn/data.js`.
 Live: https://ygamalabdelaleem-dotcom.github.io/ifrs-play/learn/
 
 ## Structure

@@ -118,5 +118,135 @@
    ]
   }
  ],
- "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document.",
+ "je": [
+  {
+   "s": "Current tax for the year is estimated at 70,000.",
+   "lines": [
+    [
+     "Dr",
+     "Income tax expense",
+     70000
+    ],
+    [
+     "Cr",
+     "Current tax payable",
+     70000
+    ]
+   ],
+   "distract": [
+    [
+     "Deferred tax liability",
+     70000
+    ],
+    [
+     "Cash",
+     70000
+    ]
+   ],
+   "why": "Current tax is an expense and a liability until paid."
+  },
+  {
+   "s": "The deferred tax liability increases from 20,000 to 26,000 (all through P&L).",
+   "lines": [
+    [
+     "Dr",
+     "Deferred tax expense",
+     6000
+    ],
+    [
+     "Cr",
+     "Deferred tax liability",
+     6000
+    ]
+   ],
+   "distract": [
+    [
+     "Deferred tax liability",
+     26000
+    ],
+    [
+     "OCI",
+     6000
+    ]
+   ],
+   "why": "Only the movement (6,000) is recorded."
+  }
+ ],
+ "calc": [
+  {
+   "s": "Machine: carrying amount 150,000, tax base 110,000. Tax rate 22.5%. Deferred tax liability?",
+   "a": 9000,
+   "why": "40,000 x 22.5% = 9,000.",
+   "unit": ""
+  },
+  {
+   "s": "Accounting profit 500,000. Non-deductible fines 20,000. Tax rate 22.5%. Current tax?",
+   "a": 117000,
+   "why": "Taxable profit 520,000 x 22.5% = 117,000.",
+   "unit": ""
+  }
+ ],
+ "seq": [
+  {
+   "s": "رتّب خطوات حساب الضريبة المؤجلة",
+   "steps": [
+    "Find the carrying amount of each asset and liability",
+    "Find its tax base",
+    "Calculate the temporary difference",
+    "Apply the enacted or substantively enacted rate",
+    "Recognise DTL / DTA (check recoverability of DTA)"
+   ],
+   "why": ""
+  }
+ ],
+ "classify": [
+  {
+   "s": "بيطلع التزام ضريبي مؤجل ولا أصل؟",
+   "buckets": [
+    "DTL",
+    "DTA"
+   ],
+   "items": [
+    [
+     "Asset carrying amount above tax base",
+     0
+    ],
+    [
+     "Warranty provision deductible when paid",
+     1
+    ],
+    [
+     "Unused tax losses",
+     1
+    ],
+    [
+     "Accelerated tax depreciation",
+     0
+    ],
+    [
+     "Interest receivable taxed when received",
+     0
+    ]
+   ],
+   "why": ""
+  }
+ ],
+ "multi": [
+  {
+   "s": "Which are TRUE? (select all)",
+   "opts": [
+    "Deferred tax is not discounted",
+    "Tax on OCI items goes to OCI",
+    "A DTA is always recognised for tax losses",
+    "No DTL on the initial recognition of goodwill"
+   ],
+   "a": [
+    0,
+    1,
+    3
+   ],
+   "why": "A DTA needs probable future taxable profit."
+  }
+ ]
 }

@@ -118,5 +118,142 @@
    ]
   }
  ],
- "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document.",
+ "je": [
+  {
+   "s": "A lease starts. The present value of lease payments is 50,000.",
+   "lines": [
+    [
+     "Dr",
+     "Right-of-use asset",
+     50000
+    ],
+    [
+     "Cr",
+     "Lease liability",
+     50000
+    ]
+   ],
+   "distract": [
+    [
+     "Rent expense",
+     50000
+    ],
+    [
+     "Cash",
+     50000
+    ]
+   ],
+   "why": "Lessee recognises ROU asset and lease liability."
+  },
+  {
+   "s": "Year-end: interest on the lease liability is 4,000 and the annual payment of 12,000 is made.",
+   "lines": [
+    [
+     "Dr",
+     "Interest expense",
+     4000
+    ],
+    [
+     "Dr",
+     "Lease liability",
+     8000
+    ],
+    [
+     "Cr",
+     "Cash",
+     12000
+    ]
+   ],
+   "distract": [
+    [
+     "Rent expense",
+     12000
+    ],
+    [
+     "Lease liability",
+     12000
+    ]
+   ],
+   "why": "Payment covers interest 4,000 and reduces the liability by 8,000."
+  }
+ ],
+ "calc": [
+  {
+   "s": "Lease liability on 1 January 40,000, rate 8%, payment 10,000 on 31 December. Closing liability?",
+   "a": 33200,
+   "why": "40,000 + 3,200 - 10,000 = 33,200.",
+   "unit": ""
+  },
+  {
+   "s": "ROU asset 60,000. Lease term 5 years, useful life 8 years, no transfer of ownership. Annual depreciation?",
+   "a": 12000,
+   "why": "Shorter of lease term and useful life: 60,000 / 5 = 12,000.",
+   "unit": ""
+  }
+ ],
+ "seq": [
+  {
+   "s": "رتّب خطوات محاسبة المستأجر",
+   "steps": [
+    "Check whether the contract contains a lease",
+    "Determine the lease term",
+    "Measure the lease liability at PV of payments",
+    "Measure the ROU asset (liability + direct costs + prepayments - incentives)",
+    "Depreciate the asset and unwind interest on the liability"
+   ],
+   "why": ""
+  }
+ ],
+ "classify": [
+  {
+   "s": "نسجل أصل والتزام ولا نستخدم الإعفاء؟",
+   "buckets": [
+    "أصل + التزام",
+    "إعفاء ممكن"
+   ],
+   "items": [
+    [
+     "5-year office lease",
+     0
+    ],
+    [
+     "6-month car hire",
+     1
+    ],
+    [
+     "Laptop leased for 3 years (low value)",
+     1
+    ],
+    [
+     "10-year factory lease",
+     0
+    ],
+    [
+     "12-month warehouse lease, no purchase option",
+     1
+    ]
+   ],
+   "why": ""
+  }
+ ],
+ "multi": [
+  {
+   "s": "Which are included in lease payments? (select all)",
+   "opts": [
+    "Fixed payments",
+    "Variable payments linked to CPI",
+    "Purchase option price if reasonably certain",
+    "Variable payments based on future sales",
+    "Termination penalty if the term reflects termination"
+   ],
+   "a": [
+    0,
+    1,
+    2,
+    4
+   ],
+   "why": "Sales-based variable payments are expensed when incurred."
+  }
+ ]
 }

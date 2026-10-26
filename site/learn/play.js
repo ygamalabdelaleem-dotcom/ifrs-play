@@ -35,38 +35,77 @@ function color(ui){ return COLORS[ui % COLORS.length]; }
 
 /* ---------- sound ---------- */
 var AC = null;
-function tone(freqs, dur, type){
+function audio(){
+  if(!AC){
+    try{ if(navigator.audioSession) navigator.audioSession.type = "playback"; }catch(e){} /* iOS: play even on silent switch */
+    AC = new (window.AudioContext || window.webkitAudioContext)();
+  }
+  if(AC.state === "suspended") AC.resume();
+  return AC;
+}
+document.addEventListener("touchstart", function(){ try{ if(S.sound) audio(); }catch(e){} }, {passive:true, once:true});
+/* notes: [freq, start, dur, type, vol] */
+function play(notes){
   if(!S.sound) return;
   try{
-    AC = AC || new (window.AudioContext || window.webkitAudioContext)();
-    if(AC.state === "suspended") AC.resume();
-    freqs.forEach(function(f, i){
-      var o = AC.createOscillator(), g = AC.createGain(), t0 = AC.currentTime + i*dur*0.8;
-      o.type = type || "sine"; o.frequency.value = f; o.connect(g); g.connect(AC.destination);
-      g.gain.setValueAtTime(0.0001, t0); g.gain.exponentialRampToValueAtTime(0.18, t0+0.02); g.gain.exponentialRampToValueAtTime(0.0001, t0+dur);
-      o.start(t0); o.stop(t0+dur+0.05);
+    var ac = audio(), now = ac.currentTime + 0.01;
+    notes.forEach(function(n){
+      var o = ac.createOscillator(), g = ac.createGain(), t0 = now + n[1], d = n[2], v = n[4] || 0.16;
+      o.type = n[3] || "sine"; o.frequency.setValueAtTime(n[0], t0);
+      if(n[5]) o.frequency.exponentialRampToValueAtTime(n[5], t0 + d);
+      o.connect(g); g.connect(ac.destination);
+      g.gain.setValueAtTime(0.0001, t0); g.gain.exponentialRampToValueAtTime(v, t0 + 0.012); g.gain.exponentialRampToValueAtTime(0.0001, t0 + d);
+      o.start(t0); o.stop(t0 + d + 0.05);
     });
   }catch(e){}
 }
-var sfx = { ok:function(){ tone([660,880],0.13); }, bad:function(){ tone([220,180],0.18,"square"); }, win:function(){ tone([523,659,784,1047],0.16,"triangle"); }, tap:function(){ tone([520],0.05); } };
+var sfx = {
+  tap:   function(){ play([[880,0,0.05,"triangle",0.07]]); },
+  place: function(){ play([[660,0,0.07,"triangle",0.1],[990,0.04,0.08,"sine",0.06]]); },
+  ok:    function(){ play([[784,0,0.12,"sine",0.18],[1175,0.09,0.22,"sine",0.18],[2350,0.09,0.18,"sine",0.04]]); },
+  bad:   function(){ play([[330,0,0.16,"sawtooth",0.09,220],[247,0.13,0.26,"sawtooth",0.09,165]]); },
+  heart: function(){ play([[520,0,0.3,"triangle",0.12,180]]); },
+  pop:   function(){ play([[600,0,0.08,"sine",0.15,1200]]); },
+  combo: function(){ play([[784,0,0.09],[988,0.07,0.09],[1175,0.14,0.09],[1568,0.21,0.22,"triangle",0.14]]); },
+  win:   function(){ play([[523,0,0.14,"triangle"],[659,0.13,0.14,"triangle"],[784,0.26,0.14,"triangle"],[1047,0.39,0.4,"triangle",0.2],[784,0.39,0.4,"sine",0.08],[1319,0.55,0.35,"sine",0.06]]); },
+  lose:  function(){ play([[392,0,0.25,"triangle"],[330,0.22,0.25,"triangle"],[262,0.44,0.5,"triangle"]]); }
+};
 
 /* ---------- exercises ---------- */
+var LVL = {tf:1, fill:1.5, classify:1.8, seq:2.2, je:2.6, multi:2.8, calc:3.2};
 function unitExercises(u){
   var out = [], ui = UNITS.indexOf(u);
-  u.pairs.forEach(function(p, i){ out.push({t:"word", u:ui, key:u.standard+"|w"+i, p:p, rev:i%2===1, lvl:0}); });
-  for(var i=0;i<u.pairs.length;i+=4) out.push({t:"match", u:ui, key:u.standard+"|m"+i, pairs:u.pairs.slice(i, i+4), lvl:0.5});
-  u.tf.forEach(function(x, i){ out.push({t:"tf", u:ui, key:u.standard+"|t"+i, x:x, lvl:1}); });
-  u.fill.forEach(function(x, i){ out.push({t:"fill", u:ui, key:u.standard+"|f"+i, x:x, lvl:1.5}); });
+  ["tf","fill","classify","seq","je","multi","calc"].forEach(function(t){
+    (u[t] || []).forEach(function(x, i){ out.push({t:t, u:ui, key:u.standard+"|"+t+i, x:x, lvl:LVL[t]}); });
+  });
   u.mcq.forEach(function(q){ out.push({t:"mcq", u:ui, key:q.id, q:q, lvl:{easy:2, medium:3, hard:4}[q.difficulty] || 3}); });
   return out;
 }
+function wordExercises(u){
+  var out = [], ui = UNITS.indexOf(u);
+  u.pairs.forEach(function(p, i){ out.push({t:"word", u:ui, key:u.standard+"|w"+i, p:p, rev:i%2===1, lvl:0}); });
+  for(var i=0;i<u.pairs.length;i+=4) out.push({t:"match", u:ui, key:u.standard+"|m"+i, pairs:u.pairs.slice(i, i+4), lvl:0.5});
+  return out;
+}
+/* never two exercises of the same type in a row when it can be avoided */
+function spread(list){
+  var left = list.slice(), out = [];
+  while(left.length){
+    var prev = out.length ? out[out.length-1].t : null, i = 0;
+    while(i < left.length && left[i].t === prev) i++;
+    out.push(left.splice(i < left.length ? i : 0, 1)[0]);
+  }
+  return out;
+}
 var LESSONS = UNITS.map(function(u){
-  var all = unitExercises(u).sort(function(a, b){ return a.lvl - b.lvl; });
-  var n = Math.max(3, Math.min(6, Math.ceil(all.length / PER_LESSON))), size = Math.ceil(all.length / n), ls = [];
-  for(var i=0;i<n;i++) ls.push(shuffle(all.slice(i*size, (i+1)*size), rng(u.standard+i)));
-  return {all:all, lessons:ls.filter(function(l){ return l.length; })};
+  var all = shuffle(unitExercises(u), rng(u.standard)).sort(function(a, b){ return a.lvl - b.lvl; });
+  var n = Math.max(3, Math.min(6, Math.ceil(all.length / PER_LESSON))), ls = [];
+  for(var i=0;i<n;i++) ls.push([]);
+  all.forEach(function(e, j){ ls[j % n].push(e); }); /* each lesson gets a spread of types and difficulty */
+  return {all:all, words:wordExercises(u), lessons:ls.map(function(l, i){ return spread(shuffle(l, rng(u.standard+i)).sort(function(a, b){ return Math.round(a.lvl) - Math.round(b.lvl); })); })};
 });
-function findEx(key){ for(var i=0;i<LESSONS.length;i++) for(var j=0;j<LESSONS[i].all.length;j++) if(LESSONS[i].all[j].key === key) return LESSONS[i].all[j]; return null; }
+function lessonMix(items){ return spread(shuffle(items)); }
+function findEx(key){ for(var i=0;i<LESSONS.length;i++){ var l = LESSONS[i].all.concat(LESSONS[i].words); for(var j=0;j<l.length;j++) if(l[j].key === key) return l[j]; } return null; }
 function nodeCount(ui){ return LESSONS[ui].lessons.length + 1; } /* + unit review */
 function done(ui){ return S.prog[UNITS[ui].standard] || 0; }
 function unitDone(ui){ return done(ui) >= nodeCount(ui); }
@@ -150,7 +189,7 @@ function bindPath(){
   $$("[data-jump]").forEach(function(b){ b.onclick = function(){
     var ui = +b.dataset.jump;
     sheet("<h2>⏩ اختبار القفز</h2><p class='muted'>جاوب على 10 أسئلة من وحدة "+esc(UNITS[ui].title_ar)+" بـ 3 قلوب. لو نجحت، هتفتح الوحدة دي وكل اللي قبلها.</p><button class='btn' id='goJump'>ابدأ الاختبار</button><button class='btn ghost' id='shClose'>مش دلوقتي</button>", function(bg){
-      $("#goJump", bg).onclick = function(){ bg.remove(); startLesson({mode:"jump", ui:ui, items:shuffle(LESSONS[ui].all).slice(0, 10), hearts:3}); };
+      $("#goJump", bg).onclick = function(){ bg.remove(); startLesson({mode:"jump", ui:ui, items:lessonMix(LESSONS[ui].all.slice()).slice(0, 10), hearts:3}); };
     });
   }; });
   var cur = $(".node.current"); if(cur && S.tab === "learn") setTimeout(function(){ cur.scrollIntoView({block:"center"}); }, 30);
@@ -169,7 +208,7 @@ function lessonSheet(ui, k){
     '<button class="btn ghost" id="shGuide">📘 الدليل</button>', function(bg){
     var g = $("#goL", bg); if(g) g.onclick = function(){
       bg.remove();
-      var items = isReview ? shuffle(LESSONS[ui].all).slice(0, 10) : LESSONS[ui].lessons[k];
+      var items = isReview ? lessonMix(LESSONS[ui].all.slice()).slice(0, 10) : LESSONS[ui].lessons[k];
       var o = {mode:isReview?"review":"lesson", ui:ui, k:k, items:items};
       if(!isReview && k === 0 && !S.seen[u.standard]) tipsScreen(ui, function(){ S.seen[u.standard] = 1; save(); startLesson(o); });
       else startLesson(o);
@@ -192,16 +231,19 @@ function viewPractice(){
   return "<h1>🏋️ تدريب</h1><p class='muted'>التدريب مش بياخد قلوب، وكل تدريب بيكسبك قلب ❤️ و5 XP.</p>"+
     '<button class="card row" style="width:100%" data-p="mistakes"><span class="ic">🎯</span><span style="flex:1;text-align:start"><b>تدريب الأخطاء</b><small>'+(m?m+" سؤال غلطت فيهم قبل كده":"مفيش أخطاء محفوظة لسه 👏")+"</small></span></button>"+
     '<button class="card row" style="width:100%" data-p="mix"><span class="ic">⚡</span><span style="flex:1;text-align:start"><b>تدريب سريع</b><small>10 أسئلة عشوائية من الوحدات المفتوحة</small></span></button>'+
+    '<button class="card row" style="width:100%" data-p="je"><span class="ic">🧾</span><span style="flex:1;text-align:start"><b>قيود يومية</b><small>سجّل القيود مدين ودائن</small></span></button>'+
+    '<button class="card row" style="width:100%" data-p="calc"><span class="ic">🧮</span><span style="flex:1;text-align:start"><b>حسابات</b><small>مسائل رقمية من المعايير</small></span></button>'+
     '<button class="card row" style="width:100%" data-p="words"><span class="ic">🔤</span><span style="flex:1;text-align:start"><b>توصيل المصطلحات</b><small>إنجليزي ↔ عربي</small></span></button>'+
     '<button class="card row" style="width:100%" data-p="hard"><span class="ic">🧠</span><span style="flex:1;text-align:start"><b>أسئلة امتحان</b><small>اختيار من متعدد فقط (متوسط وصعب)</small></span></button>';
 }
 function bindPractice(){ $$("[data-p]").forEach(function(b){ b.onclick = function(){ startPractice(b.dataset.p); }; }); }
 function startPractice(kind){
   var pool = practicePool(), items;
-  if(kind === "mistakes"){ items = S.mistakes.map(findEx).filter(Boolean); if(!items.length){ toast("مفيش أخطاء محفوظة 👏"); return; } items = shuffle(items).slice(0, 12); }
-  else if(kind === "words"){ items = shuffle(pool.filter(function(e){ return e.t === "match" || e.t === "word"; })).slice(0, 8); }
+  if(kind === "mistakes"){ items = S.mistakes.map(findEx).filter(Boolean); if(!items.length){ toast("مفيش أخطاء محفوظة 👏"); return; } items = lessonMix(items).slice(0, 12); }
+  else if(kind === "words"){ items = []; UNITS.forEach(function(u, ui){ if(unitOpen(ui)) items = items.concat(LESSONS[ui].words); }); items = lessonMix(items).slice(0, 8); }
+  else if(kind === "je" || kind === "calc"){ items = lessonMix(pool.filter(function(e){ return e.t === kind; })).slice(0, 8); }
   else if(kind === "hard"){ items = shuffle(pool.filter(function(e){ return e.t === "mcq" && e.lvl >= 3; })).slice(0, 8); if(items.length < 3) items = shuffle(pool.filter(function(e){ return e.t === "mcq"; })).slice(0, 8); }
-  else items = shuffle(pool).slice(0, 10);
+  else items = lessonMix(pool).slice(0, 10);
   if(!items.length){ toast("افتح وحدة الأول"); return; }
   startLesson({mode:"practice", kind:kind, items:items});
 }
@@ -268,7 +310,7 @@ function lessonShell(inner, footer){
 function nextEx(){
   if(!L.queue.length) return finish();
   var ex = L.queue[0];
-  ({word:exWord, match:exMatch, tf:exTF, fill:exFill, mcq:exMCQ})[ex.t](ex);
+  ({word:exWord, match:exMatch, tf:exTF, fill:exFill, mcq:exMCQ, je:exJE, calc:exCalc, seq:exSeq, classify:exClassify, multi:exMulti})[ex.t](ex);
 }
 function checkFooter(){ return '<button class="btn" id="check" disabled>تحقق</button>'; }
 
@@ -276,13 +318,15 @@ function answered(ex, ok, correctHtml, explain){
   S.answered++; if(ok) S.correct++;
   var foot = $("#foot");
   if(ok){
-    sfx.ok(); L.okCount++; L.queue.shift();
+    L.combo = (L.combo || 0) + 1; L.okCount++; L.queue.shift();
+    if(L.combo >= 3) sfx.combo(); else sfx.ok();
     var mi = S.mistakes.indexOf(ex.key); if(mi >= 0 && L.practice) S.mistakes.splice(mi, 1);
     var cheers = ["أحسنت! 🎉","ممتاز! 👏","برافو! ✨","صح كده! 💪","رائع! 🌟"];
     foot.className = "lfoot ok";
-    foot.innerHTML = "<h3>"+cheers[Math.floor(Math.random()*cheers.length)]+"</h3>"+(explain?'<p dir="auto">'+explain+"</p>":"")+'<button class="btn" id="cont">متابعة</button>';
+    foot.innerHTML = "<h3>"+(L.combo >= 3 ? "🔥 "+L.combo+" صح ورا بعض!" : cheers[Math.floor(Math.random()*cheers.length)])+"</h3>"+(explain?'<p dir="auto">'+explain+"</p>":"")+'<button class="btn" id="cont">متابعة</button>';
   }else{
-    sfx.bad(); L.mistakes++;
+    sfx.bad(); L.mistakes++; L.combo = 0;
+    if(!L.practice) setTimeout(sfx.heart, 350);
     if(S.mistakes.indexOf(ex.key) < 0) S.mistakes.push(ex.key);
     if(!L.practice){ if(L.hearts != null) L.hearts--; else { if(S.hearts >= MAX_HEARTS) S.heartAt = Date.now(); S.hearts = Math.max(0, S.hearts-1); } }
     L.queue.shift(); L.queue.push(ex); /* Duolingo-style: wrong answers come back at the end */
@@ -329,7 +373,7 @@ function exMatch(ex){
       var a = selL, c = selR; selL = selR = null;
       if(a.dataset.en === c.dataset.en){
         [a, c].forEach(function(x){ x.classList.remove("sel"); x.classList.add("ok"); setTimeout(function(){ x.classList.remove("ok"); x.classList.add("gone"); x.disabled = true; }, 250); });
-        S.words[a.dataset.en] = 1; sfx.ok();
+        S.words[a.dataset.en] = 1; sfx.pop();
         if(--left2 === 0) setTimeout(function(){ S.answered++; S.correct++; L.okCount++; L.queue.shift(); save(); $(".prog i").style.width = Math.round(100*L.okCount/L.total)+"%";
           var f = $("#foot"); f.className = "lfoot ok"; f.innerHTML = "<h3>"+(errs?"خلصت التوصيل 👍":"توصيل كامل بدون غلط! 🎉")+'</h3><button class="btn" id="cont">متابعة</button>'; $("#cont").onclick = nextEx; }, 350);
       }else{
@@ -378,7 +422,112 @@ function exMCQ(ex){
   };
 }
 
+function fmt(n){ return Number(n).toLocaleString("en-US"); }
+function scenario(icon, text){ return '<div class="prompt"><span class="who">'+icon+'</span><div class="say ltr">'+esc(text)+"</div></div>"; }
+
+/* journal entry: put each account in Dr or Cr, leave the wrong ones in the bank */
+function exJE(ex){
+  var x = ex.x, chips = shuffle(x.lines.map(function(l){ return {acc:l[1], amt:l[2], side:l[0]}; })
+    .concat(x.distract.map(function(d){ return {acc:d[0], amt:d[1], side:null}; }))), place = {}, sel = null;
+  lessonShell('<div class="tag">قيد يومية 🧾</div><div class="kind">سجّل القيد</div>'+scenario("🧾", x.s)+
+    '<div class="jt"><div class="jcol" data-side="Dr"><h4>مدين Dr</h4><div class="jlist"></div></div><div class="jcol" data-side="Cr"><h4>دائن Cr</h4><div class="jlist"></div></div></div>'+
+    '<p class="hint">اختار الحساب من تحت، وبعدين اضغط على مدين أو دائن. فيه حسابات زيادة مش هتستخدمها.</p><div class="chips" id="bank"></div>', checkFooter());
+  function chip(i){ var c = chips[i]; return '<button class="opt jchip ltr'+(sel===i?" sel":"")+'" data-i="'+i+'"><b>'+esc(c.acc)+"</b><small>"+fmt(c.amt)+"</small></button>"; }
+  function draw(){
+    $("#bank").innerHTML = chips.map(function(c, i){ return place[i] ? "" : chip(i); }).join("");
+    $$(".jcol").forEach(function(col){ var side = col.dataset.side;
+      col.querySelector(".jlist").innerHTML = chips.map(function(c, i){ return place[i] === side ? chip(i) : ""; }).join("") || '<span class="jempty">اضغط هنا</span>';
+      col.classList.toggle("ready", sel != null);
+    });
+    $$(".jchip").forEach(function(b){ b.onclick = function(e){ e.stopPropagation(); var i = +b.dataset.i;
+      if(place[i]){ delete place[i]; sel = null; sfx.tap(); } else { sel = sel === i ? null : i; sfx.tap(); } draw(); }; });
+    $("#check").disabled = !Object.keys(place).length;
+  }
+  $$(".jcol").forEach(function(col){ col.onclick = function(){ if(sel == null) return; place[sel] = col.dataset.side; sel = null; sfx.place(); draw(); }; });
+  draw();
+  $("#check").onclick = function(){
+    var ok = chips.every(function(c, i){ return (place[i] || null) === c.side; });
+    lock(); $$(".jcol").forEach(function(c){ c.onclick = null; });
+    $$(".jchip").forEach(function(b){ var c = chips[+b.dataset.i], at = place[+b.dataset.i] || null; if(at) b.classList.add(at === c.side ? "ok" : "bad"); else if(c.side) b.classList.add("bad"); });
+    var entry = x.lines.map(function(l){ return (l[0] === "Dr" ? "Dr " : "&nbsp;&nbsp;&nbsp;&nbsp;Cr ")+esc(l[1])+" "+fmt(l[2]); }).join("<br>");
+    answered(ex, ok, '<span class="ltr" style="display:block">'+entry+"</span>", '<span class="ltr" style="display:block">'+esc(x.why)+"</span>");
+  };
+}
+
+/* calculation: type the number */
+function exCalc(ex){
+  var x = ex.x;
+  lessonShell('<div class="tag">احسبها 🧮</div><div class="kind">اكتب الرقم</div>'+scenario("🧮", x.s)+
+    '<div class="calc"><input id="num" class="ltr" inputmode="decimal" autocomplete="off" placeholder="0"></div><p class="hint">اكتب الرقم بس (من غير عملة). الفواصل مش مشكلة.</p>', checkFooter());
+  var inp = $("#num");
+  inp.oninput = function(){ $("#check").disabled = !inp.value.trim(); };
+  inp.onkeydown = function(e){ if(e.key === "Enter" && !$("#check").disabled) $("#check").click(); };
+  $("#check").onclick = function(){
+    var v = parseFloat(inp.value.replace(/[,\s٬]/g, "").replace(/[٠-٩]/g, function(d){ return "٠١٢٣٤٥٦٧٨٩".indexOf(d); }));
+    var ok = !isNaN(v) && Math.abs(v - x.a) <= Math.max(0.5, Math.abs(x.a)*0.001);
+    inp.disabled = true; inp.blur(); inp.classList.add(ok ? "ok" : "bad");
+    answered(ex, ok, '<span class="ltr">'+fmt(x.a)+"</span>", '<span class="ltr" style="display:block">'+esc(x.why)+"</span>");
+  };
+  setTimeout(function(){ try{ inp.focus(); }catch(e){} }, 50);
+}
+
+/* put the steps in order */
+function exSeq(ex){
+  var x = ex.x, pool = shuffle(x.steps.map(function(s, i){ return i; })), picked = [];
+  if(pool.every(function(v, i){ return v === i; })) pool.reverse();
+  lessonShell('<div class="tag">رتّب الخطوات 🔢</div><div class="kind">'+esc(x.s)+'</div><div class="seq" id="seq"></div><p class="hint">اضغط على الخطوات بالترتيب الصح. اضغط على خطوة فوق عشان ترجعها.</p><div class="opts" id="pool"></div>', checkFooter());
+  function draw(){
+    $("#seq").innerHTML = picked.length ? picked.map(function(i, k){ return '<button class="opt ltr" data-p="'+k+'"><span class="n">'+(k+1)+"</span>"+esc(x.steps[i])+"</button>"; }).join("") : '<span class="jempty">الترتيب هيظهر هنا</span>';
+    $("#pool").innerHTML = pool.map(function(i){ return picked.indexOf(i) >= 0 ? "" : '<button class="opt ltr" data-i="'+i+'">'+esc(x.steps[i])+"</button>"; }).join("");
+    $$("#pool .opt").forEach(function(b){ b.onclick = function(){ picked.push(+b.dataset.i); sfx.place(); draw(); }; });
+    $$("#seq .opt").forEach(function(b){ b.onclick = function(){ picked.splice(+b.dataset.p, 1); sfx.tap(); draw(); }; });
+    $("#check").disabled = picked.length !== x.steps.length;
+  }
+  draw();
+  $("#check").onclick = function(){
+    var ok = picked.every(function(v, i){ return v === i; }); lock();
+    $$("#seq .opt").forEach(function(b, k){ b.classList.add(picked[k] === k ? "ok" : "bad"); });
+    answered(ex, ok, '<span class="ltr" style="display:block">'+x.steps.map(function(s, i){ return (i+1)+". "+esc(s); }).join("<br>")+"</span>", x.why ? esc(x.why) : "");
+  };
+}
+
+/* sort each item into a bucket */
+function exClassify(ex){
+  var x = ex.x, items = shuffle(x.items.map(function(it, i){ return i; })), pick = {};
+  lessonShell('<div class="tag">صنّف 🗂️</div><div class="kind">'+esc(x.s)+'</div><div class="cls">'+items.map(function(i){
+      return '<div class="crow" data-i="'+i+'"><div class="ltr clabel">'+esc(x.items[i][0])+'</div><div class="seg">'+
+        x.buckets.map(function(b, k){ return '<button class="opt" data-k="'+k+'">'+esc(b)+"</button>"; }).join("")+"</div></div>";
+    }).join("")+"</div>", checkFooter());
+  $$(".crow").forEach(function(r){ var i = +r.dataset.i;
+    $$(".opt", r).forEach(function(b){ b.onclick = function(){ $$(".opt", r).forEach(function(o){ o.classList.remove("sel"); }); b.classList.add("sel"); pick[i] = +b.dataset.k; sfx.tap();
+      $("#check").disabled = Object.keys(pick).length !== x.items.length; }; });
+  });
+  $("#check").onclick = function(){
+    var wrong = 0; lock();
+    $$(".crow").forEach(function(r){ var i = +r.dataset.i, right = x.items[i][1];
+      $$(".opt", r).forEach(function(b){ var k = +b.dataset.k; if(k === right) b.classList.add(pick[i] === k ? "ok" : "hint-ok"); else if(k === pick[i]){ b.classList.add("bad"); wrong++; } });
+    });
+    var fix = x.items.filter(function(it, i){ return pick[i] !== it[1]; }).map(function(it){ return esc(it[0])+" ← "+esc(x.buckets[it[1]]); }).join("<br>");
+    answered(ex, !wrong, fix, x.why ? esc(x.why) : "");
+  };
+}
+
+/* select all that apply */
+function exMulti(ex){
+  var x = ex.x, order = shuffle(x.opts.map(function(o, i){ return i; })), on = {};
+  lessonShell('<div class="tag">اختار كل الإجابات الصح ☑️</div>'+scenario("🧐", x.s)+'<div class="opts">'+
+    order.map(function(i){ return '<button class="opt ltr" data-i="'+i+'"><span class="n box">✓</span>'+esc(x.opts[i])+"</button>"; }).join("")+"</div>", checkFooter());
+  $$(".opt").forEach(function(b){ b.onclick = function(){ var i = +b.dataset.i; on[i] = !on[i]; b.classList.toggle("sel", on[i]); sfx.tap();
+    $("#check").disabled = !Object.keys(on).some(function(k){ return on[k]; }); }; });
+  $("#check").onclick = function(){
+    var ok = x.opts.every(function(o, i){ return !!on[i] === (x.a.indexOf(i) >= 0); }); lock();
+    $$(".opt").forEach(function(b){ var i = +b.dataset.i, right = x.a.indexOf(i) >= 0; if(right) b.classList.add(on[i] ? "ok" : "hint-ok"); else if(on[i]) b.classList.add("bad"); });
+    answered(ex, ok, '<span class="ltr" style="display:block">'+x.a.map(function(i){ return "✓ "+esc(x.opts[i]); }).join("<br>")+"</span>", '<span class="ltr" style="display:block">'+esc(x.why)+"</span>");
+  };
+}
+
 function outOfHearts(){
+  sfx.lose();
   var jump = L.o.mode === "jump";
   app.innerHTML = '<div class="lesson"><div class="result"><div class="big">💔</div><h1 style="color:var(--red)">'+(jump?"الاختبار ماعداش":"خلصت القلوب")+"</h1><p class='muted'>"+
     (jump?"كمّل الوحدات بالترتيب، أو جرب تاني بعد شوية.":"القلب بيرجع كل "+REFILL_MIN+" دقيقة. أو تدرّب دلوقتي واكسب قلب.")+'</p><div style="width:100%;margin-top:20px">'+
