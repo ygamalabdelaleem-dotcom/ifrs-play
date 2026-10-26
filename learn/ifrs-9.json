@@ -1,0 +1,121 @@
+{
+ "standard": "IFRS 9",
+ "also": [],
+ "order": 12,
+ "title": "Financial Instruments",
+ "title_ar": "الأدوات المالية",
+ "icon": "💰",
+ "intro": [
+  "تصنيف الأصل المالي يعتمد على **نموذج الأعمال** + اختبار **التدفقات النقدية التعاقدية (SPPI)**.",
+  "3 تصنيفات: التكلفة المستهلكة، FVOCI، FVTPL. والاضمحلال بنموذج **الخسائر الائتمانية المتوقعة (ECL)**."
+ ],
+ "pairs": [
+  {
+   "en": "Amortised cost",
+   "ar": "التكلفة المستهلكة"
+  },
+  {
+   "en": "Fair value through OCI",
+   "ar": "القيمة العادلة من خلال الدخل الشامل الآخر"
+  },
+  {
+   "en": "Fair value through profit or loss",
+   "ar": "القيمة العادلة من خلال الأرباح أو الخسائر"
+  },
+  {
+   "en": "Expected credit losses",
+   "ar": "الخسائر الائتمانية المتوقعة"
+  },
+  {
+   "en": "Business model",
+   "ar": "نموذج الأعمال"
+  },
+  {
+   "en": "Effective interest rate",
+   "ar": "معدل الفائدة الفعلي"
+  },
+  {
+   "en": "Derecognition",
+   "ar": "إلغاء الاعتراف"
+  },
+  {
+   "en": "Hedge accounting",
+   "ar": "محاسبة التحوط"
+  }
+ ],
+ "tf": [
+  {
+   "s": "Classification of financial assets depends on the business model and the contractual cash flow characteristics.",
+   "a": true,
+   "why": "Both tests."
+  },
+  {
+   "s": "Equity investments can be measured at amortised cost.",
+   "a": false,
+   "why": "They fail the SPPI test: FVTPL or FVOCI by election."
+  },
+  {
+   "s": "Under the general approach, 12-month ECL is recognised at Stage 1.",
+   "a": true,
+   "why": "Lifetime ECL at Stages 2 and 3."
+  },
+  {
+   "s": "Trade receivables without a significant financing component use the simplified approach (lifetime ECL).",
+   "a": true,
+   "why": "Required for those receivables."
+  },
+  {
+   "s": "Gains on equity investments designated at FVOCI are reclassified to profit or loss on disposal.",
+   "a": false,
+   "why": "No recycling for equity at FVOCI."
+  },
+  {
+   "s": "A derivative is normally measured at fair value through profit or loss.",
+   "a": true,
+   "why": "Unless it is a designated hedging instrument."
+  }
+ ],
+ "fill": [
+  {
+   "s": "Interest at amortised cost uses the effective ___ rate.",
+   "a": "interest",
+   "opts": [
+    "interest",
+    "tax",
+    "discount",
+    "coupon"
+   ]
+  },
+  {
+   "s": "IFRS 9 impairment is based on expected credit ___.",
+   "a": "losses",
+   "opts": [
+    "limits",
+    "losses",
+    "ratings",
+    "gains"
+   ]
+  },
+  {
+   "s": "Assets held to collect SPPI cash flows are measured at ___ cost.",
+   "a": "amortised",
+   "opts": [
+    "historical",
+    "amortised",
+    "replacement",
+    "standard"
+   ]
+  },
+  {
+   "s": "A financial instrument is recognised when the entity becomes a ___ to the contract.",
+   "a": "party",
+   "opts": [
+    "party",
+    "owner",
+    "guarantor",
+    "lender"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

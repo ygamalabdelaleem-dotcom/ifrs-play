@@ -1,0 +1,123 @@
+{
+ "standard": "IAS 28",
+ "also": [
+  "IFRS 11"
+ ],
+ "order": 14,
+ "title": "Associates and Joint Arrangements",
+ "title_ar": "الشركات الشقيقة والترتيبات المشتركة",
+ "icon": "🔗",
+ "intro": [
+  "**نفوذ مؤثر** (عادة 20% أو أكثر) ← شركة شقيقة ← طريقة حقوق الملكية.",
+  "**سيطرة مشتركة** تحتاج موافقة **بالإجماع**: مشروع مشترك (حقوق ملكية) أو عملية مشتركة (حصتك في الأصول والالتزامات)."
+ ],
+ "pairs": [
+  {
+   "en": "Associate",
+   "ar": "شركة شقيقة"
+  },
+  {
+   "en": "Significant influence",
+   "ar": "نفوذ مؤثر"
+  },
+  {
+   "en": "Equity method",
+   "ar": "طريقة حقوق الملكية"
+  },
+  {
+   "en": "Joint arrangement",
+   "ar": "ترتيب مشترك"
+  },
+  {
+   "en": "Joint venture",
+   "ar": "مشروع مشترك"
+  },
+  {
+   "en": "Joint operation",
+   "ar": "عملية مشتركة"
+  },
+  {
+   "en": "Joint control",
+   "ar": "سيطرة مشتركة"
+  },
+  {
+   "en": "Unanimous consent",
+   "ar": "موافقة بالإجماع"
+  }
+ ],
+ "tf": [
+  {
+   "s": "Holding 20% or more of the voting power is presumed to give significant influence.",
+   "a": true,
+   "why": "The presumption can be rebutted."
+  },
+  {
+   "s": "Joint ventures are accounted for using the equity method.",
+   "a": true,
+   "why": "Under IAS 28."
+  },
+  {
+   "s": "A joint operator recognises its share of assets, liabilities, revenue and expenses.",
+   "a": true,
+   "why": "It has rights to assets and obligations for liabilities."
+  },
+  {
+   "s": "Joint control exists when decisions need a simple majority.",
+   "a": false,
+   "why": "Unanimous consent of the parties sharing control is needed."
+  },
+  {
+   "s": "Under the equity method, dividends received increase the investment.",
+   "a": false,
+   "why": "Dividends reduce the carrying amount."
+  },
+  {
+   "s": "Unrealised profits on transactions with an associate are eliminated to the extent of the investor's interest.",
+   "a": true,
+   "why": "Only the investor's share."
+  }
+ ],
+ "fill": [
+  {
+   "s": "An associate is an entity over which the investor has significant ___.",
+   "a": "influence",
+   "opts": [
+    "control",
+    "influence",
+    "interest",
+    "shares"
+   ]
+  },
+  {
+   "s": "A joint venture is accounted for using the ___ method.",
+   "a": "equity",
+   "opts": [
+    "cost",
+    "equity",
+    "acquisition",
+    "proportionate"
+   ]
+  },
+  {
+   "s": "Joint control needs ___ consent of the parties sharing control.",
+   "a": "unanimous",
+   "opts": [
+    "majority",
+    "unanimous",
+    "written",
+    "annual"
+   ]
+  },
+  {
+   "s": "Under the equity method, dividends received ___ the carrying amount.",
+   "a": "reduce",
+   "opts": [
+    "increase",
+    "reduce",
+    "do not change",
+    "double"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

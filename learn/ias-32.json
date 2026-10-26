@@ -1,0 +1,121 @@
+{
+ "standard": "IAS 32",
+ "also": [],
+ "order": 11,
+ "title": "Financial Instruments: Presentation",
+ "title_ar": "الأدوات المالية: العرض",
+ "icon": "📜",
+ "intro": [
+  "IAS 32 يحدد: الأداة **التزام** ولا **حقوق ملكية**؟ حسب جوهر العقد مش شكله القانوني.",
+  "الأداة المركبة (زي السندات القابلة للتحويل) تتقسم: الالتزام أولاً بالقيمة الحالية، وحقوق الملكية هي **الباقي**."
+ ],
+ "pairs": [
+  {
+   "en": "Equity instrument",
+   "ar": "أداة حقوق ملكية"
+  },
+  {
+   "en": "Financial liability",
+   "ar": "التزام مالي"
+  },
+  {
+   "en": "Compound instrument",
+   "ar": "أداة مالية مركبة"
+  },
+  {
+   "en": "Convertible bond",
+   "ar": "سندات قابلة للتحويل"
+  },
+  {
+   "en": "Redeemable preference shares",
+   "ar": "أسهم ممتازة قابلة للاسترداد"
+  },
+  {
+   "en": "Treasury shares",
+   "ar": "أسهم الخزينة"
+  },
+  {
+   "en": "Offsetting",
+   "ar": "المقاصة"
+  },
+  {
+   "en": "Residual interest",
+   "ar": "الحصة المتبقية"
+  }
+ ],
+ "tf": [
+  {
+   "s": "Mandatorily redeemable preference shares are financial liabilities.",
+   "a": true,
+   "why": "There is a contractual obligation to pay cash."
+  },
+  {
+   "s": "A convertible bond is split into a liability component and an equity component.",
+   "a": true,
+   "why": "Split accounting."
+  },
+  {
+   "s": "The equity component of a compound instrument is measured first at fair value.",
+   "a": false,
+   "why": "The liability is measured first; equity is the residual."
+  },
+  {
+   "s": "Treasury shares are deducted from equity; no gain or loss goes to profit or loss.",
+   "a": true,
+   "why": "Transactions in own shares are in equity."
+  },
+  {
+   "s": "Dividends on shares classified as liabilities are presented as interest expense.",
+   "a": true,
+   "why": "Presentation follows classification."
+  },
+  {
+   "s": "Financial assets and liabilities may be offset whenever they are with the same counterparty.",
+   "a": false,
+   "why": "Need a legally enforceable right and intention to settle net."
+  }
+ ],
+ "fill": [
+  {
+   "s": "In a compound instrument, the equity component is the ___ amount.",
+   "a": "residual",
+   "opts": [
+    "fair",
+    "residual",
+    "nominal",
+    "maximum"
+   ]
+  },
+  {
+   "s": "Mandatorily redeemable preference shares are financial ___.",
+   "a": "liabilities",
+   "opts": [
+    "assets",
+    "liabilities",
+    "equity",
+    "reserves"
+   ]
+  },
+  {
+   "s": "Treasury shares are deducted from ___.",
+   "a": "equity",
+   "opts": [
+    "assets",
+    "equity",
+    "revenue",
+    "goodwill"
+   ]
+  },
+  {
+   "s": "Offsetting needs a legally enforceable ___ to set off.",
+   "a": "right",
+   "opts": [
+    "right",
+    "contract",
+    "plan",
+    "order"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

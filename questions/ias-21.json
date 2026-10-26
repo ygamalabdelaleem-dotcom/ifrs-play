@@ -1,0 +1,178 @@
+[
+ {
+  "id": "q-ias21-001",
+  "standard": "IAS 21",
+  "topic": "Functional currency",
+  "difficulty": "easy",
+  "question": "Functional currency is:",
+  "options": [
+   "The currency of the country of incorporation",
+   "The currency of the primary economic environment in which the entity operates",
+   "The currency of the parent",
+   "Always US dollars"
+  ],
+  "answer": 1,
+  "explanation": "Look at sales prices, costs, financing and the currency of receipts.",
+  "why_wrong": [
+   "Not necessarily.",
+   "",
+   "Not necessarily.",
+   "No."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias21-002",
+  "standard": "IAS 21",
+  "topic": "Initial",
+  "difficulty": "easy",
+  "question": "A foreign currency purchase is first recorded at:",
+  "options": [
+   "The closing rate",
+   "The spot rate at the transaction date",
+   "The average rate for the year",
+   "The forward rate"
+  ],
+  "answer": 1,
+  "explanation": "An average rate may be used as an approximation if rates are stable.",
+  "why_wrong": [
+   "Used at reporting date for monetary items.",
+   "",
+   "Only as an approximation.",
+   "Not used."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias21-003",
+  "standard": "IAS 21",
+  "topic": "Year-end",
+  "difficulty": "easy",
+  "question": "Which item is retranslated at the closing rate at year-end?",
+  "options": [
+   "Trade payable in USD",
+   "Inventory",
+   "PPE at cost",
+   "Prepaid expenses"
+  ],
+  "answer": 0,
+  "explanation": "A payable is monetary.",
+  "why_wrong": [
+   "",
+   "Non-monetary.",
+   "Non-monetary.",
+   "Non-monetary (goods or services to be received)."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias21-004",
+  "standard": "IAS 21",
+  "topic": "Exchange differences",
+  "difficulty": "easy",
+  "question": "An exchange difference on settling a trade receivable is recognised in:",
+  "options": [
+   "Profit or loss",
+   "OCI",
+   "Equity directly",
+   "Goodwill"
+  ],
+  "answer": 0,
+  "explanation": "Differences on monetary items go to profit or loss.",
+  "why_wrong": [
+   "",
+   "Not OCI.",
+   "Not equity.",
+   "Not goodwill."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias21-005",
+  "standard": "IAS 21",
+  "topic": "Translation",
+  "difficulty": "medium",
+  "question": "When translating a foreign subsidiary's statements, its assets and liabilities are translated at:",
+  "options": [
+   "Historical rates",
+   "The closing rate",
+   "The average rate",
+   "The rate on acquisition"
+  ],
+  "answer": 1,
+  "explanation": "Income and expenses use transaction-date rates (or average); differences go to OCI.",
+  "why_wrong": [
+   "Not for translation.",
+   "",
+   "Used for income and expenses.",
+   "Not used."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias21-006",
+  "standard": "IAS 21",
+  "topic": "Calculation",
+  "difficulty": "medium",
+  "question": "An Egyptian company buys goods for $10,000 when $1 = EGP 30. At year-end it has not paid, and $1 = EGP 32. The exchange difference is:",
+  "options": [
+   "Loss EGP 20,000",
+   "Gain EGP 20,000",
+   "No difference",
+   "Loss EGP 320,000"
+  ],
+  "answer": 0,
+  "explanation": "Payable rises from EGP 300,000 to 320,000: loss of 20,000.",
+  "why_wrong": [
+   "",
+   "A liability that increases is a loss.",
+   "The payable is monetary.",
+   "That is the payable, not the difference."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias21-007",
+  "standard": "IAS 21",
+  "topic": "Disposal",
+  "difficulty": "hard",
+  "question": "On disposal of a foreign operation, cumulative exchange differences in OCI are:",
+  "options": [
+   "Left in equity",
+   "Reclassified to profit or loss",
+   "Transferred to retained earnings",
+   "Written off to goodwill"
+  ],
+  "answer": 1,
+  "explanation": "They are recycled as part of the gain or loss on disposal.",
+  "why_wrong": [
+   "Must be reclassified.",
+   "",
+   "Must be reclassified.",
+   "No."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias21-008",
+  "standard": "IAS 21",
+  "topic": "Goodwill",
+  "difficulty": "hard",
+  "question": "Goodwill on acquiring a foreign operation is:",
+  "options": [
+   "Kept at the historical rate",
+   "Treated as an asset of the foreign operation and translated at the closing rate",
+   "Expensed",
+   "Translated at the average rate"
+  ],
+  "answer": 1,
+  "explanation": "It is expressed in the foreign operation's functional currency.",
+  "why_wrong": [
+   "Not under IAS 21.",
+   "",
+   "No.",
+   "No."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ }
+]

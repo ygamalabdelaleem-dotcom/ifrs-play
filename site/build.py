@@ -89,6 +89,17 @@ data = {"pages": pages, "questions": questions, "flashcards": flashcards, "traps
         "review": review, "standards": standards}
 out = ROOT / "site" / "assets" / "content.js"
 out.write_text("window.IFRS_DATA = " + json.dumps(data, ensure_ascii=False) + ";\n", encoding="utf-8")
+# IFRS Play (Duolingo-style app): units from learn/*.json + their questions
+units = []
+for f in sorted((ROOT / "learn").glob("*.json")):
+    u = json.loads(f.read_text(encoding="utf-8"))
+    stds = [u["standard"]] + u.get("also", [])
+    u["mcq"] = [q for q in questions if q["standard"] in stds]
+    if not (u.get("pairs") and u.get("tf") and u.get("fill")): problems.append(f"incomplete unit {f.name}")
+    units.append(u)
+units.sort(key=lambda u: u["order"])
+(ROOT / "site" / "learn" / "data.js").write_text("window.PLAY_DATA = " + json.dumps({"units": units}, ensure_ascii=False) + ";\n", encoding="utf-8")
+print(f"learn units={len(units)}")
 print(f"pages={len(pages)} questions={len(questions)} flashcards={len(flashcards)} traps={len(traps)} review={len(review)}")
 if problems:
     print("\n".join(problems)); sys.exit(1)

@@ -1,0 +1,178 @@
+[
+ {
+  "id": "q-ias38-001",
+  "standard": "IAS 38",
+  "topic": "Research",
+  "difficulty": "easy",
+  "question": "Research costs are:",
+  "options": [
+   "Capitalised",
+   "Expensed",
+   "Capitalised if success is probable",
+   "Deferred until the project ends"
+  ],
+  "answer": 1,
+  "explanation": "Research is always expensed.",
+  "why_wrong": [
+   "Research is never capitalised.",
+   "",
+   "Probability does not matter for research.",
+   "No deferral is allowed."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias38-002",
+  "standard": "IAS 38",
+  "topic": "Recognition",
+  "difficulty": "easy",
+  "question": "Which internally generated item may be recognised as an asset?",
+  "options": [
+   "Internally generated brands",
+   "Internally generated goodwill",
+   "Development costs meeting all the criteria",
+   "Internally generated customer lists"
+  ],
+  "answer": 2,
+  "explanation": "Only development costs that meet all the IAS 38 criteria are capitalised.",
+  "why_wrong": [
+   "Prohibited.",
+   "Prohibited.",
+   "",
+   "Prohibited."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias38-003",
+  "standard": "IAS 38",
+  "topic": "Indefinite life",
+  "difficulty": "medium",
+  "question": "An intangible with an indefinite useful life is:",
+  "options": [
+   "Amortised over 10 years",
+   "Not amortised, but tested for impairment annually",
+   "Expensed immediately",
+   "Amortised over 40 years"
+  ],
+  "answer": 1,
+  "explanation": "Indefinite does not mean infinite; the life is reviewed each period.",
+  "why_wrong": [
+   "No amortisation.",
+   "",
+   "It is still an asset.",
+   "No amortisation."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias38-004",
+  "standard": "IAS 38",
+  "topic": "Revaluation",
+  "difficulty": "medium",
+  "question": "The revaluation model may be used for an intangible asset only if:",
+  "options": [
+   "The directors approve",
+   "Fair value is determined by reference to an active market",
+   "It was acquired in a business combination",
+   "It has an indefinite life"
+  ],
+  "answer": 1,
+  "explanation": "Active markets are rare for intangibles, so revaluation is rare.",
+  "why_wrong": [
+   "Approval is not a criterion.",
+   "",
+   "Source of acquisition is not the test.",
+   "Life is not the test."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias38-005",
+  "standard": "IAS 38",
+  "topic": "Development",
+  "difficulty": "medium",
+  "question": "Which is NOT a criterion for capitalising development costs?",
+  "options": [
+   "Technical feasibility",
+   "Intention to complete and use or sell",
+   "Ability to measure the expenditure reliably",
+   "The project will be profitable within one year"
+  ],
+  "answer": 3,
+  "explanation": "IAS 38 needs probable future economic benefits, not profit within a set time.",
+  "why_wrong": [
+   "A criterion.",
+   "A criterion.",
+   "A criterion.",
+   ""
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias38-006",
+  "standard": "IAS 38",
+  "topic": "Development",
+  "difficulty": "medium",
+  "question": "Development costs were expensed in 20X1. In 20X2 the criteria are met. What happens to the 20X1 costs?",
+  "options": [
+   "Reinstated as an asset",
+   "They stay expensed",
+   "Restated as a prior period error",
+   "Taken to OCI"
+  ],
+  "answer": 1,
+  "explanation": "Costs already expensed cannot be reinstated.",
+  "why_wrong": [
+   "Not allowed.",
+   "",
+   "No error was made.",
+   "Not allowed."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias38-007",
+  "standard": "IAS 38",
+  "topic": "Definition",
+  "difficulty": "easy",
+  "question": "What makes an intangible asset 'identifiable'?",
+  "options": [
+   "It has physical substance",
+   "It is separable or arises from contractual or other legal rights",
+   "It was paid for in cash",
+   "Its useful life is over one year"
+  ],
+  "answer": 1,
+  "explanation": "Identifiability distinguishes intangibles from goodwill.",
+  "why_wrong": [
+   "Intangibles have no physical substance.",
+   "",
+   "Payment method is irrelevant.",
+   "Not the test."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias38-008",
+  "standard": "IAS 38",
+  "topic": "Amortisation",
+  "difficulty": "medium",
+  "question": "Development costs of 600,000 are capitalised. The product is available for use on 1 July 20X1, useful life 5 years, year-end 31 December 20X1. Amortisation for 20X1?",
+  "options": [
+   "120,000",
+   "60,000",
+   "0",
+   "30,000"
+  ],
+  "answer": 1,
+  "explanation": "600,000 / 5 x 6/12 = 60,000. Amortisation starts when available for use.",
+  "why_wrong": [
+   "A full year was charged.",
+   "",
+   "Amortisation starts on 1 July.",
+   "Wrong calculation."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ }
+]

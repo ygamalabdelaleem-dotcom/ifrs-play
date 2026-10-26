@@ -1,0 +1,178 @@
+[
+ {
+  "id": "q-ias2-001",
+  "standard": "IAS 2",
+  "topic": "Measurement",
+  "difficulty": "easy",
+  "question": "How are inventories measured under IAS 2?",
+  "options": [
+   "Lower of cost and fair value",
+   "Lower of cost and net realisable value",
+   "Higher of cost and net realisable value",
+   "Fair value less costs to sell"
+  ],
+  "answer": 1,
+  "explanation": "IAS 2 measures inventories at the lower of cost and NRV.",
+  "why_wrong": [
+   "Fair value is not the IAS 2 test.",
+   "",
+   "Using the higher would overstate assets.",
+   "This is the IAS 41 / IFRS 5 type of measure, not IAS 2."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias2-002",
+  "standard": "IAS 2",
+  "topic": "Cost",
+  "difficulty": "easy",
+  "question": "Which cost is EXCLUDED from the cost of inventories?",
+  "options": [
+   "Import duties",
+   "Abnormal amounts of wasted materials",
+   "Transport to the present location",
+   "Fixed production overheads based on normal capacity"
+  ],
+  "answer": 1,
+  "explanation": "Abnormal waste is expensed when incurred.",
+  "why_wrong": [
+   "Non-recoverable import duties are part of cost of purchase.",
+   "",
+   "Costs to bring inventories to their present location are included.",
+   "Fixed overheads are absorbed using normal capacity."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias2-003",
+  "standard": "IAS 2",
+  "topic": "NRV",
+  "difficulty": "medium",
+  "question": "An item cost 100. Its selling price is 120, costs to complete are 15 and selling costs are 10. At what amount is it carried?",
+  "options": [
+   "100",
+   "95",
+   "120",
+   "105"
+  ],
+  "answer": 1,
+  "explanation": "NRV = 120 - 15 - 10 = 95. Lower of cost (100) and NRV (95) = 95.",
+  "why_wrong": [
+   "Cost is higher than NRV, so cost is not used.",
+   "",
+   "Selling price ignores completion and selling costs.",
+   "Only completion costs were deducted; selling costs must be deducted too."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias2-004",
+  "standard": "IAS 2",
+  "topic": "Cost formulas",
+  "difficulty": "easy",
+  "question": "Which cost formula is NOT permitted by IAS 2?",
+  "options": [
+   "FIFO",
+   "Weighted average",
+   "LIFO",
+   "Specific identification"
+  ],
+  "answer": 2,
+  "explanation": "LIFO is prohibited.",
+  "why_wrong": [
+   "FIFO is allowed.",
+   "Weighted average is allowed.",
+   "",
+   "Specific identification is required for non-interchangeable items."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias2-005",
+  "standard": "IAS 2",
+  "topic": "Overheads",
+  "difficulty": "medium",
+  "question": "Production this year was abnormally low. How are fixed production overheads treated?",
+  "options": [
+   "All fixed overheads are absorbed into the units produced",
+   "Absorbed based on normal capacity; unallocated overheads are expensed",
+   "All fixed overheads are expensed",
+   "Absorbed based on budgeted sales"
+  ],
+  "answer": 1,
+  "explanation": "Low production does not increase the overhead per unit. The unallocated part is an expense.",
+  "why_wrong": [
+   "This would overstate the cost per unit.",
+   "",
+   "Fixed production overheads are part of conversion cost.",
+   "Sales volume is not the basis."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias2-006",
+  "standard": "IAS 2",
+  "topic": "Cost formulas",
+  "difficulty": "medium",
+  "question": "Specific identification of cost must be used for:",
+  "options": [
+   "All inventories",
+   "Items not ordinarily interchangeable or produced for specific projects",
+   "Raw materials only",
+   "Inventories bought in foreign currency"
+  ],
+  "answer": 1,
+  "explanation": "Specific identification applies to items that are not interchangeable, e.g. goods made for a specific project.",
+  "why_wrong": [
+   "Interchangeable items use FIFO or weighted average.",
+   "",
+   "Raw materials are usually interchangeable.",
+   "Currency is irrelevant to the cost formula."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias2-007",
+  "standard": "IAS 2",
+  "topic": "Reversal",
+  "difficulty": "medium",
+  "question": "Inventory written down to NRV in 20X1 recovers in value in 20X2 because selling prices rose. The treatment is:",
+  "options": [
+   "No reversal is allowed",
+   "Reverse the write-down, limited to the original amount, in profit or loss",
+   "Reverse through other comprehensive income",
+   "Increase the carrying amount above original cost"
+  ],
+  "answer": 1,
+  "explanation": "The write-down is reversed (up to the original write-down) as a reduction in the inventory expense.",
+  "why_wrong": [
+   "IAS 2 requires the reversal when circumstances change.",
+   "",
+   "The reversal goes to profit or loss.",
+   "The new carrying amount is still the lower of cost and revised NRV."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias2-008",
+  "standard": "IAS 2",
+  "topic": "Cost",
+  "difficulty": "easy",
+  "question": "Storage costs of finished goods waiting to be sold are:",
+  "options": [
+   "Included in the cost of inventories",
+   "Expensed as incurred",
+   "Capitalised as PPE",
+   "Deferred to next year"
+  ],
+  "answer": 1,
+  "explanation": "Storage is excluded unless necessary in the production process before a further stage.",
+  "why_wrong": [
+   "Storage of finished goods does not bring them to their present condition.",
+   "",
+   "Storage is not an asset.",
+   "There is no basis for deferral."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ }
+]

@@ -1,0 +1,122 @@
+{
+ "standard": "IAS 37",
+ "also": [],
+ "order": 6,
+ "title": "Provisions and Contingencies",
+ "title_ar": "المخصصات والالتزامات المحتملة",
+ "icon": "⚖️",
+ "intro": [
+  "**المخصص** يُسجل لو: التزام حالي من حدث سابق + خروج موارد **مرجّح** + تقدير موثوق.",
+  "**الالتزام المحتمل** لا يُسجل، يُفصح عنه إلا لو احتماله بعيد (remote).",
+  "**الأصل المحتمل** لا يُسجل إلا لو شبه مؤكد، ويُفصح عنه لو مرجّح."
+ ],
+ "pairs": [
+  {
+   "en": "Provision",
+   "ar": "مخصص"
+  },
+  {
+   "en": "Contingent liability",
+   "ar": "التزام محتمل"
+  },
+  {
+   "en": "Contingent asset",
+   "ar": "أصل محتمل"
+  },
+  {
+   "en": "Constructive obligation",
+   "ar": "التزام ضمني (استدلالي)"
+  },
+  {
+   "en": "Legal obligation",
+   "ar": "التزام قانوني"
+  },
+  {
+   "en": "Onerous contract",
+   "ar": "عقد مُرهِق (خاسر)"
+  },
+  {
+   "en": "Obligating event",
+   "ar": "الحدث المُلزِم"
+  },
+  {
+   "en": "Virtually certain",
+   "ar": "شبه مؤكد"
+  }
+ ],
+ "tf": [
+  {
+   "s": "A provision is a liability of uncertain timing or amount.",
+   "a": true,
+   "why": "That is the IAS 37 definition."
+  },
+  {
+   "s": "Provisions are discounted when the time value of money is material.",
+   "a": true,
+   "why": "Use a pre-tax rate."
+  },
+  {
+   "s": "A board decision alone, not communicated before year-end, creates a constructive obligation to restructure.",
+   "a": false,
+   "why": "A detailed plan and a valid expectation in those affected are needed."
+  },
+  {
+   "s": "Contingent liabilities are recognised in the statement of financial position.",
+   "a": false,
+   "why": "They are disclosed, not recognised."
+  },
+  {
+   "s": "Provisions for future operating losses are not recognised.",
+   "a": true,
+   "why": "There is no present obligation."
+  },
+  {
+   "s": "An expected reimbursement is recognised as a separate asset only when virtually certain.",
+   "a": true,
+   "why": "It cannot exceed the provision."
+  }
+ ],
+ "fill": [
+  {
+   "s": "A provision needs a present obligation as a result of a ___ event.",
+   "a": "past",
+   "opts": [
+    "past",
+    "future",
+    "planned",
+    "recurring"
+   ]
+  },
+  {
+   "s": "A contingent asset is recognised only when the inflow is ___ certain.",
+   "a": "virtually",
+   "opts": [
+    "probably",
+    "virtually",
+    "possibly",
+    "reasonably"
+   ]
+  },
+  {
+   "s": "No provision is made for future operating ___.",
+   "a": "losses",
+   "opts": [
+    "profits",
+    "losses",
+    "leases",
+    "taxes"
+   ]
+  },
+  {
+   "s": "Contingent liabilities are disclosed unless the outflow is ___.",
+   "a": "remote",
+   "opts": [
+    "remote",
+    "probable",
+    "material",
+    "certain"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

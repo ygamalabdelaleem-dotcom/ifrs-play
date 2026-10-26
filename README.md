@@ -6,6 +6,11 @@ Reference and exam-preparation site for external audit work and the DipIFR exam 
 1. `python3 site/build.py` (bundles all content into `site/assets/content.js`)
 2. Open `site/index.html` in any browser. No server needed.
 
+## IFRS Play (Duolingo-style app)
+`site/learn/` is a phone app version: units per standard, short lessons (word, match, true/false, fill-the-blank, multiple choice), hearts, XP, streak, daily goal, mistakes practice. Progress is saved in the browser.
+Content: `learn/*.json` (pairs, tf, fill, intro) + `questions/*.json`. `python3 site/build.py` also writes `site/learn/data.js`.
+Live: https://ygamalabdelaleem-dotcom.github.io/ifrs-play/learn/
+
 ## Structure
 ```
 ifrs/ ias/ concepts/ comparisons/ calculations/ journal-entries/ case-studies/

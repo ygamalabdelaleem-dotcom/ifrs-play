@@ -1,0 +1,122 @@
+{
+ "standard": "IAS 12",
+ "also": [],
+ "order": 9,
+ "title": "Income Taxes",
+ "title_ar": "ضرائب الدخل",
+ "icon": "🧾",
+ "intro": [
+  "**الضريبة المؤجلة** تنتج عن الفروق المؤقتة بين **القيمة الدفترية** و**الأساس الضريبي**.",
+  "قيمة دفترية لأصل أكبر من أساسه الضريبي ← **التزام ضريبي مؤجل**. والعكس ← **أصل ضريبي مؤجل** (لو الربح المستقبلي مرجّح).",
+  "يُستخدم السعر المقر أو المقر فعلياً في تاريخ التقرير، وبدون خصم."
+ ],
+ "pairs": [
+  {
+   "en": "Current tax",
+   "ar": "الضريبة الجارية"
+  },
+  {
+   "en": "Deferred tax liability",
+   "ar": "التزام ضريبي مؤجل"
+  },
+  {
+   "en": "Deferred tax asset",
+   "ar": "أصل ضريبي مؤجل"
+  },
+  {
+   "en": "Tax base",
+   "ar": "الأساس الضريبي"
+  },
+  {
+   "en": "Temporary difference",
+   "ar": "فرق مؤقت"
+  },
+  {
+   "en": "Taxable profit",
+   "ar": "الربح الضريبي"
+  },
+  {
+   "en": "Substantively enacted",
+   "ar": "مُقرّ فعلياً"
+  },
+  {
+   "en": "Unused tax losses",
+   "ar": "خسائر ضريبية مرحلة"
+  }
+ ],
+ "tf": [
+  {
+   "s": "Deferred tax assets and liabilities are discounted.",
+   "a": false,
+   "why": "IAS 12 prohibits discounting."
+  },
+  {
+   "s": "Unpaid current tax is recognised as a liability.",
+   "a": true,
+   "why": "Overpayments are an asset."
+  },
+  {
+   "s": "The tax base of an asset is the amount deductible for tax against future taxable benefits.",
+   "a": true,
+   "why": "That is the definition."
+  },
+  {
+   "s": "A deferred tax liability is recognised on the initial recognition of goodwill.",
+   "a": false,
+   "why": "There is an exception for goodwill."
+  },
+  {
+   "s": "Tax on items recognised in OCI is also recognised in OCI.",
+   "a": true,
+   "why": "Tax follows the item."
+  },
+  {
+   "s": "Deferred tax assets for unused tax losses are recognised without considering future profits.",
+   "a": false,
+   "why": "Only to the extent future taxable profit is probable."
+  }
+ ],
+ "fill": [
+  {
+   "s": "Temporary difference = carrying amount minus tax ___.",
+   "a": "base",
+   "opts": [
+    "rate",
+    "base",
+    "expense",
+    "credit"
+   ]
+  },
+  {
+   "s": "If an asset's carrying amount is above its tax base, a deferred tax ___ arises.",
+   "a": "liability",
+   "opts": [
+    "asset",
+    "liability",
+    "credit",
+    "expense"
+   ]
+  },
+  {
+   "s": "Deferred tax balances are ___ discounted.",
+   "a": "never",
+   "opts": [
+    "always",
+    "never",
+    "partly",
+    "annually"
+   ]
+  },
+  {
+   "s": "Use tax rates enacted or substantively enacted by the ___ date.",
+   "a": "reporting",
+   "opts": [
+    "transaction",
+    "reporting",
+    "payment",
+    "filing"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

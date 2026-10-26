@@ -1,0 +1,122 @@
+{
+ "standard": "IFRS 16",
+ "also": [],
+ "order": 8,
+ "title": "Leases",
+ "title_ar": "عقود الإيجار",
+ "icon": "🔑",
+ "intro": [
+  "المستأجر يسجل **أصل حق استخدام** و**التزام عقد إيجار** لكل العقود تقريباً.",
+  "الالتزام = القيمة الحالية لدفعات الإيجار، مخصومة بالمعدل الضمني أو **معدل الاقتراض الإضافي**.",
+  "إعفاءات اختيارية: العقود **قصيرة الأجل (12 شهر أو أقل)** والأصول **منخفضة القيمة**."
+ ],
+ "pairs": [
+  {
+   "en": "Lease",
+   "ar": "عقد إيجار"
+  },
+  {
+   "en": "Lessee",
+   "ar": "المستأجر"
+  },
+  {
+   "en": "Lessor",
+   "ar": "المؤجر"
+  },
+  {
+   "en": "Right-of-use asset",
+   "ar": "أصل حق الاستخدام"
+  },
+  {
+   "en": "Lease liability",
+   "ar": "التزام عقد الإيجار"
+  },
+  {
+   "en": "Incremental borrowing rate",
+   "ar": "معدل الاقتراض الإضافي"
+  },
+  {
+   "en": "Lease term",
+   "ar": "مدة عقد الإيجار"
+  },
+  {
+   "en": "Sale and leaseback",
+   "ar": "البيع وإعادة الاستئجار"
+  }
+ ],
+ "tf": [
+  {
+   "s": "Lessees classify leases as finance or operating under IFRS 16.",
+   "a": false,
+   "why": "Only lessors classify. Lessees use one model."
+  },
+  {
+   "s": "The lease term includes extension periods if the lessee is reasonably certain to exercise the option.",
+   "a": true,
+   "why": "That is part of the lease term."
+  },
+  {
+   "s": "If ownership does not transfer, the ROU asset is depreciated over the shorter of the lease term and its useful life.",
+   "a": true,
+   "why": "That is the IFRS 16 rule."
+  },
+  {
+   "s": "Lessors recognise operating lease income usually on a straight-line basis.",
+   "a": true,
+   "why": "Or another systematic basis."
+  },
+  {
+   "s": "Interest on the lease liability is included in depreciation.",
+   "a": false,
+   "why": "Interest is a finance cost; depreciation is on the ROU asset."
+  },
+  {
+   "s": "A lessee may choose not to recognise ROU assets for leases of 12 months or less.",
+   "a": true,
+   "why": "The short-term lease exemption."
+  }
+ ],
+ "fill": [
+  {
+   "s": "At commencement, a lessee recognises a right-of-use asset and a lease ___.",
+   "a": "liability",
+   "opts": [
+    "income",
+    "liability",
+    "reserve",
+    "provision"
+   ]
+  },
+  {
+   "s": "If the implicit rate is not available, use the lessee's incremental ___ rate.",
+   "a": "borrowing",
+   "opts": [
+    "borrowing",
+    "tax",
+    "inflation",
+    "growth"
+   ]
+  },
+  {
+   "s": "Short-term leases have a term of ___ months or less.",
+   "a": "12",
+   "opts": [
+    "6",
+    "12",
+    "24",
+    "36"
+   ]
+  },
+  {
+   "s": "A finance lease transfers substantially all the risks and ___ of ownership.",
+   "a": "rewards",
+   "opts": [
+    "costs",
+    "rewards",
+    "assets",
+    "rights"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

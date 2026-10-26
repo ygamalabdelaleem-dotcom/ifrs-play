@@ -1,0 +1,178 @@
+[
+ {
+  "id": "q-ias37-001",
+  "standard": "IAS 37",
+  "topic": "Recognition",
+  "difficulty": "easy",
+  "question": "Which is NOT a criterion for recognising a provision?",
+  "options": [
+   "Present obligation from a past event",
+   "Probable outflow of resources",
+   "Reliable estimate",
+   "The amount is certain"
+  ],
+  "answer": 3,
+  "explanation": "Provisions involve uncertainty; a reliable estimate is enough.",
+  "why_wrong": [
+   "Required.",
+   "Required.",
+   "Required.",
+   ""
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias37-002",
+  "standard": "IAS 37",
+  "topic": "Constructive",
+  "difficulty": "medium",
+  "question": "A retailer has a published policy to refund goods even when not legally required. At year-end it should:",
+  "options": [
+   "Recognise no provision",
+   "Recognise a provision for expected refunds",
+   "Disclose a contingent liability",
+   "Recognise a contingent asset"
+  ],
+  "answer": 1,
+  "explanation": "The published policy creates a constructive obligation.",
+  "why_wrong": [
+   "A constructive obligation exists.",
+   "",
+   "The outflow is probable, so recognise.",
+   "Not an asset."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias37-003",
+  "standard": "IAS 37",
+  "topic": "Contingent liability",
+  "difficulty": "easy",
+  "question": "A possible obligation whose existence depends on uncertain future events is:",
+  "options": [
+   "Recognised as a provision",
+   "Disclosed as a contingent liability (unless remote)",
+   "Ignored",
+   "Recognised in OCI"
+  ],
+  "answer": 1,
+  "explanation": "Contingent liabilities are disclosed only.",
+  "why_wrong": [
+   "Not a present obligation.",
+   "",
+   "Disclosure is needed unless remote.",
+   "Not OCI."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias37-004",
+  "standard": "IAS 37",
+  "topic": "Contingent asset",
+  "difficulty": "medium",
+  "question": "An entity expects to win a lawsuit; the inflow is probable but not virtually certain. It should:",
+  "options": [
+   "Recognise an asset",
+   "Disclose a contingent asset",
+   "Do nothing",
+   "Reduce expenses"
+  ],
+  "answer": 1,
+  "explanation": "Probable: disclose. Virtually certain: recognise.",
+  "why_wrong": [
+   "Only when virtually certain.",
+   "",
+   "Disclosure is required when probable.",
+   "No recognition."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias37-005",
+  "standard": "IAS 37",
+  "topic": "Losses",
+  "difficulty": "easy",
+  "question": "Management expects operating losses next year. The treatment is:",
+  "options": [
+   "Provide for the losses",
+   "No provision",
+   "Disclose a contingent liability",
+   "Create a reserve"
+  ],
+  "answer": 1,
+  "explanation": "Future losses are not obligations; they may indicate impairment.",
+  "why_wrong": [
+   "Not allowed.",
+   "",
+   "Not a contingent liability.",
+   "Not allowed."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias37-006",
+  "standard": "IAS 37",
+  "topic": "Onerous",
+  "difficulty": "medium",
+  "question": "For an onerous contract, the provision is:",
+  "options": [
+   "The full contract value",
+   "The unavoidable costs: the lower of the cost of fulfilling it and the penalty for exiting",
+   "Zero",
+   "The expected profit"
+  ],
+  "answer": 1,
+  "explanation": "Unavoidable costs are the least net cost of exiting.",
+  "why_wrong": [
+   "Too high.",
+   "",
+   "An onerous contract needs a provision.",
+   "There is no profit."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias37-007",
+  "standard": "IAS 37",
+  "topic": "Restructuring",
+  "difficulty": "medium",
+  "question": "Which cost may be included in a restructuring provision?",
+  "options": [
+   "Retraining continuing staff",
+   "Marketing",
+   "Redundancy payments",
+   "Investment in new IT systems"
+  ],
+  "answer": 2,
+  "explanation": "Only direct costs necessarily entailed by the restructuring and not related to ongoing activities.",
+  "why_wrong": [
+   "Ongoing activity.",
+   "Ongoing activity.",
+   "",
+   "Ongoing activity."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias37-008",
+  "standard": "IAS 37",
+  "topic": "Measurement",
+  "difficulty": "hard",
+  "question": "100 units sold with a 1-year warranty. Expected: 10% need minor repairs (200 each) and 5% need major repairs (1,000 each). Provision?",
+  "options": [
+   "7,000",
+   "1,200",
+   "0",
+   "120,000"
+  ],
+  "answer": 0,
+  "explanation": "Expected value: 10 x 200 + 5 x 1,000 = 7,000.",
+  "why_wrong": [
+   "",
+   "Costs were not weighted by the number of units.",
+   "An obligation exists.",
+   "Wrong calculation."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ }
+]

@@ -224,6 +224,7 @@ function viewHome(){
   var ans = Object.keys(S.qstat).length, ok = Object.keys(S.qstat).filter(function(k){ return S.qstat[k]; }).length;
   var fk = Object.keys(S.fc).filter(function(k){ return S.fc[k]==="know"; }).length;
   var h = "<h1>IFRS Study — "+(S.lang==="ar"?"مرجع IFRS":"IFRS Reference")+"</h1><p dir=auto>"+esc(t("homeLead"))+"</p>";
+  h += '<a class="card play-cta" href="learn/" style="display:block;margin:14px 0;text-decoration:none;font-weight:700">🎮 IFRS Play — '+(S.lang==="ar"?"اتعلم IFRS بدروس قصيرة زي Duolingo":"Learn IFRS in short Duolingo-style lessons")+" ←</a>";
   h += '<div class="card" style="margin:14px 0"><strong>'+esc(t("note"))+":</strong> "+esc(t("noteText"))+"</div>";
   h += "<h2>"+esc(t("progress"))+'</h2><div class="stats"><div class="card"><b>'+rd+"/"+tp+"</b>"+esc(t("pagesRev"))+'</div><div class="card"><b>'+ans+"/"+D.questions.length+"</b>"+esc(t("qAns"))+'</div><div class="card"><b>'+ok+"</b>"+esc(t("qOk"))+'</div><div class="card"><b>'+fk+"/"+D.flashcards.length+"</b>"+esc(t("fcKnown"))+"</div></div>";
   h += '<div class="bar" style="margin-top:12px"><i style="width:'+(tp?Math.round(100*rd/tp):0)+'%"></i></div>';
