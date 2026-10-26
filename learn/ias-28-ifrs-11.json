@@ -119,5 +119,134 @@
    ]
   }
  ],
- "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document.",
+ "je": [
+  {
+   "s": "The investor's share of the associate's profit is 30,000.",
+   "lines": [
+    [
+     "Dr",
+     "Investment in associate",
+     30000
+    ],
+    [
+     "Cr",
+     "Share of profit of associate",
+     30000
+    ]
+   ],
+   "distract": [
+    [
+     "Dividend income",
+     30000
+    ],
+    [
+     "Cash",
+     30000
+    ]
+   ],
+   "why": "Equity method: the investment grows with the share of profit."
+  },
+  {
+   "s": "A dividend of 10,000 is received from the associate.",
+   "lines": [
+    [
+     "Dr",
+     "Cash",
+     10000
+    ],
+    [
+     "Cr",
+     "Investment in associate",
+     10000
+    ]
+   ],
+   "distract": [
+    [
+     "Dividend income",
+     10000
+    ],
+    [
+     "Share of profit of associate",
+     10000
+    ]
+   ],
+   "why": "Dividends reduce the investment."
+  }
+ ],
+ "calc": [
+  {
+   "s": "Bought 30% of an associate for 400,000. Associate profit 200,000; it paid dividends of 50,000. Carrying amount at year-end?",
+   "a": 445000,
+   "why": "400,000 + 30% x 200,000 - 30% x 50,000 = 445,000.",
+   "unit": ""
+  },
+  {
+   "s": "Investor (25%) sold goods to its associate at a profit of 40,000. All are still in the associate's inventory. Unrealised profit to eliminate?",
+   "a": 10000,
+   "why": "25% x 40,000 = 10,000.",
+   "unit": ""
+  }
+ ],
+ "seq": [
+  {
+   "s": "رتّب خطوات طريقة حقوق الملكية",
+   "steps": [
+    "Initially recognise at cost",
+    "Add the share of post-acquisition profit (and OCI)",
+    "Deduct dividends received",
+    "Eliminate the share of unrealised profits",
+    "Test for impairment if there are indicators"
+   ],
+   "why": ""
+  }
+ ],
+ "classify": [
+  {
+   "s": "صنّف كل استثمار",
+   "buckets": [
+    "تابعة",
+    "شقيقة",
+    "مشروع مشترك"
+   ],
+   "items": [
+    [
+     "60% of votes with control",
+     0
+    ],
+    [
+     "30% with a board seat",
+     1
+    ],
+    [
+     "50/50, unanimous decisions, rights to net assets",
+     2
+    ],
+    [
+     "25% with significant influence",
+     1
+    ]
+   ],
+   "why": ""
+  }
+ ],
+ "multi": [
+  {
+   "s": "Which indicate significant influence? (select all)",
+   "opts": [
+    "Board representation",
+    "Participation in policy-making",
+    "Material transactions between the parties",
+    "Interchange of managerial staff",
+    "Holding 5% with no other rights"
+   ],
+   "a": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "why": "5% alone, with no other rights, does not give influence."
+  }
+ ]
 }

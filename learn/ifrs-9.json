@@ -117,5 +117,140 @@
    ]
   }
  ],
- "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document.",
+ "je": [
+  {
+   "s": "Bond at amortised cost: interest at EIR is 7,600; the coupon received in cash is 5,000.",
+   "lines": [
+    [
+     "Dr",
+     "Cash",
+     5000
+    ],
+    [
+     "Dr",
+     "Financial asset (bond)",
+     2600
+    ],
+    [
+     "Cr",
+     "Interest income",
+     7600
+    ]
+   ],
+   "distract": [
+    [
+     "Interest income",
+     5000
+    ],
+    [
+     "OCI",
+     2600
+    ]
+   ],
+   "why": "Income at EIR; the difference increases the carrying amount."
+  },
+  {
+   "s": "The loss allowance (ECL) on trade receivables increases by 3,000.",
+   "lines": [
+    [
+     "Dr",
+     "Impairment loss (P&L)",
+     3000
+    ],
+    [
+     "Cr",
+     "Loss allowance",
+     3000
+    ]
+   ],
+   "distract": [
+    [
+     "OCI",
+     3000
+    ],
+    [
+     "Revenue",
+     3000
+    ]
+   ],
+   "why": "ECL changes go to profit or loss."
+  }
+ ],
+ "calc": [
+  {
+   "s": "Receivables 200,000. 12-month probability of default 2%, loss given default 50%. 12-month ECL?",
+   "a": 2000,
+   "why": "200,000 x 2% x 50% = 2,000.",
+   "unit": ""
+  },
+  {
+   "s": "Bond at amortised cost: opening 95,000, EIR 8%, coupon received 5,000. Closing amortised cost?",
+   "a": 97600,
+   "why": "95,000 + 7,600 - 5,000 = 97,600.",
+   "unit": ""
+  }
+ ],
+ "seq": [
+  {
+   "s": "رتّب خطوات تصنيف الأصل المالي",
+   "steps": [
+    "Check the cash flows: SPPI or not?",
+    "Identify the business model",
+    "Classify: amortised cost, FVOCI or FVTPL",
+    "Measure ECL for amortised cost and FVOCI debt"
+   ],
+   "why": ""
+  }
+ ],
+ "classify": [
+  {
+   "s": "صنّف كل أصل مالي",
+   "buckets": [
+    "AC",
+    "FVOCI",
+    "FVTPL"
+   ],
+   "items": [
+    [
+     "Loan held to collect, SPPI",
+     0
+    ],
+    [
+     "Bond held to collect and sell, SPPI",
+     1
+    ],
+    [
+     "Shares held for trading",
+     2
+    ],
+    [
+     "Derivative (not a hedge)",
+     2
+    ],
+    [
+     "Strategic shares, irrevocable OCI election",
+     1
+    ]
+   ],
+   "why": ""
+  }
+ ],
+ "multi": [
+  {
+   "s": "Which require LIFETIME expected credit losses? (select all)",
+   "opts": [
+    "Significant increase in credit risk",
+    "More than 30 days past due (rebuttable presumption)",
+    "New low-risk loan at initial recognition",
+    "Trade receivables under the simplified approach"
+   ],
+   "a": [
+    0,
+    1,
+    3
+   ],
+   "why": "A new performing loan starts with 12-month ECL."
+  }
+ ]
 }

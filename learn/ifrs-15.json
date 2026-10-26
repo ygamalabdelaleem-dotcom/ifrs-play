@@ -117,5 +117,137 @@
    ]
   }
  ],
- "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document.",
+ "je": [
+  {
+   "s": "A customer pays 30,000 in advance for goods to be delivered next month.",
+   "lines": [
+    [
+     "Dr",
+     "Cash",
+     30000
+    ],
+    [
+     "Cr",
+     "Contract liability",
+     30000
+    ]
+   ],
+   "distract": [
+    [
+     "Revenue",
+     30000
+    ],
+    [
+     "Trade receivables",
+     30000
+    ]
+   ],
+   "why": "No performance yet, so a contract liability."
+  },
+  {
+   "s": "The goods are now delivered (the 30,000 advance was received last month).",
+   "lines": [
+    [
+     "Dr",
+     "Contract liability",
+     30000
+    ],
+    [
+     "Cr",
+     "Revenue",
+     30000
+    ]
+   ],
+   "distract": [
+    [
+     "Cash",
+     30000
+    ],
+    [
+     "Trade receivables",
+     30000
+    ]
+   ],
+   "why": "Control passes on delivery: release the contract liability to revenue."
+  }
+ ],
+ "calc": [
+  {
+   "s": "A phone plus a 2-year service plan sells for 1,200. Stand-alone prices: phone 900, service 600. Revenue allocated to the phone?",
+   "a": 720,
+   "why": "1,200 x 900 / 1,500 = 720.",
+   "unit": ""
+  },
+  {
+   "s": "Contract price 1,000,000. Costs to date 300,000; total expected costs 750,000 (input method). Revenue to date?",
+   "a": 400000,
+   "why": "Progress = 300 / 750 = 40%. 40% x 1,000,000 = 400,000.",
+   "unit": ""
+  }
+ ],
+ "seq": [
+  {
+   "s": "رتّب الخطوات الخمس لـ IFRS 15",
+   "steps": [
+    "Identify the contract",
+    "Identify the performance obligations",
+    "Determine the transaction price",
+    "Allocate the price to the obligations",
+    "Recognise revenue when obligations are satisfied"
+   ],
+   "why": ""
+  }
+ ],
+ "classify": [
+  {
+   "s": "الإيراد على مدى زمني ولا عند نقطة زمنية؟",
+   "buckets": [
+    "مدى زمني",
+    "نقطة زمنية"
+   ],
+   "items": [
+    [
+     "Building on the customer's land",
+     0
+    ],
+    [
+     "Retail sale of a phone",
+     1
+    ],
+    [
+     "Monthly cleaning service",
+     0
+    ],
+    [
+     "Standard goods delivered to the customer",
+     1
+    ],
+    [
+     "12-month gym membership",
+     0
+    ]
+   ],
+   "why": ""
+  }
+ ],
+ "multi": [
+  {
+   "s": "Which indicate that control has passed to the customer? (select all)",
+   "opts": [
+    "Present right to payment",
+    "Legal title transferred",
+    "Physical possession transferred",
+    "Customer has the significant risks and rewards",
+    "Seller still decides who uses the asset"
+   ],
+   "a": [
+    0,
+    1,
+    2,
+    3
+   ],
+   "why": "The last one shows the seller still has control."
+  }
+ ]
 }

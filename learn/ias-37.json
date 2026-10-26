@@ -118,5 +118,139 @@
    ]
   }
  ],
- "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document.",
+ "je": [
+  {
+   "s": "Lawyers say it is probable the company will pay 120,000 in a court case.",
+   "lines": [
+    [
+     "Dr",
+     "Legal expense (P&L)",
+     120000
+    ],
+    [
+     "Cr",
+     "Provision",
+     120000
+    ]
+   ],
+   "distract": [
+    [
+     "Cash",
+     120000
+    ],
+    [
+     "Retained earnings",
+     120000
+    ]
+   ],
+   "why": "Probable outflow + reliable estimate = provision."
+  },
+  {
+   "s": "Unwinding of the discount on a decommissioning provision: 8,000.",
+   "lines": [
+    [
+     "Dr",
+     "Finance cost",
+     8000
+    ],
+    [
+     "Cr",
+     "Provision",
+     8000
+    ]
+   ],
+   "distract": [
+    [
+     "Property, plant and equipment",
+     8000
+    ],
+    [
+     "Depreciation expense",
+     8000
+    ]
+   ],
+   "why": "Unwinding is a finance cost."
+  }
+ ],
+ "calc": [
+  {
+   "s": "Warranty: 1,000 units sold. 90% no defects, 8% minor (100 each), 2% major (500 each). Provision?",
+   "a": 18000,
+   "why": "80 x 100 + 20 x 500 = 8,000 + 10,000 = 18,000.",
+   "unit": ""
+  },
+  {
+   "s": "Onerous contract: cost to fulfil 50,000, penalty to exit 35,000. Provision?",
+   "a": 35000,
+   "why": "Lower of the cost of fulfilling and the penalty for exiting.",
+   "unit": ""
+  }
+ ],
+ "seq": [
+  {
+   "s": "رتّب أسئلة قرار المخصص",
+   "steps": [
+    "Is there a present obligation from a past event?",
+    "Is an outflow of resources probable?",
+    "Can the amount be estimated reliably?",
+    "Recognise a provision (otherwise consider disclosure)"
+   ],
+   "why": ""
+  }
+ ],
+ "classify": [
+  {
+   "s": "نعمل إيه في كل حالة؟",
+   "buckets": [
+    "مخصص",
+    "إفصاح فقط",
+    "لا شيء"
+   ],
+   "items": [
+    [
+     "Probable outflow, reliable estimate",
+     0
+    ],
+    [
+     "Possible outflow",
+     1
+    ],
+    [
+     "Remote outflow",
+     2
+    ],
+    [
+     "Expected future operating losses",
+     2
+    ],
+    [
+     "Probable inflow from a lawsuit",
+     1
+    ],
+    [
+     "Restructuring announced with a detailed plan before year-end",
+     0
+    ]
+   ],
+   "why": ""
+  }
+ ],
+ "multi": [
+  {
+   "s": "Which costs can be included in a restructuring provision? (select all)",
+   "opts": [
+    "Redundancy payments",
+    "Lease termination penalties for closed sites",
+    "Retraining continuing staff",
+    "Marketing the new image",
+    "Relocating continuing staff"
+   ],
+   "a": [
+    0,
+    1
+   ],
+   "why": "Only direct costs not linked to ongoing activities."
+  }
+ ]
 }

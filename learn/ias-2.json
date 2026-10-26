@@ -118,5 +118,143 @@
    ]
   }
  ],
- "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document.",
+ "je": [
+  {
+   "s": "Goods are bought on credit for 50,000 (perpetual inventory system).",
+   "lines": [
+    [
+     "Dr",
+     "Inventory",
+     50000
+    ],
+    [
+     "Cr",
+     "Trade payables",
+     50000
+    ]
+   ],
+   "distract": [
+    [
+     "Cash",
+     50000
+    ],
+    [
+     "Cost of sales",
+     50000
+    ]
+   ],
+   "why": "Inventory increases and a liability to the supplier arises."
+  },
+  {
+   "s": "Inventory with a cost of 8,000 has an NRV of 6,500 at year-end. Record the write-down.",
+   "lines": [
+    [
+     "Dr",
+     "Cost of sales (write-down)",
+     1500
+    ],
+    [
+     "Cr",
+     "Inventory",
+     1500
+    ]
+   ],
+   "distract": [
+    [
+     "Inventory",
+     6500
+    ],
+    [
+     "OCI",
+     1500
+    ]
+   ],
+   "why": "Write down to NRV: 8,000 - 6,500 = 1,500 expense in profit or loss."
+  }
+ ],
+ "calc": [
+  {
+   "s": "Opening: 100 units @ 10. Purchases: 200 units @ 13. Sold: 150 units. Using FIFO, what is closing inventory?",
+   "a": 1950,
+   "why": "Sold first 100 @ 10 and 50 @ 13. Left: 150 @ 13 = 1,950.",
+   "unit": ""
+  },
+  {
+   "s": "Opening: 100 units @ 10. Purchases: 200 units @ 13. Sold: 150 units. Using periodic weighted average, what is closing inventory?",
+   "a": 1800,
+   "why": "Average = (1,000 + 2,600) / 300 = 12. Closing = 150 x 12 = 1,800.",
+   "unit": ""
+  }
+ ],
+ "seq": [
+  {
+   "s": "رتّب خطوات قياس بند مخزون في نهاية السنة",
+   "steps": [
+    "Determine cost (purchase + conversion + other costs)",
+    "Estimate the selling price",
+    "Deduct costs to complete and costs to sell to get NRV",
+    "Carry the item at the lower of cost and NRV"
+   ],
+   "why": ""
+  }
+ ],
+ "classify": [
+  {
+   "s": "صنّف كل تكلفة: تُضاف لتكلفة المخزون ولا مصروف؟",
+   "buckets": [
+    "تكلفة مخزون",
+    "مصروف"
+   ],
+   "items": [
+    [
+     "Non-recoverable import duties",
+     0
+    ],
+    [
+     "Freight-in to the warehouse",
+     0
+    ],
+    [
+     "Abnormal waste",
+     1
+    ],
+    [
+     "Storage of finished goods",
+     1
+    ],
+    [
+     "Sales commissions",
+     1
+    ],
+    [
+     "Factory supervisor salary",
+     0
+    ],
+    [
+     "General admin salaries",
+     1
+    ]
+   ],
+   "why": ""
+  }
+ ],
+ "multi": [
+  {
+   "s": "Which cost formulas does IAS 2 permit? (select all)",
+   "opts": [
+    "FIFO",
+    "LIFO",
+    "Weighted average",
+    "Specific identification",
+    "Highest-in, first-out"
+   ],
+   "a": [
+    0,
+    2,
+    3
+   ],
+   "why": "LIFO and HIFO are not permitted."
+  }
+ ]
 }

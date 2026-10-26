@@ -118,5 +118,134 @@
    ]
   }
  ],
- "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document.",
+ "je": [
+  {
+   "s": "Legal fees of 25,000 for an acquisition are paid in cash.",
+   "lines": [
+    [
+     "Dr",
+     "Administrative expenses",
+     25000
+    ],
+    [
+     "Cr",
+     "Cash",
+     25000
+    ]
+   ],
+   "distract": [
+    [
+     "Goodwill",
+     25000
+    ],
+    [
+     "Investment in subsidiary",
+     25000
+    ]
+   ],
+   "why": "Acquisition costs are expensed."
+  },
+  {
+   "s": "Parent buys 100% of S for 500,000 cash (parent's own books).",
+   "lines": [
+    [
+     "Dr",
+     "Investment in subsidiary",
+     500000
+    ],
+    [
+     "Cr",
+     "Cash",
+     500000
+    ]
+   ],
+   "distract": [
+    [
+     "Goodwill",
+     500000
+    ],
+    [
+     "Share capital",
+     500000
+    ]
+   ],
+   "why": "Goodwill appears only on consolidation."
+  }
+ ],
+ "calc": [
+  {
+   "s": "Consideration 800. FV of net identifiable assets 900. NCI (20%) at proportionate share. Goodwill?",
+   "a": 80,
+   "why": "NCI = 20% x 900 = 180. Goodwill = 800 + 180 - 900 = 80.",
+   "unit": ""
+  },
+  {
+   "s": "Consideration 800. FV of net identifiable assets 900. NCI (20%) measured at its fair value of 210. Goodwill?",
+   "a": 110,
+   "why": "800 + 210 - 900 = 110.",
+   "unit": ""
+  }
+ ],
+ "seq": [
+  {
+   "s": "رتّب خطوات طريقة الاستحواذ",
+   "steps": [
+    "Identify the acquirer",
+    "Determine the acquisition date",
+    "Recognise and measure identifiable assets, liabilities and NCI",
+    "Recognise goodwill or a bargain purchase gain"
+   ],
+   "why": ""
+  }
+ ],
+ "classify": [
+  {
+   "s": "جزء من المقابل ولا مصروف؟",
+   "buckets": [
+    "مقابل",
+    "مصروف"
+   ],
+   "items": [
+    [
+     "Cash paid to the sellers",
+     0
+    ],
+    [
+     "Shares issued at fair value",
+     0
+    ],
+    [
+     "Legal fees",
+     1
+    ],
+    [
+     "Contingent consideration at fair value",
+     0
+    ],
+    [
+     "Due diligence costs",
+     1
+    ]
+   ],
+   "why": ""
+  }
+ ],
+ "multi": [
+  {
+   "s": "After acquisition, which are TRUE? (select all)",
+   "opts": [
+    "Goodwill is not amortised",
+    "Goodwill is tested for impairment annually",
+    "Goodwill impairment is reversed when value recovers",
+    "The measurement period is at most one year"
+   ],
+   "a": [
+    0,
+    1,
+    3
+   ],
+   "why": "Goodwill impairment is never reversed."
+  }
+ ]
 }
