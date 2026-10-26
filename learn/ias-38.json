@@ -1,0 +1,122 @@
+{
+ "standard": "IAS 38",
+ "also": [],
+ "order": 3,
+ "title": "Intangible Assets",
+ "title_ar": "الأصول غير الملموسة",
+ "icon": "💡",
+ "intro": [
+  "الأصل غير الملموس: أصل **قابل للتحديد**، غير نقدي، **بدون وجود مادي**.",
+  "مرحلة **البحث** دائماً مصروف. مرحلة **التطوير** تُرسمل فقط لو كل الشروط اتحققت.",
+  "العمر المحدد ← استهلاك (amortisation). العمر غير المحدد ← لا استهلاك واختبار هبوط سنوي."
+ ],
+ "pairs": [
+  {
+   "en": "Intangible asset",
+   "ar": "أصل غير ملموس"
+  },
+  {
+   "en": "Research",
+   "ar": "البحث"
+  },
+  {
+   "en": "Development",
+   "ar": "التطوير"
+  },
+  {
+   "en": "Amortisation",
+   "ar": "الاستهلاك (الإطفاء)"
+  },
+  {
+   "en": "Active market",
+   "ar": "سوق نشط"
+  },
+  {
+   "en": "Indefinite useful life",
+   "ar": "عمر إنتاجي غير محدد"
+  },
+  {
+   "en": "Identifiable",
+   "ar": "قابل للتحديد"
+  },
+  {
+   "en": "Goodwill",
+   "ar": "الشهرة"
+  }
+ ],
+ "tf": [
+  {
+   "s": "Internally generated goodwill is recognised as an asset.",
+   "a": false,
+   "why": "It is not identifiable and its cost cannot be measured reliably."
+  },
+  {
+   "s": "Expenditure on training activities is recognised as an expense.",
+   "a": true,
+   "why": "Training does not create a controlled asset."
+  },
+  {
+   "s": "Advertising and promotional costs are expensed when incurred.",
+   "a": true,
+   "why": "They build the business as a whole, not an identifiable asset."
+  },
+  {
+   "s": "If the research and development phases cannot be distinguished, all expenditure is treated as research.",
+   "a": true,
+   "why": "So it is expensed."
+  },
+  {
+   "s": "An intangible with an indefinite useful life is amortised over 20 years.",
+   "a": false,
+   "why": "It is not amortised; it is tested for impairment annually."
+  },
+  {
+   "s": "Start-up costs are capitalised as intangible assets.",
+   "a": false,
+   "why": "Start-up costs are expensed."
+  }
+ ],
+ "fill": [
+  {
+   "s": "Research expenditure is always ___.",
+   "a": "expensed",
+   "opts": [
+    "capitalised",
+    "expensed",
+    "deferred",
+    "revalued"
+   ]
+  },
+  {
+   "s": "An intangible asset is an identifiable non-monetary asset without physical ___.",
+   "a": "substance",
+   "opts": [
+    "value",
+    "substance",
+    "cost",
+    "form"
+   ]
+  },
+  {
+   "s": "Intangibles with indefinite lives are tested for ___ at least annually.",
+   "a": "impairment",
+   "opts": [
+    "amortisation",
+    "impairment",
+    "revaluation",
+    "disposal"
+   ]
+  },
+  {
+   "s": "The revaluation model for intangibles needs an ___ market.",
+   "a": "active",
+   "opts": [
+    "active",
+    "open",
+    "local",
+    "private"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

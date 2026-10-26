@@ -1,0 +1,122 @@
+{
+ "standard": "IAS 21",
+ "also": [],
+ "order": 10,
+ "title": "Foreign Exchange Rates",
+ "title_ar": "أسعار الصرف الأجنبي",
+ "icon": "💱",
+ "intro": [
+  "حدد **العملة الوظيفية** (عملة البيئة الاقتصادية الرئيسية) أولاً.",
+  "المعاملة تُسجل بـ **السعر الفوري** يوم المعاملة. في نهاية السنة: البنود **النقدية** بسعر الإقفال، وغير النقدية بالتكلفة تبقى بالسعر التاريخي.",
+  "فروق تحويل البنود النقدية ← أرباح وخسائر. فروق ترجمة العمليات الأجنبية ← الدخل الشامل الآخر."
+ ],
+ "pairs": [
+  {
+   "en": "Functional currency",
+   "ar": "العملة الوظيفية"
+  },
+  {
+   "en": "Presentation currency",
+   "ar": "عملة العرض"
+  },
+  {
+   "en": "Spot rate",
+   "ar": "السعر الفوري"
+  },
+  {
+   "en": "Closing rate",
+   "ar": "سعر الإقفال"
+  },
+  {
+   "en": "Monetary items",
+   "ar": "البنود النقدية"
+  },
+  {
+   "en": "Exchange difference",
+   "ar": "فروق العملة"
+  },
+  {
+   "en": "Foreign operation",
+   "ar": "عملية أجنبية"
+  },
+  {
+   "en": "Average rate",
+   "ar": "متوسط السعر"
+  }
+ ],
+ "tf": [
+  {
+   "s": "Non-monetary items carried at historical cost are translated at the historical rate.",
+   "a": true,
+   "why": "They are not retranslated."
+  },
+  {
+   "s": "The presentation currency must be the same as the functional currency.",
+   "a": false,
+   "why": "Any presentation currency may be chosen."
+  },
+  {
+   "s": "Exchange differences on translating a foreign operation are recognised in OCI.",
+   "a": true,
+   "why": "They are reclassified to P&L on disposal."
+  },
+  {
+   "s": "An average rate may be used for income and expenses if rates do not fluctuate significantly.",
+   "a": true,
+   "why": "It approximates actual rates."
+  },
+  {
+   "s": "Inventory bought in foreign currency is retranslated at the closing rate each year-end.",
+   "a": false,
+   "why": "Inventory is non-monetary; it stays at the historical rate."
+  },
+  {
+   "s": "Monetary items include cash and amounts receivable or payable in a fixed number of currency units.",
+   "a": true,
+   "why": "That is the definition."
+  }
+ ],
+ "fill": [
+  {
+   "s": "Foreign currency transactions are first recorded at the ___ rate.",
+   "a": "spot",
+   "opts": [
+    "closing",
+    "spot",
+    "average",
+    "forward"
+   ]
+  },
+  {
+   "s": "Monetary items are retranslated at the ___ rate.",
+   "a": "closing",
+   "opts": [
+    "historical",
+    "closing",
+    "average",
+    "opening"
+   ]
+  },
+  {
+   "s": "Translation differences of a foreign operation go to ___.",
+   "a": "OCI",
+   "opts": [
+    "profit or loss",
+    "OCI",
+    "share capital",
+    "goodwill"
+   ]
+  },
+  {
+   "s": "Functional currency is the currency of the primary economic ___.",
+   "a": "environment",
+   "opts": [
+    "environment",
+    "partner",
+    "bank",
+    "budget"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

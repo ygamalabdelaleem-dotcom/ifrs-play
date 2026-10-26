@@ -1,0 +1,178 @@
+[
+ {
+  "id": "q-ias40-001",
+  "standard": "IAS 40",
+  "topic": "Definition",
+  "difficulty": "easy",
+  "question": "Which of these is investment property?",
+  "options": [
+   "A building leased out to a third party under an operating lease",
+   "The entity's head office",
+   "Property held for sale in the ordinary course of business",
+   "Property being built for a customer"
+  ],
+  "answer": 0,
+  "explanation": "Leased-out property held to earn rentals is investment property.",
+  "why_wrong": [
+   "",
+   "Owner-occupied: IAS 16.",
+   "Inventory: IAS 2.",
+   "Contract with a customer: IFRS 15."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias40-002",
+  "standard": "IAS 40",
+  "topic": "Fair value model",
+  "difficulty": "easy",
+  "question": "Under the fair value model, a gain on remeasurement goes to:",
+  "options": [
+   "Profit or loss",
+   "OCI",
+   "Revaluation surplus",
+   "It is not recognised"
+  ],
+  "answer": 0,
+  "explanation": "IAS 40 fair value changes go to profit or loss.",
+  "why_wrong": [
+   "",
+   "That is IAS 16 revaluation.",
+   "That is IAS 16 revaluation.",
+   "It must be recognised."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias40-003",
+  "standard": "IAS 40",
+  "topic": "Fair value model",
+  "difficulty": "easy",
+  "question": "Under the fair value model, investment property is:",
+  "options": [
+   "Depreciated over its useful life",
+   "Not depreciated",
+   "Depreciated only for buildings",
+   "Amortised"
+  ],
+  "answer": 1,
+  "explanation": "Fair value remeasurement replaces depreciation.",
+  "why_wrong": [
+   "Not under the fair value model.",
+   "",
+   "No depreciation for any part.",
+   "Amortisation is for intangibles."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias40-004",
+  "standard": "IAS 40",
+  "topic": "Transfers",
+  "difficulty": "hard",
+  "question": "An owner-occupied building (cost model) becomes investment property carried at fair value. The increase from carrying amount to fair value at the transfer date goes to:",
+  "options": [
+   "Profit or loss",
+   "OCI (revaluation surplus), as under IAS 16",
+   "Retained earnings directly",
+   "It is ignored"
+  ],
+  "answer": 1,
+  "explanation": "Up to the transfer date the property is under IAS 16, so the difference is treated like an IAS 16 revaluation.",
+  "why_wrong": [
+   "Only later fair value changes go to P&L.",
+   "",
+   "It passes through OCI.",
+   "It must be recognised."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias40-005",
+  "standard": "IAS 40",
+  "topic": "Mixed use",
+  "difficulty": "medium",
+  "question": "A building is partly rented out and partly owner-occupied. The parts cannot be sold or leased separately. It is investment property only if:",
+  "options": [
+   "Any part is rented out",
+   "Only an insignificant portion is owner-occupied",
+   "The rented part is over 50%",
+   "The directors choose"
+  ],
+  "answer": 1,
+  "explanation": "If parts cannot be separated, the whole is investment property only if owner occupation is insignificant.",
+  "why_wrong": [
+   "Not enough.",
+   "",
+   "There is no 50% rule.",
+   "Not a choice."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias40-006",
+  "standard": "IAS 40",
+  "topic": "Policy",
+  "difficulty": "easy",
+  "question": "An entity chooses the fair value model. It applies to:",
+  "options": [
+   "Only new properties",
+   "All its investment property",
+   "Only land",
+   "Properties chosen one by one"
+  ],
+  "answer": 1,
+  "explanation": "The model is an accounting policy for all investment property (limited exceptions).",
+  "why_wrong": [
+   "Applies to all.",
+   "",
+   "Applies to all.",
+   "No cherry-picking."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias40-007",
+  "standard": "IAS 40",
+  "topic": "Services",
+  "difficulty": "medium",
+  "question": "A hotel the entity owns and manages, providing significant services to guests, is:",
+  "options": [
+   "Investment property",
+   "Owner-occupied PPE under IAS 16",
+   "Inventory",
+   "Held for sale"
+  ],
+  "answer": 1,
+  "explanation": "Significant ancillary services make it owner-occupied.",
+  "why_wrong": [
+   "Services are significant.",
+   "",
+   "Not held for sale in ordinary business.",
+   "No plan to sell."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias40-008",
+  "standard": "IAS 40",
+  "topic": "Group",
+  "difficulty": "hard",
+  "question": "A parent leases a building to its subsidiary. In the consolidated financial statements the building is:",
+  "options": [
+   "Investment property",
+   "Owner-occupied PPE",
+   "Inventory",
+   "Not recognised"
+  ],
+  "answer": 1,
+  "explanation": "From the group's view the property is used by the group. In the parent's separate statements it is investment property.",
+  "why_wrong": [
+   "Only in the separate statements.",
+   "",
+   "Not held for sale.",
+   "It is a group asset."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ }
+]

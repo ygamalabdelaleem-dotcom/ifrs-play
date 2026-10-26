@@ -1,0 +1,178 @@
+[
+ {
+  "id": "q-ias36-001",
+  "standard": "IAS 36",
+  "topic": "Definition",
+  "difficulty": "easy",
+  "question": "Recoverable amount is:",
+  "options": [
+   "The lower of FVLCD and value in use",
+   "The higher of FVLCD and value in use",
+   "Fair value only",
+   "Carrying amount less depreciation"
+  ],
+  "answer": 1,
+  "explanation": "Higher of the two, because a rational entity would sell or use the asset, whichever gives more.",
+  "why_wrong": [
+   "It is the higher.",
+   "",
+   "Value in use is also considered.",
+   "That is carrying amount."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias36-002",
+  "standard": "IAS 36",
+  "topic": "Calculation",
+  "difficulty": "easy",
+  "question": "Carrying amount 500, FVLCD 420, value in use 460. Impairment loss?",
+  "options": [
+   "80",
+   "40",
+   "0",
+   "120"
+  ],
+  "answer": 1,
+  "explanation": "Recoverable = higher of 420 and 460 = 460. Loss = 500 - 460 = 40.",
+  "why_wrong": [
+   "FVLCD was used instead of the higher amount.",
+   "",
+   "CA exceeds recoverable amount.",
+   "Wrong calculation."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias36-003",
+  "standard": "IAS 36",
+  "topic": "Annual test",
+  "difficulty": "easy",
+  "question": "Which asset must be tested for impairment annually even without an indicator?",
+  "options": [
+   "Goodwill",
+   "Plant and machinery",
+   "Inventories",
+   "Investment property at fair value"
+  ],
+  "answer": 0,
+  "explanation": "Goodwill, indefinite-life intangibles and intangibles not yet available for use need annual tests.",
+  "why_wrong": [
+   "",
+   "Only when there is an indicator.",
+   "IAS 2 applies.",
+   "Outside IAS 36."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias36-004",
+  "standard": "IAS 36",
+  "topic": "CGU",
+  "difficulty": "medium",
+  "question": "An impairment loss for a CGU is allocated:",
+  "options": [
+   "Pro rata to all assets including goodwill",
+   "First to goodwill, then pro rata to other assets",
+   "Only to current assets",
+   "Only to PPE"
+  ],
+  "answer": 1,
+  "explanation": "Goodwill is reduced first.",
+  "why_wrong": [
+   "Goodwill comes first.",
+   "",
+   "Current assets like inventory are outside IAS 36.",
+   "Not only PPE."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias36-005",
+  "standard": "IAS 36",
+  "topic": "Reversal",
+  "difficulty": "easy",
+  "question": "An impairment of goodwill recognised last year is no longer needed. The entity:",
+  "options": [
+   "Reverses it in profit or loss",
+   "Reverses it in OCI",
+   "Does not reverse it",
+   "Reverses half"
+  ],
+  "answer": 2,
+  "explanation": "Any increase would be internally generated goodwill, which cannot be recognised.",
+  "why_wrong": [
+   "Prohibited for goodwill.",
+   "Prohibited.",
+   "",
+   "Prohibited."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias36-006",
+  "standard": "IAS 36",
+  "topic": "Revalued assets",
+  "difficulty": "medium",
+  "question": "An impairment loss on a revalued building (with a revaluation surplus) is recognised:",
+  "options": [
+   "Fully in profit or loss",
+   "First against the revaluation surplus (OCI), then profit or loss",
+   "Directly in retained earnings",
+   "Not recognised"
+  ],
+  "answer": 1,
+  "explanation": "It is treated as a revaluation decrease.",
+  "why_wrong": [
+   "Only the excess over the surplus.",
+   "",
+   "Not retained earnings.",
+   "Must be recognised."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias36-007",
+  "standard": "IAS 36",
+  "topic": "Value in use",
+  "difficulty": "medium",
+  "question": "Which cash flows are EXCLUDED from value in use?",
+  "options": [
+   "Inflows from continuing use",
+   "Net cash from disposal at the end of life",
+   "Financing cash flows and income tax",
+   "Outflows needed to generate the inflows"
+  ],
+  "answer": 2,
+  "explanation": "Financing and tax are excluded; the rate already reflects the time value of money.",
+  "why_wrong": [
+   "Included.",
+   "Included.",
+   "",
+   "Included."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias36-008",
+  "standard": "IAS 36",
+  "topic": "CGU",
+  "difficulty": "easy",
+  "question": "A cash-generating unit is:",
+  "options": [
+   "Any group of assets",
+   "The smallest group of assets generating largely independent cash inflows",
+   "A legal entity",
+   "A business segment"
+  ],
+  "answer": 1,
+  "explanation": "Used when an individual asset's recoverable amount cannot be estimated.",
+  "why_wrong": [
+   "Must be the smallest identifiable group.",
+   "",
+   "Not necessarily a legal entity.",
+   "Usually smaller than a segment."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ }
+]

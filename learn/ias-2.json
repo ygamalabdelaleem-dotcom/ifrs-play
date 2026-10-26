@@ -1,0 +1,122 @@
+{
+ "standard": "IAS 2",
+ "also": [],
+ "order": 1,
+ "title": "Inventories",
+ "title_ar": "المخزون",
+ "icon": "📦",
+ "intro": [
+  "المخزون يُقاس بـ **الأقل** بين التكلفة وصافي القيمة القابلة للتحقق (NRV).",
+  "التكلفة = شراء + تحويل + أي تكلفة لوصول المخزون لمكانه وحالته الحالية. الهالك غير العادي والتخزين والمصروفات الإدارية والبيعية مصروف.",
+  "طرق التكلفة المسموحة: FIFO والمتوسط المرجح والتمييز المحدد. LIFO ممنوعة."
+ ],
+ "pairs": [
+  {
+   "en": "Inventories",
+   "ar": "المخزون"
+  },
+  {
+   "en": "Net realisable value",
+   "ar": "صافي القيمة القابلة للتحقق"
+  },
+  {
+   "en": "Cost of purchase",
+   "ar": "تكلفة الشراء"
+  },
+  {
+   "en": "Costs of conversion",
+   "ar": "تكاليف التحويل"
+  },
+  {
+   "en": "Normal capacity",
+   "ar": "الطاقة العادية"
+  },
+  {
+   "en": "Write-down",
+   "ar": "تخفيض القيمة"
+  },
+  {
+   "en": "Weighted average cost",
+   "ar": "المتوسط المرجح للتكلفة"
+  },
+  {
+   "en": "First-in, first-out",
+   "ar": "الوارد أولاً يصرف أولاً"
+  }
+ ],
+ "tf": [
+  {
+   "s": "Selling costs are included in the cost of inventories.",
+   "a": false,
+   "why": "Selling costs are expensed. They are deducted when calculating NRV, not added to cost."
+  },
+  {
+   "s": "The retail method may be used if the result approximates cost.",
+   "a": true,
+   "why": "IAS 2 allows standard cost and retail methods for convenience when results approximate cost."
+  },
+  {
+   "s": "Trade discounts and rebates are deducted in determining the cost of purchase.",
+   "a": true,
+   "why": "Cost of purchase is net of trade discounts, rebates and similar items."
+  },
+  {
+   "s": "Write-downs to NRV are normally made item by item.",
+   "a": true,
+   "why": "Item by item is the normal rule. Grouping is allowed only for similar or related items, not whole classes."
+  },
+  {
+   "s": "When inventories are sold, their carrying amount is expensed in the period the related revenue is recognised.",
+   "a": true,
+   "why": "This matches cost of sales with revenue."
+  },
+  {
+   "s": "General administrative overheads are included in the cost of inventories.",
+   "a": false,
+   "why": "Admin overheads that do not bring inventories to their present location and condition are expensed."
+  }
+ ],
+ "fill": [
+  {
+   "s": "Inventories are measured at the lower of cost and ___.",
+   "a": "net realisable value",
+   "opts": [
+    "fair value",
+    "net realisable value",
+    "replacement cost",
+    "market value"
+   ]
+  },
+  {
+   "s": "IAS 2 does not permit the ___ cost formula.",
+   "a": "LIFO",
+   "opts": [
+    "FIFO",
+    "LIFO",
+    "weighted average",
+    "specific identification"
+   ]
+  },
+  {
+   "s": "Abnormal amounts of wasted materials are ___ when incurred.",
+   "a": "expensed",
+   "opts": [
+    "capitalised",
+    "expensed",
+    "deferred",
+    "revalued"
+   ]
+  },
+  {
+   "s": "Fixed production overheads are allocated based on the ___ capacity of the facilities.",
+   "a": "normal",
+   "opts": [
+    "maximum",
+    "normal",
+    "actual",
+    "budgeted"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

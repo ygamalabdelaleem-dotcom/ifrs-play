@@ -1,0 +1,122 @@
+{
+ "standard": "IAS 16",
+ "also": [],
+ "order": 2,
+ "title": "Property, Plant and Equipment",
+ "title_ar": "الأصول الثابتة",
+ "icon": "🏭",
+ "intro": [
+  "الأصل الثابت يُسجل أولاً **بالتكلفة**: سعر الشراء + التكاليف المباشرة لتجهيزه + التقدير الأولي لتكاليف الإزالة.",
+  "بعد ذلك تختار **نموذج التكلفة** أو **نموذج إعادة التقييم** لكل فئة (class) بالكامل.",
+  "الإهلاك يبدأ لما الأصل يكون **جاهز للاستخدام**، وكل جزء جوهري له عمر مختلف يُهلك منفصلاً."
+ ],
+ "pairs": [
+  {
+   "en": "Property, plant and equipment",
+   "ar": "الأصول الثابتة"
+  },
+  {
+   "en": "Depreciation",
+   "ar": "الإهلاك"
+  },
+  {
+   "en": "Residual value",
+   "ar": "القيمة المتبقية"
+  },
+  {
+   "en": "Useful life",
+   "ar": "العمر الإنتاجي"
+  },
+  {
+   "en": "Carrying amount",
+   "ar": "القيمة الدفترية"
+  },
+  {
+   "en": "Revaluation surplus",
+   "ar": "فائض إعادة التقييم"
+  },
+  {
+   "en": "Dismantling costs",
+   "ar": "تكاليف الإزالة والتفكيك"
+  },
+  {
+   "en": "Significant part",
+   "ar": "الجزء الجوهري"
+  }
+ ],
+ "tf": [
+  {
+   "s": "Land and buildings are accounted for separately, even when acquired together.",
+   "a": true,
+   "why": "Land usually has an unlimited life; buildings are depreciated."
+  },
+  {
+   "s": "Land is normally not depreciated.",
+   "a": true,
+   "why": "Land normally has an unlimited useful life (exceptions: quarries, landfill sites)."
+  },
+  {
+   "s": "Gains on derecognition of PPE are classified as revenue.",
+   "a": false,
+   "why": "Gains on disposal go to profit or loss but are not revenue."
+  },
+  {
+   "s": "Depreciation stops when an asset becomes temporarily idle.",
+   "a": false,
+   "why": "Depreciation continues while idle, unless the asset is fully depreciated."
+  },
+  {
+   "s": "Residual value and useful life are reviewed at least at each financial year-end.",
+   "a": true,
+   "why": "Changes are accounted for as changes in estimate (IAS 8)."
+  },
+  {
+   "s": "The revaluation surplus may be transferred directly to retained earnings when the asset is derecognised.",
+   "a": true,
+   "why": "The transfer is within equity, not through profit or loss."
+  }
+ ],
+ "fill": [
+  {
+   "s": "Depreciation begins when the asset is ___ for use.",
+   "a": "available",
+   "opts": [
+    "purchased",
+    "available",
+    "delivered",
+    "paid"
+   ]
+  },
+  {
+   "s": "A first-time revaluation increase is recognised in ___.",
+   "a": "OCI",
+   "opts": [
+    "profit or loss",
+    "OCI",
+    "retained earnings",
+    "share premium"
+   ]
+  },
+  {
+   "s": "Each significant ___ of an item of PPE is depreciated separately.",
+   "a": "part",
+   "opts": [
+    "part",
+    "invoice",
+    "location",
+    "supplier"
+   ]
+  },
+  {
+   "s": "A change in useful life is a change in accounting ___.",
+   "a": "estimate",
+   "opts": [
+    "policy",
+    "estimate",
+    "error",
+    "standard"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

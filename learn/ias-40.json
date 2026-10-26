@@ -1,0 +1,121 @@
+{
+ "standard": "IAS 40",
+ "also": [],
+ "order": 4,
+ "title": "Investment Property",
+ "title_ar": "العقارات الاستثمارية",
+ "icon": "🏢",
+ "intro": [
+  "العقار الاستثماري: عقار مُحتفظ به لـ **الإيجار** أو لـ **زيادة قيمته**، مش للاستخدام ولا للبيع العادي.",
+  "تختار **نموذج القيمة العادلة** (التغيرات في الأرباح والخسائر وبدون إهلاك) أو **نموذج التكلفة** لكل العقارات الاستثمارية."
+ ],
+ "pairs": [
+  {
+   "en": "Investment property",
+   "ar": "عقار استثماري"
+  },
+  {
+   "en": "Owner-occupied property",
+   "ar": "عقار يشغله المالك"
+  },
+  {
+   "en": "Fair value model",
+   "ar": "نموذج القيمة العادلة"
+  },
+  {
+   "en": "Cost model",
+   "ar": "نموذج التكلفة"
+  },
+  {
+   "en": "Rental income",
+   "ar": "إيراد الإيجار"
+  },
+  {
+   "en": "Capital appreciation",
+   "ar": "زيادة القيمة الرأسمالية"
+  },
+  {
+   "en": "Transfer",
+   "ar": "التحويل (إعادة التبويب)"
+  },
+  {
+   "en": "Transaction costs",
+   "ar": "تكاليف المعاملة"
+  }
+ ],
+ "tf": [
+  {
+   "s": "Land held for an undetermined future use is investment property.",
+   "a": true,
+   "why": "It is treated as held for capital appreciation."
+  },
+  {
+   "s": "Under the fair value model, fair value gains are recognised in OCI.",
+   "a": false,
+   "why": "They are recognised in profit or loss."
+  },
+  {
+   "s": "Property held for sale in the ordinary course of business is inventory under IAS 2.",
+   "a": true,
+   "why": "It is not investment property."
+  },
+  {
+   "s": "Investment property is initially measured at cost, including transaction costs.",
+   "a": true,
+   "why": "E.g. legal fees and property transfer taxes."
+  },
+  {
+   "s": "An entity using the cost model for investment property must disclose its fair value.",
+   "a": true,
+   "why": "Fair value disclosure is still required."
+  },
+  {
+   "s": "Investment property under the fair value model is depreciated.",
+   "a": false,
+   "why": "No depreciation under the fair value model."
+  }
+ ],
+ "fill": [
+  {
+   "s": "Under the fair value model, changes in fair value go to ___.",
+   "a": "profit or loss",
+   "opts": [
+    "OCI",
+    "profit or loss",
+    "revaluation surplus",
+    "retained earnings"
+   ]
+  },
+  {
+   "s": "Investment property is held to earn rentals or for capital ___.",
+   "a": "appreciation",
+   "opts": [
+    "appreciation",
+    "expenditure",
+    "reserves",
+    "allowances"
+   ]
+  },
+  {
+   "s": "Owner-occupied property is accounted for under IAS ___.",
+   "a": "16",
+   "opts": [
+    "2",
+    "16",
+    "38",
+    "40"
+   ]
+  },
+  {
+   "s": "The chosen model must be applied to ___ investment property.",
+   "a": "all",
+   "opts": [
+    "all",
+    "most",
+    "new",
+    "leased"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

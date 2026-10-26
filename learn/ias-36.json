@@ -1,0 +1,122 @@
+{
+ "standard": "IAS 36",
+ "also": [],
+ "order": 5,
+ "title": "Impairment of Assets",
+ "title_ar": "الهبوط في قيمة الأصول",
+ "icon": "📉",
+ "intro": [
+  "الأصل **مضمحل** لو قيمته الدفترية أكبر من **القيمة القابلة للاسترداد**.",
+  "القيمة القابلة للاسترداد = **الأعلى** بين القيمة العادلة ناقصاً تكاليف الاستبعاد والقيمة الاستخدامية (VIU).",
+  "الشهرة تُختبر سنوياً، وخسارة اضمحلالها **لا تُرد أبداً**."
+ ],
+ "pairs": [
+  {
+   "en": "Impairment loss",
+   "ar": "خسارة الاضمحلال"
+  },
+  {
+   "en": "Recoverable amount",
+   "ar": "القيمة القابلة للاسترداد"
+  },
+  {
+   "en": "Value in use",
+   "ar": "القيمة الاستخدامية"
+  },
+  {
+   "en": "Fair value less costs of disposal",
+   "ar": "القيمة العادلة ناقصاً تكاليف الاستبعاد"
+  },
+  {
+   "en": "Cash-generating unit",
+   "ar": "وحدة توليد النقد"
+  },
+  {
+   "en": "Indicator of impairment",
+   "ar": "مؤشر الاضمحلال"
+  },
+  {
+   "en": "Discount rate",
+   "ar": "معدل الخصم"
+  },
+  {
+   "en": "Corporate assets",
+   "ar": "الأصول المشتركة"
+  }
+ ],
+ "tf": [
+  {
+   "s": "An asset is impaired when its carrying amount exceeds its recoverable amount.",
+   "a": true,
+   "why": "That is the definition."
+  },
+  {
+   "s": "Value in use is calculated using a pre-tax discount rate.",
+   "a": true,
+   "why": "Cash flows and the rate are both pre-tax."
+  },
+  {
+   "s": "Market capitalisation below net assets may indicate impairment.",
+   "a": true,
+   "why": "It is an external indicator."
+  },
+  {
+   "s": "Within a CGU, an asset can be written down below the highest of its FVLCD, its value in use and zero.",
+   "a": false,
+   "why": "This floor limits the allocation; the excess is spread to the other assets."
+  },
+  {
+   "s": "Impairment losses on goodwill can be reversed in later years.",
+   "a": false,
+   "why": "Reversal is prohibited for goodwill."
+  },
+  {
+   "s": "An impairment loss on an asset carried at cost is recognised in profit or loss.",
+   "a": true,
+   "why": "For revalued assets it first reduces the revaluation surplus."
+  }
+ ],
+ "fill": [
+  {
+   "s": "Recoverable amount is the ___ of FVLCD and value in use.",
+   "a": "higher",
+   "opts": [
+    "higher",
+    "lower",
+    "average",
+    "sum"
+   ]
+  },
+  {
+   "s": "Goodwill must be tested for impairment at least ___.",
+   "a": "annually",
+   "opts": [
+    "monthly",
+    "annually",
+    "every 3 years",
+    "on disposal"
+   ]
+  },
+  {
+   "s": "An impairment loss on a CGU is first allocated to ___.",
+   "a": "goodwill",
+   "opts": [
+    "inventory",
+    "goodwill",
+    "land",
+    "cash"
+   ]
+  },
+  {
+   "s": "Impairment losses on goodwill are ___ reversed.",
+   "a": "never",
+   "opts": [
+    "always",
+    "never",
+    "sometimes",
+    "partly"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

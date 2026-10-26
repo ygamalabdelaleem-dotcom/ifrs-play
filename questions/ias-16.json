@@ -1,0 +1,178 @@
+[
+ {
+  "id": "q-ias16-001",
+  "standard": "IAS 16",
+  "topic": "Initial cost",
+  "difficulty": "easy",
+  "question": "Which cost is NOT part of the cost of an item of PPE?",
+  "options": [
+   "Delivery and handling",
+   "Site preparation",
+   "Initial estimate of dismantling costs",
+   "Costs of training staff to use it"
+  ],
+  "answer": 3,
+  "explanation": "Staff training is expensed.",
+  "why_wrong": [
+   "Directly attributable, so included.",
+   "Directly attributable, so included.",
+   "Included when there is an obligation (provision under IAS 37).",
+   ""
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias16-002",
+  "standard": "IAS 16",
+  "topic": "Revaluation",
+  "difficulty": "easy",
+  "question": "Under the revaluation model, which items must be revalued?",
+  "options": [
+   "Only the item chosen",
+   "The entire class of PPE the item belongs to",
+   "All PPE of the entity",
+   "Only land"
+  ],
+  "answer": 1,
+  "explanation": "Revaluing a whole class avoids selective revaluation.",
+  "why_wrong": [
+   "Selective revaluation is not allowed.",
+   "",
+   "Only the class, not all PPE.",
+   "Any class may be revalued."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias16-003",
+  "standard": "IAS 16",
+  "topic": "Revaluation",
+  "difficulty": "easy",
+  "question": "A building is revalued upwards for the first time. The gain goes to:",
+  "options": [
+   "Profit or loss",
+   "OCI and the revaluation surplus",
+   "Retained earnings directly",
+   "Deferred income"
+  ],
+  "answer": 1,
+  "explanation": "Increases go to OCI unless they reverse a decrease previously recognised in profit or loss.",
+  "why_wrong": [
+   "Only a reversal of a past P&L decrease goes to P&L.",
+   "",
+   "It must pass through OCI first.",
+   "There is no deferred income."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias16-004",
+  "standard": "IAS 16",
+  "topic": "Depreciation",
+  "difficulty": "easy",
+  "question": "Cost 100,000, residual value 10,000, useful life 9 years, straight line. Annual depreciation?",
+  "options": [
+   "11,111",
+   "10,000",
+   "9,000",
+   "12,000"
+  ],
+  "answer": 1,
+  "explanation": "(100,000 - 10,000) / 9 = 10,000.",
+  "why_wrong": [
+   "Residual value was ignored.",
+   "",
+   "Wrong life used.",
+   "Wrong calculation."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias16-005",
+  "standard": "IAS 16",
+  "topic": "Components",
+  "difficulty": "medium",
+  "question": "An aircraft's engines have a different useful life from its body. IAS 16 requires:",
+  "options": [
+   "Depreciating the aircraft as one asset",
+   "Depreciating each significant part separately",
+   "Expensing the engines",
+   "Revaluing the engines only"
+  ],
+  "answer": 1,
+  "explanation": "Significant parts with different lives are depreciated separately.",
+  "why_wrong": [
+   "Ignores the component approach.",
+   "",
+   "The engines are assets.",
+   "Revaluation is a separate policy choice."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias16-006",
+  "standard": "IAS 16",
+  "topic": "Depreciation",
+  "difficulty": "easy",
+  "question": "When does depreciation begin?",
+  "options": [
+   "When the asset is purchased",
+   "When it is available for use",
+   "When it is first used in production",
+   "At the start of the next financial year"
+  ],
+  "answer": 1,
+  "explanation": "Available for use = in the location and condition necessary to operate as intended.",
+  "why_wrong": [
+   "Purchase date may be earlier than availability.",
+   "",
+   "Actual use may be later; depreciation still starts.",
+   "No such rule."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias16-007",
+  "standard": "IAS 16",
+  "topic": "Subsequent costs",
+  "difficulty": "easy",
+  "question": "Day-to-day servicing costs of PPE (labour, consumables) are:",
+  "options": [
+   "Capitalised",
+   "Expensed in profit or loss",
+   "Added to the revaluation surplus",
+   "Deferred"
+  ],
+  "answer": 1,
+  "explanation": "Repairs and maintenance are expenses.",
+  "why_wrong": [
+   "They do not meet the recognition criteria.",
+   "",
+   "Not related to revaluation.",
+   "No basis for deferral."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ias16-008",
+  "standard": "IAS 16",
+  "topic": "Estimates",
+  "difficulty": "medium",
+  "question": "An entity revises the remaining useful life of a machine from 5 to 8 years. This is accounted for:",
+  "options": [
+   "Retrospectively by restating prior years",
+   "Prospectively as a change in estimate",
+   "As a prior period error",
+   "It is not allowed"
+  ],
+  "answer": 1,
+  "explanation": "Changes in useful life are changes in estimate under IAS 8.",
+  "why_wrong": [
+   "Only policy changes and errors are retrospective.",
+   "",
+   "No error occurred.",
+   "Reviews are required annually."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ }
+]

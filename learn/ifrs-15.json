@@ -1,0 +1,121 @@
+{
+ "standard": "IFRS 15",
+ "also": [],
+ "order": 7,
+ "title": "Revenue from Contracts with Customers",
+ "title_ar": "الإيراد من العقود مع العملاء",
+ "icon": "🧩",
+ "intro": [
+  "IFRS 15 = **5 خطوات**: العقد ← التزامات الأداء ← سعر المعاملة ← التوزيع ← الاعتراف بالإيراد.",
+  "الإيراد يُعترف به لما **السيطرة** تنتقل للعميل: على مدى زمني أو عند نقطة زمنية."
+ ],
+ "pairs": [
+  {
+   "en": "Performance obligation",
+   "ar": "التزام الأداء"
+  },
+  {
+   "en": "Transaction price",
+   "ar": "سعر المعاملة"
+  },
+  {
+   "en": "Stand-alone selling price",
+   "ar": "سعر البيع المستقل"
+  },
+  {
+   "en": "Contract asset",
+   "ar": "أصل العقد"
+  },
+  {
+   "en": "Contract liability",
+   "ar": "التزام العقد"
+  },
+  {
+   "en": "Variable consideration",
+   "ar": "المقابل المتغير"
+  },
+  {
+   "en": "Over time",
+   "ar": "على مدى زمني"
+  },
+  {
+   "en": "Point in time",
+   "ar": "عند نقطة زمنية"
+  }
+ ],
+ "tf": [
+  {
+   "s": "IFRS 15 uses a five-step model.",
+   "a": true,
+   "why": "Contract, obligations, price, allocation, recognition."
+  },
+  {
+   "s": "Revenue is recognised when control of goods or services passes to the customer.",
+   "a": true,
+   "why": "Control is the key test."
+  },
+  {
+   "s": "Variable consideration is included only to the extent a significant reversal is highly probable not to occur.",
+   "a": true,
+   "why": "The constraint."
+  },
+  {
+   "s": "The transaction price is allocated based on each obligation's profit margin.",
+   "a": false,
+   "why": "It is allocated on relative stand-alone selling prices."
+  },
+  {
+   "s": "A contract liability arises when the customer pays before the entity performs.",
+   "a": true,
+   "why": "E.g. advances, deferred revenue."
+  },
+  {
+   "s": "Incremental costs of obtaining a contract are always expensed.",
+   "a": false,
+   "why": "They are capitalised if expected to be recovered (practical expedient for 1 year or less)."
+  }
+ ],
+ "fill": [
+  {
+   "s": "Step 1 is to identify the ___ with a customer.",
+   "a": "contract",
+   "opts": [
+    "contract",
+    "invoice",
+    "price",
+    "asset"
+   ]
+  },
+  {
+   "s": "The transaction price is allocated on relative stand-alone selling ___.",
+   "a": "prices",
+   "opts": [
+    "costs",
+    "prices",
+    "margins",
+    "volumes"
+   ]
+  },
+  {
+   "s": "Revenue is recognised when the customer obtains ___ of the asset.",
+   "a": "control",
+   "opts": [
+    "title",
+    "control",
+    "possession",
+    "invoice"
+   ]
+  },
+  {
+   "s": "A promise to transfer a distinct good or service is a performance ___.",
+   "a": "obligation",
+   "opts": [
+    "obligation",
+    "asset",
+    "price",
+    "option"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

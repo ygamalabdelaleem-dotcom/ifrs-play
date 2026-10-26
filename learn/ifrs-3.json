@@ -1,0 +1,122 @@
+{
+ "standard": "IFRS 3",
+ "also": [],
+ "order": 13,
+ "title": "Business Combinations",
+ "title_ar": "تجميع الأعمال",
+ "icon": "🤝",
+ "intro": [
+  "كل عمليات تجميع الأعمال تُحاسب بـ **طريقة الاستحواذ**.",
+  "الشهرة = المقابل المحوّل + الحصص غير المسيطرة − صافي الأصول القابلة للتحديد بالقيمة العادلة.",
+  "تكاليف الاستحواذ (أتعاب قانونية واستشارية) **مصروف**، والشهرة **لا تُستهلك** وتُختبر سنوياً."
+ ],
+ "pairs": [
+  {
+   "en": "Business combination",
+   "ar": "تجميع الأعمال"
+  },
+  {
+   "en": "Acquirer",
+   "ar": "المستحوذ"
+  },
+  {
+   "en": "Acquiree",
+   "ar": "المستحوذ عليه"
+  },
+  {
+   "en": "Non-controlling interest",
+   "ar": "الحصص غير المسيطرة"
+  },
+  {
+   "en": "Consideration transferred",
+   "ar": "المقابل المحوّل"
+  },
+  {
+   "en": "Bargain purchase",
+   "ar": "صفقة شراء بخصم"
+  },
+  {
+   "en": "Acquisition date",
+   "ar": "تاريخ الاستحواذ"
+  },
+  {
+   "en": "Contingent consideration",
+   "ar": "المقابل المحتمل"
+  }
+ ],
+ "tf": [
+  {
+   "s": "Contingent liabilities of the acquiree may be recognised if they are present obligations with a reliably measurable fair value.",
+   "a": true,
+   "why": "This differs from IAS 37."
+  },
+  {
+   "s": "Acquisition costs such as legal fees are added to goodwill.",
+   "a": false,
+   "why": "They are expensed."
+  },
+  {
+   "s": "Goodwill is amortised over 10 years under IFRS 3.",
+   "a": false,
+   "why": "It is tested for impairment annually instead."
+  },
+  {
+   "s": "Identifiable assets and liabilities are measured at acquisition-date fair value.",
+   "a": true,
+   "why": "With limited exceptions."
+  },
+  {
+   "s": "A gain on a bargain purchase is recognised in profit or loss after reassessment.",
+   "a": true,
+   "why": "First recheck the amounts."
+  },
+  {
+   "s": "Measurement period adjustments can be made up to three years after acquisition.",
+   "a": false,
+   "why": "The measurement period is at most one year."
+  }
+ ],
+ "fill": [
+  {
+   "s": "All business combinations use the ___ method.",
+   "a": "acquisition",
+   "opts": [
+    "pooling",
+    "acquisition",
+    "equity",
+    "cost"
+   ]
+  },
+  {
+   "s": "Acquisition-related costs are ___ as incurred.",
+   "a": "expensed",
+   "opts": [
+    "capitalised",
+    "expensed",
+    "added to goodwill",
+    "deferred"
+   ]
+  },
+  {
+   "s": "NCI can be measured at fair value or at its share of net ___ assets.",
+   "a": "identifiable",
+   "opts": [
+    "current",
+    "identifiable",
+    "total",
+    "tangible"
+   ]
+  },
+  {
+   "s": "The measurement period cannot exceed one ___.",
+   "a": "year",
+   "opts": [
+    "month",
+    "quarter",
+    "year",
+    "decade"
+   ]
+  }
+ ],
+ "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+}

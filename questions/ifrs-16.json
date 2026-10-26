@@ -1,0 +1,178 @@
+[
+ {
+  "id": "q-ifrs16-001",
+  "standard": "IFRS 16",
+  "topic": "Lessee",
+  "difficulty": "easy",
+  "question": "At commencement, a lessee recognises:",
+  "options": [
+   "Rent expense only",
+   "A right-of-use asset and a lease liability",
+   "PPE only",
+   "Nothing until the first payment"
+  ],
+  "answer": 1,
+  "explanation": "IFRS 16 has a single lessee model.",
+  "why_wrong": [
+   "Only for exempt leases.",
+   "",
+   "The ROU asset is a separate line or included with PPE, with a liability.",
+   "Recognition is at commencement."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs16-002",
+  "standard": "IFRS 16",
+  "topic": "Measurement",
+  "difficulty": "easy",
+  "question": "The lease liability is first measured at:",
+  "options": [
+   "The total undiscounted payments",
+   "The present value of lease payments not yet paid",
+   "Fair value of the asset",
+   "Zero"
+  ],
+  "answer": 1,
+  "explanation": "Discounted at the implicit rate or the incremental borrowing rate.",
+  "why_wrong": [
+   "Must be discounted.",
+   "",
+   "Not fair value.",
+   "A liability exists."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs16-003",
+  "standard": "IFRS 16",
+  "topic": "Exemptions",
+  "difficulty": "easy",
+  "question": "Which leases may be exempt from recognition?",
+  "options": [
+   "Leases over 5 years",
+   "Short-term leases and leases of low-value assets",
+   "Property leases",
+   "Leases with variable payments"
+  ],
+  "answer": 1,
+  "explanation": "These are optional exemptions.",
+  "why_wrong": [
+   "No such exemption.",
+   "",
+   "No such exemption.",
+   "No such exemption."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs16-004",
+  "standard": "IFRS 16",
+  "topic": "ROU asset",
+  "difficulty": "medium",
+  "question": "Which is NOT included in the cost of the right-of-use asset?",
+  "options": [
+   "Initial lease liability",
+   "Initial direct costs",
+   "Estimated restoration costs",
+   "Variable payments linked to future sales"
+  ],
+  "answer": 3,
+  "explanation": "Sales-linked variable payments are expensed when incurred.",
+  "why_wrong": [
+   "Included.",
+   "Included.",
+   "Included.",
+   ""
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs16-005",
+  "standard": "IFRS 16",
+  "topic": "Lessor",
+  "difficulty": "easy",
+  "question": "A lessor classifies a lease as a finance lease when:",
+  "options": [
+   "The term is over 1 year",
+   "It transfers substantially all the risks and rewards of ownership",
+   "Payments are monthly",
+   "The lessee is a related party"
+  ],
+  "answer": 1,
+  "explanation": "Substance over form.",
+  "why_wrong": [
+   "Not the test.",
+   "",
+   "Not the test.",
+   "Not the test."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs16-006",
+  "standard": "IFRS 16",
+  "topic": "Calculation",
+  "difficulty": "medium",
+  "question": "Lease liability on 1 January is 10,000, rate 10%. A payment of 2,000 is made on 31 December (in arrears). Liability at 31 December?",
+  "options": [
+   "9,000",
+   "8,000",
+   "11,000",
+   "10,000"
+  ],
+  "answer": 0,
+  "explanation": "10,000 + 1,000 interest - 2,000 = 9,000.",
+  "why_wrong": [
+   "",
+   "Interest was ignored.",
+   "Payment was ignored.",
+   "Nothing changed?"
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs16-007",
+  "standard": "IFRS 16",
+  "topic": "Sale and leaseback",
+  "difficulty": "hard",
+  "question": "In a sale and leaseback that is a sale under IFRS 15, the seller-lessee recognises:",
+  "options": [
+   "The full gain",
+   "Only the gain relating to the rights transferred to the buyer-lessor",
+   "No gain",
+   "The gain in OCI"
+  ],
+  "answer": 1,
+  "explanation": "Part of the asset is retained through the ROU asset.",
+  "why_wrong": [
+   "Too much.",
+   "",
+   "A gain on transferred rights is recognised.",
+   "Not OCI."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs16-008",
+  "standard": "IFRS 16",
+  "topic": "Identifying a lease",
+  "difficulty": "hard",
+  "question": "A supplier has a substantive right to substitute the asset throughout the period. This means:",
+  "options": [
+   "The contract contains a lease",
+   "There is no identified asset, so no lease",
+   "The lease is a finance lease",
+   "The lease is short-term"
+  ],
+  "answer": 1,
+  "explanation": "A substantive substitution right means the customer does not control an identified asset.",
+  "why_wrong": [
+   "No identified asset.",
+   "",
+   "Classification is irrelevant.",
+   "Term is irrelevant."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ }
+]

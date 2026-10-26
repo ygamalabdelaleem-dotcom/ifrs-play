@@ -1,0 +1,178 @@
+[
+ {
+  "id": "q-ifrs3-001",
+  "standard": "IFRS 3",
+  "topic": "Method",
+  "difficulty": "easy",
+  "question": "IFRS 3 requires business combinations to be accounted for using:",
+  "options": [
+   "The acquisition method",
+   "Pooling of interests",
+   "Merger accounting",
+   "The equity method"
+  ],
+  "answer": 0,
+  "explanation": "Pooling is not allowed.",
+  "why_wrong": [
+   "",
+   "Prohibited.",
+   "Not under IFRS 3.",
+   "For associates and JVs."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs3-002",
+  "standard": "IFRS 3",
+  "topic": "Goodwill",
+  "difficulty": "easy",
+  "question": "Consideration 1,000, NCI 300, fair value of net identifiable assets 1,100. Goodwill?",
+  "options": [
+   "200",
+   "100",
+   "-100",
+   "1,400"
+  ],
+  "answer": 0,
+  "explanation": "1,000 + 300 - 1,100 = 200.",
+  "why_wrong": [
+   "",
+   "NCI was ignored.",
+   "Wrong.",
+   "Wrong."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs3-003",
+  "standard": "IFRS 3",
+  "topic": "NCI",
+  "difficulty": "medium",
+  "question": "IFRS 3 allows NCI to be measured at:",
+  "options": [
+   "Book value only",
+   "Fair value or the proportionate share of net identifiable assets",
+   "Cost",
+   "Zero"
+  ],
+  "answer": 1,
+  "explanation": "A choice for each combination.",
+  "why_wrong": [
+   "Not allowed.",
+   "",
+   "Not a measure for NCI.",
+   "No."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs3-004",
+  "standard": "IFRS 3",
+  "topic": "Costs",
+  "difficulty": "easy",
+  "question": "Legal and due diligence fees for an acquisition are:",
+  "options": [
+   "Added to goodwill",
+   "Expensed",
+   "Added to investment",
+   "Deducted from equity"
+  ],
+  "answer": 1,
+  "explanation": "Except costs of issuing debt or equity (IFRS 9 / IAS 32).",
+  "why_wrong": [
+   "Not allowed.",
+   "",
+   "Not in consolidated statements.",
+   "Only share issue costs."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs3-005",
+  "standard": "IFRS 3",
+  "topic": "Contingent consideration",
+  "difficulty": "medium",
+  "question": "Contingent consideration is included in the consideration at:",
+  "options": [
+   "Zero",
+   "Acquisition-date fair value",
+   "The maximum payable",
+   "Only when paid"
+  ],
+  "answer": 1,
+  "explanation": "Later changes (after the measurement period) usually go to profit or loss.",
+  "why_wrong": [
+   "Must be recognised.",
+   "",
+   "Not the maximum.",
+   "Recognised at acquisition."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs3-006",
+  "standard": "IFRS 3",
+  "topic": "Bargain purchase",
+  "difficulty": "medium",
+  "question": "If net assets acquired exceed consideration plus NCI, after reassessment the excess is:",
+  "options": [
+   "Negative goodwill in assets",
+   "A gain in profit or loss",
+   "Deducted from equity",
+   "Spread over 5 years"
+  ],
+  "answer": 1,
+  "explanation": "A bargain purchase gain.",
+  "why_wrong": [
+   "Not allowed.",
+   "",
+   "Not allowed.",
+   "Not allowed."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs3-007",
+  "standard": "IFRS 3",
+  "topic": "Goodwill",
+  "difficulty": "easy",
+  "question": "After acquisition, goodwill is:",
+  "options": [
+   "Amortised over 20 years",
+   "Not amortised; tested for impairment annually",
+   "Written off immediately",
+   "Revalued"
+  ],
+  "answer": 1,
+  "explanation": "IAS 36 applies.",
+  "why_wrong": [
+   "Not under IFRS.",
+   "",
+   "Not allowed.",
+   "Not allowed."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ },
+ {
+  "id": "q-ifrs3-008",
+  "standard": "IFRS 3",
+  "topic": "Measurement period",
+  "difficulty": "medium",
+  "question": "The measurement period for provisional amounts:",
+  "options": [
+   "Is unlimited",
+   "Ends when information is obtained, but no later than one year after acquisition",
+   "Is three years",
+   "Is until the next audit"
+  ],
+  "answer": 1,
+  "explanation": "Adjustments in that period are retrospective to goodwill.",
+  "why_wrong": [
+   "Limited.",
+   "",
+   "One year maximum.",
+   "No."
+  ],
+  "source": "Written for IFRS Play from the standard's core requirements. Exact source reference could not be verified from the uploaded document."
+ }
+]
